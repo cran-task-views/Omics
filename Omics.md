@@ -24,15 +24,36 @@ Complementary information might also be found in `r view("Phylogenetics")`, `r v
 
 If you think we have missed some important packages in this list, please e-mail the maintainers or submit an issue or pull request in the GitHub repository linked above.
 
+[**Annotation**]{#annotation}
+
+-   `r pkg("WebGestaltR")` uses [WebGestalt](http://www.webgestalt.org/) to 
+    perform Gene Set Enrichment and Network Topology analysis.
+
+[**Proteomics**]{#proteomics}
+
+-   `r pkg("wrProteo", priority = "core")` contains a collection of functions 
+    for the analysis of mass spectrometry proteomic data.
+-   `r pkg("ypssc")` is designed to analyzed outputs of 
+    [MaxQuant](https://www.maxquant.org)], which is a quantitative proteomics 
+    tool for large mass-spectrometric datasets.
+    
+[**Integration**]{#integration}
+
+-   `r pkg("wrMisc")` contains a collection of tools to manipulate omics data
+    and to perform various simple statistical analyses (including normalization
+    and some statistical tests).
+
 [**Specific tasks**]{#tasks}
 
 -   *Multiple testing*:
 
--   *High dimensional data - regularization*:
+-   *High dimensional data - regularization*: `r pkg("whitening")` implements 
+    whitening methods and CCA for high-dimensional omics data.
 
 -   *Networks*:
 
--   *Visualization*:
+-   *Visualization*: `r pkg("wilson")` is a web-based tool dedicated to the
+    visualization of multi-omics data in an interactive way.
 
 [**Specific application fields**]{#applications}
 
