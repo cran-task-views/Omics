@@ -26,8 +26,14 @@ If you think we have missed some important packages in this list, please e-mail 
 
 [**Annotation**]{#annotation}
 
+-   `r pkg("valr")` can be used to read and manipulate genome intervals and
+    signals.
+-   `r pkg("vhica")` can be used to detect horizontal transfers of transposable 
+    elements from their divergence compared with regular genes.
 -   `r pkg("WebGestaltR")` uses [WebGestalt](http://www.webgestalt.org/) to 
-    perform Gene Set Enrichment and Network Topology analysis.
+    perform Gene Set Enrichment and Network Topology analysis. `r pkg("VAM")`
+    proposes a gene set testing method that is better designed than standard 
+    ones to handle single-cell RNA-seq data.
 
 [**Proteomics**]{#proteomics}
 
@@ -52,8 +58,15 @@ If you think we have missed some important packages in this list, please e-mail 
 
 -   *Networks*:
 
--   *Visualization*: `r pkg("wilson")` is a web-based tool dedicated to the
-    visualization of multi-omics data in an interactive way.
+-   *Visualization*: `r pkg("valr")` can be used to visualize genome-scale data.
+    `r pkg("VALERIE")` enables visualization of alternative splicing event from
+    single-cell data.\ 
+    `r pkg("volcano3D")` provides 3D volcano and polar plots that is well suited
+    to visualize biomarker differential analysis results for 3-class problems.\ 
+    `r pkg("wilson")` is a web-based tool dedicated to the visualization of 
+    multi-omics data in an interactive way. \ 
+    
+    
 
 [**Specific application fields**]{#applications}
 
