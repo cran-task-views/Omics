@@ -12,8 +12,9 @@ In this task view, we focused on the most important CRAN packages, which have be
 -   [Annotation](#annotation)
 -   [Genomics](#genomics)
 -   [Human genetic epidemiology](#human)
--   [Proteomics](#proteomics)
+-   [Methylation](#methylation)
 -   [Transcriptomics](#transcriptomics)
+-   [Proteomics](#proteomics)
 -   [Metabolomics](#metabolomics)
 -   [Bacterial genomics, microbiome and metagenomics](#metagenomics)
 -   [Integration of differents omics](#integration)
@@ -26,6 +27,8 @@ If you think we have missed some important packages in this list, please e-mail 
 
 [**Annotation**]{#annotation}
 
+-   `r pkg("toprdata")` provides gene and exon information from Ensembl genome
+    builds.
 -   `r pkg("valr")` can be used to read and manipulate genome intervals and
     signals.
 -   `r pkg("vhica")` can be used to detect horizontal transfers of transposable 
@@ -33,7 +36,30 @@ If you think we have missed some important packages in this list, please e-mail 
 -   `r pkg("WebGestaltR")` uses [WebGestalt](http://www.webgestalt.org/) to 
     perform Gene Set Enrichment and Network Topology analysis. `r pkg("VAM")`
     proposes a gene set testing method that is better designed than standard 
-    ones to handle single-cell RNA-seq data.
+    ones to handle single-cell RNA-seq data. `r pkg("tmod")`provides functions
+    for gene set enrichment analysis in transcriptomic and metabolic profiling
+    data.
+-   `r pkg("topologyGSA")` performs gene expression data tests using given
+    pathway information on genes.
+
+[**Methylation**]{#methylation}
+
+-   `r pkg("TCA")` can deconvolve bulk condition-specific DNA methylation data
+    into condition and individual specific methylation levels and detect 
+    associations with phenotypes.
+
+[**Transcriptomics**]{#transcriptomics}
+
+-   `r pkg("Tmisc")`is a collection of utility functions to manipulate gene
+    expression data.
+-   `r pkg("TailRank")`provides a tail-rank non parametric test for microarray
+    datasets.
+-   `r pkg("TwoPhaseInd")` estimates gene-treatment interactions in randomized
+    clinical trials.
+-   `r pkg("TcGSA")` and `r pkg("TGS")` implement methods for longitudinal 
+    gene-expression data analysis.
+-   `r pkg("treefit")` infers cell trajectories (as trees) from single-cell gene
+    expression data.
 
 [**Proteomics**]{#proteomics}
 
@@ -42,7 +68,7 @@ If you think we have missed some important packages in this list, please e-mail 
 -   `r pkg("ypssc")` is designed to analyzed outputs of 
     [MaxQuant](https://www.maxquant.org)], which is a quantitative proteomics 
     tool for large mass-spectrometric datasets.
-    
+
 [**Integration**]{#integration}
 
 -   `r pkg("wrMisc")` contains a collection of tools to manipulate omics data
@@ -58,19 +84,19 @@ If you think we have missed some important packages in this list, please e-mail 
 
 -   *Networks*:
 
--   *Visualization*: `r pkg("valr")` can be used to visualize genome-scale data.
+-   *Visualization*: `r pkg("tinyarray")` is dedicated to the visualization of
+    GEO and TCGA expression data.\ 
+    `r pkg("valr")` can be used to visualize genome-scale data. 
     `r pkg("VALERIE")` enables visualization of alternative splicing event from
     single-cell data.\ 
     `r pkg("volcano3D")` provides 3D volcano and polar plots that is well suited
     to visualize biomarker differential analysis results for 3-class problems.\ 
     `r pkg("wilson")` is a web-based tool dedicated to the visualization of 
     multi-omics data in an interactive way. \ 
-    
-    
 
 [**Specific application fields**]{#applications}
 
--   *Cancer*:
+-   *Cancer*: `r pkg("tidyestimate")` infers tumor purity from expression data.
 
 -   *Plant breeding*:
 
