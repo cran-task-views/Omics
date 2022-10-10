@@ -212,6 +212,3 @@ If you think we have missed some important packages in this list, please e-mail 
 ### Other ressources
 
 -   [The Bioconductor project](https://www.bioconductor.org/)
--   [The PhyloGenetic CRAN task view](to%20be%20completed)
--   [The Epidemiology CRAN task view](to%20be%20completed)
--   [The StatisticalGenetics CRAN task view](to%20be%20completed)
