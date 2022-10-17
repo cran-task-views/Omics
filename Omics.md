@@ -35,7 +35,13 @@ If you think we have missed some important packages in this list, please e-mail 
     `r pkg("BED")` is an interface for the [Neo4j](https://neo4j.com/) database 
     providing mapping between different identifiers of biological entities.
     `r pkg("toprdata")` provides gene and exon information from Ensembl genome
-    builds.
+    builds. `r pkg("read.gb")` can read records with `.gb` extension form the 
+    NCBI Nucleotide database. `r pkg("babelgene")` converts between human and 
+    non-human gene orthologs/homologs from multiple databases. 
+    `r pkg("riceidconverter")` can be used to convert rice biological 
+    identifiers. 
+-   `r pkg("RNAsmc")` provides functions to mine, compare and plot RNA secondary
+    structure.
 -   `r pkg("valr")` can be used to read and manipulate genome intervals and
     signals.
 -   `r pkg("vhica")` can be used to detect horizontal transfers of transposable 
@@ -58,13 +64,18 @@ If you think we have missed some important packages in this list, please e-mail 
    
 [**Genomics**]{#genomics}
 
--   `r pkg("apex")` contains a collection of tools for the analysis aligned DNA sequences from multiple genes.
--   `r pkg("aroma.cn")` implements several methods for normalizing and analyzing DNA copy-number data.
--   `r pkg("babelgene")` converts between human and non-human gene orthologs/homologs and integrates orthology assertion predictions sourced from multiple databases as compiled by the HGNC Comparison of Orthology Predictions.
--   `r pkg("crispRdesignR")` designs guide sequences for CRISPR/Cas9 genome editing.
--   `r pkg("cumSeg")` estimates the number and location of change points in mean-shift (piecewise constant) models, such as genomic sequences.
+-   `r pkg("apex")` contains a collection of tools for the analysis of aligned 
+    DNA sequences from multiple genes. `r pkg("RFLPtools")` includes functions
+    to analyze DNA fragments.
+-   `r pkg("aroma.cn")` implements several methods for normalizing and analyzing
+    DNA copy-number data.
+-   `r pkg("crispRdesignR")` designs guide sequences for CRISPR/Cas9 genome 
+    editing.
+-   `r pkg("cumSeg")` estimates the number and location of change points in 
+     mean-shift (piecewise constant) models, such as genomic sequences.
 -   `r pkg("sigminer")` computes alteration signatures from genomic alteration 
-    records.
+    records and `r pkg("Rediscover")` identify mutually exclusive mutations 
+    using a Poisson-Binomial model.
 -   `r pkg("Signac")` is a framework for the analysis and exploration of 
     single-cell chromatin data.
 
@@ -80,7 +91,12 @@ If you think we have missed some important packages in this list, please e-mail 
 
 -   `r pkg("TailRank")`provides a tail-rank non parametric test for microarray
     datasets. `r pkg("SMVar")` implements structural model for variances for
-    differential analysis of gene expression data.
+    differential analysis of gene expression data. `r pkg("RNentropy")`
+    implements a method based on information theory to detect significant 
+    variation in gene expression.  `r pkg("depthTools` (and its 
+    [R commander](https://socialsciences.mcmaster.ca/jfox/Misc/Rcmdr/) 
+    plugin `r pkg("RcmdrPlugin.depthTools")`) is a collection of statistical
+    tools based on data depth for gene expression analysis.
 -   `r pkg("ssize.fdr")` provides functions that calculate appropriate sample 
     sizes for gene expression tests.
 -   `r pkg("TcGSA")` and `r pkg("TGS")` implement methods for longitudinal 
@@ -99,6 +115,7 @@ If you think we have missed some important packages in this list, please e-mail 
     various assumptions and `r pkg("SeqNet")` offers simulations of RNA-seq data
     based on regulatory networks.
 -   `r pkg("SIBERG")` implements a method to identify bimodally expressed genes.
+
 
 *single-cell RNA-seq*
 
@@ -121,6 +138,8 @@ If you think we have missed some important packages in this list, please e-mail 
     when one single-cell reference sample is available. `r pkg("scMappR")`
     assigns cell-type specificity score to DEGs obtained from bulk RNA-seq data
     by using a deconvolution method.
+-   `r pkg("rPanglaoDB")` can download and merge single-cell RNA-seq data from
+    the PanglaoDB https://panglaodb.se/
 
 *???*
 - `r pkg("cubfits")` estimates mutation and selection coefficients on synonymous codon bias usage based on models of ribosome overhead cost (ROC), and estimates and predicts protein production rates.
@@ -135,20 +154,30 @@ If you think we have missed some important packages in this list, please e-mail 
 [**Proteomics**]{#proteomics}
 
 
--   `r pkg("aLFQ")` implements the most commonly used absolute label-free protein abundance estimation methods for LC-MS/MS modes quantifying on either MS1-, MS2-levels or spectral counts together with validation algorithms to enable automated data analysis and error estimation.
--   `r pkg("bio3d")`contains utilities to process, organize and explore protein structure, sequence and dynamics data.
 
+-   `r pkg("bio3d")` contains utilities to process, organize and explore protein
+    structure, sequence and dynamics data.
+-   `r pkg("aLFQ")` implements the most common absolute label-free protein 
+    abundance estimation methods for LC-MS/MS.
 -   `r pkg("wrProteo", priority = "core")` contains a collection of functions 
     for the analysis of mass spectrometry proteomic data.
 -   `r pkg("ypssc")` is designed to analyzed outputs of 
     [MaxQuant](https://www.maxquant.org)], which is a quantitative proteomics 
     tool for large mass-spectrometric datasets.
+-   `r pkg("RPPASAPACE")` provides tools for the analysis of reverse-phase 
+    protein arrays.
+
+[**Metabolomics**]{#metabolomics}
+
+-   `r pkg("RAMClustR")` includes a clustering algorithm for mass spectrometry
+    metabolomic data.
 
 
 [**Bacterial genomics, microbiome and metagenomics**]{#metagenomics}
 
--   `r pkg("BarcodingR")` performs species identification using DNA barcodes.\
--   `r pkg("BacArena")` can be used for simulation of organisms living in     communities. Each organism is represented individually and genome scale metabolic models determine the uptake and release of compounds.
+-   `r pkg("BarcodingR")` performs species identification using DNA barcodes.
+-   `r pkg("BacArena")` can be used for simulation of organisms living in 
+    communities. 
 
 [**Integration**]{#integration}
 
@@ -166,7 +195,14 @@ If you think we have missed some important packages in this list, please e-mail 
 
 [**Specific tasks**]{#tasks}
 
--   *Multiple testing*:
+-   *Data normalization*: `r pkg("RUVIIIC")` performs normalization using
+    negative control variales and replications.\
+    `r pkg("rBiasCorrection")` performs bias correction in methylation data.
+
+-   *Multiple testing*: `r pkg("rSEA")` performs simultaneous enrichment
+    analysis that controls the FWER.\ 
+    `r pkg("RobustRankAggreg")` provides a method for aggregating rank lists,
+    especially lists of genes.
 
 -   *High dimensional data - regularization*: `r pkg("whitening")` implements 
     whitening methods and CCA for high-dimensional omics data.\
@@ -174,22 +210,30 @@ If you think we have missed some important packages in this list, please e-mail 
     potentially many predictor variables (including 'PELORA' and 'WILMA').
 
 -   *Networks*:
+    `r pkg("RGBM")` implements bootstrap based algorithm for network inference
+    from microarray and RNA-seq data.
     `r pkg("scLink")` and `r pkg("scTenifoldNet")` can be used to infer 
     co-expression networks from single-cell data, the latter including an 
-    approach to compare these networks between different conditions. 
-    Similarly, `r pkg("scTenifoldKnk")` uses co-expression networks to identify
+    approach to compare these networks between different conditions. \ 
+    `r pkg("scTenifoldKnk")` uses co-expression networks to identify 
     differentially regulated genes by a virtual knockout approach and 
     `r pkg("SIMMS")` enables integration of molecular profiles with functional 
     networks (such as PPI networks) to detect biomarkers from survival data.
+    Similarly, `r pkg("regnet")` provides network-base regularized models to 
+    perform variable selection in high-dimensional biological data.
 
 -   *Visualization*: 
     `r pkg("seqinr")` provides visualizations for biological sequence (DNA and 
-    protein) data.
-    `r pkg("cRegulome")` builds a 'SQLite' database and enables the 
-    visualization of Regulome-Gene Expression Correlations in Cancer and 
-    `r pkg("tinyarray")` is dedicated to the visualization of GEO and TCGA 
-    expression data.\ 
-    `r pkg("valr")` can be used to visualize genome-scale data.\ 
+    protein) data. \ 
+    `r pkg("RVA")` is dedicated to visualization of RNA-seq data and especially 
+    of results of differential analysis. Similarly, `r pkg("cRegulome")` builds 
+    a 'SQLite' database and enables the visualization of Regulome-Gene 
+    Expression Correlations in Cancer and `r pkg("tinyarray")` is dedicated to 
+    the visualization of GEO and TCGA expression data.\ 
+    `r pkg("valr")` can be used to visualize genome-scale data, 
+    `r pkg("RCircos")` includes collection of 2D circos plots for genomic 
+    visualization, and `r pkg("RIdeogram")` provides functions to display 
+    genome-wide data on ideograms.\ 
     `r pkg("VALERIE")` enables visualization of alternative splicing event from
     single-cell data.\ 
     `r pkg("statVisual")` implements visulizations for translational medicine 
