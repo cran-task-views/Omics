@@ -9,7 +9,7 @@ source:
 
 In this task view, we focused on the most important CRAN packages, which have been published more than one year ago and are regularly updated. The task view is structured into main topics:
 
--   [Annotation](#annotation)
+-   [Annotation and databases](#annotation)
 -   [Genomics](#genomics)
 -   [Human genetic epidemiology](#human)
 -   [Methylation](#methylation)
@@ -25,14 +25,17 @@ Complementary information might also be found in `r view("Phylogenetics")`, `r v
 
 If you think we have missed some important packages in this list, please e-mail the maintainers or submit an issue or pull request in the GitHub repository linked above.
 
-[**Annotation**]{#annotation}
+[**Annotation and Databases**]{#annotation}
+
+-   `r pkg("aliases2entrez")` converts human gene symbols to curated gene entrezID from NCBI database.
 
 -   `r pkg("AnnotationBustR")` extracts subsequences into FASTA files from GenBank annotations where gene names may vary among accessions.
 
 -   `r pkg("BED")` for Biological Entity Dictionary is an interface for the [Neo4j](https://neo4j.com/) database providing mapping between different identifiers of biological entities.
 
 -   `r pkg("biomart")` provides  an interface to the 'BioMart' database and a standardized way to automate genome, proteome, 'RNA', coding sequence ('CDS'), 'GFF', and metagenome retrieval from 'NCBI RefSeq', 'NCBI Genbank', 'ENSEMBL', and 'UniProt' databases.
-
+-   `r pkg("cbioportalR")` browse and query clinical and genomic Data from [cBioPortal](http://www.cbioportal.org/).
+-   `r pkg("CePa")` aims to find significant pathways through network topology information.
 -   `r pkg("toprdata")` provides gene and exon information from Ensembl genome
     builds.
 -   `r pkg("valr")` can be used to read and manipulate genome intervals and
@@ -50,14 +53,24 @@ If you think we have missed some important packages in this list, please e-mail 
 
    
 [**Genomics**](#genomics)
+-   `r pkg("agvgd")` is an extension of the original 'Grantham' distance to multiple sequence alignments to predict "missense" based on the properties of amino acid side chains and protein multiple sequence alignments.
 
+-   `r pkg("alakazam")` provides methods for for high-throughput adaptive immune receptor repertoire sequencing (AIRR-Seq; Rep-Seq) analysis.
+-   `r pkg("AnaCoDa")` contains a collection of models to analyze genome scale codon data using a Bayesian framework.
 -   `r pkg("apex")` contains a collection of tools for the analysis aligned DNA sequences from multiple genes.
 -   `r pkg("aroma.cn")` implements several methods for normalizing and analyzing DNA copy-number data.
 -   `r pkg("babelgene")` converts between human and non-human gene orthologs/homologs and integrates orthology assertion predictions sourced from multiple databases as compiled by the HGNC Comparison of Orthology Predictions.
+-     `r pkg("BASiNET")` implements a method to classify RNA Sequences using Complex Network Theory.
+
+-     `r pkg("bioseq")` is a toolbox for manipulating biological (DNA, RNA and amino acid) sequences.
+- `r pkg("Cascade")` implements a modeling tool allowing gene selection, reverse engineering, and prediction in cascade networks. Some such experimental data are available in the `r pkg("CascadeData")`
+
 -   `r pkg("crispRdesignR")` designs guide sequences for CRISPR/Cas9 genome editing.
 -   `r pkg("cumSeg")` estimates the number and location of change points in mean-shift (piecewise constant) models, such as genomic sequences.
 
 [**Methylation**]{#methylation}
+
+-   `r pkg("BiasCorrector")` is a GUI to correct measurement bias in DNA methylation analyses.
 
 -   `r pkg("TCA")` can deconvolve bulk condition-specific DNA methylation data
     into condition and individual specific methylation levels and detect 
@@ -65,10 +78,16 @@ If you think we have missed some important packages in this list, please e-mail 
 
 [**Transcriptomics**]{#transcriptomics}
 
- 
+- `r pkg("ADAPTS")` constructs cell-type signature matrices using flow sorted or single cell samples and deconvolve bulk gene expression data.
+- `r pkg("CB2")` provided functions for CRISPR pooled screen analysis using Beta-Binomial Test.
+- `r pkg("CeRNASeek")` provides several functions to identify and analyse miRNA sponge.
+- `r pkg("clustermole")` can be used to identify human and mouse single-Cell transcriptomic data cell type.
 - `r pkg("conos")` can be used to identify recurrent cell clusters in collections of single-cell RNA-seq datasets and to propagate information between datasets in multi-sample or atlas-scale collections.\
 - `r pkg("cubfits")` estimates mutation and selection coefficients on synonymous codon bias usage based on models of ribosome overhead cost (ROC), and estimates and predicts protein production rates.
 - `r pkg("bda")` implements algorithms for binned data analysis, gene expression data analysis and measurement error models for ordinal data analysis. 
+- `r pkg("BisqueRNA")` provides tools to accurately estimate cell type abundances from heterogeneous bulk expression based either on reference-based or marker-based method.
+
+- `r pkg("BClustLonG")` implements a dirichlet process mixture model for clustering longitudinal gene expression data.
 -   `r pkg("Tmisc")`is a collection of utility functions to manipulate gene
     expression data.
 -   `r pkg("TailRank")`provides a tail-rank non parametric test for microarray
@@ -82,10 +101,13 @@ If you think we have missed some important packages in this list, please e-mail 
 
 [**Proteomics**]{#proteomics}
 
-
 -   `r pkg("aLFQ")` implements the most commonly used absolute label-free protein abundance estimation methods for LC-MS/MS modes quantifying on either MS1-, MS2-levels or spectral counts together with validation algorithms to enable automated data analysis and error estimation.
+- `r pkg("ampir")` is a toolkit to predict antimicrobial peptides from protein sequences on a genome-wide scale.
 -   `r pkg("bio3d")`contains utilities to process, organize and explore protein structure, sequence and dynamics data.
-
+-   `r pkg("canprot")`contains data files of published differentially expressed proteins in cancer and cell culture proteomics experiments and tools for calculate chemical metrics.
+-   `r pkg("ChemoSpec", priority = "core")` contains a collection of functions for top-down exploratory chemometrics for spectroscopy.
+-   `r pkg("compas")` manipulates and analyzes 3-D structural geometry of Protein Data Bank (PDB) files.
+-   `r pkg("cp4p")` provides calibration plot for proteomics to check assumptions of FDR (false discovery rate) control procedures and to compute adjusted p-values.
 -   `r pkg("wrProteo", priority = "core")` contains a collection of functions 
     for the analysis of mass spectrometry proteomic data.
 -   `r pkg("ypssc")` is designed to analyzed outputs of 
@@ -100,7 +122,8 @@ If you think we have missed some important packages in this list, please e-mail 
 
 [**Integration**]{#integration}
 
-    
+- `r pkg("ActivePathways")` uses p-value merging to combine gene- or protein-level signals, followed by ranked hypergeometric tests to determine enriched pathways and processes. 
+
 - `r pkg("CovCombR")` can be used to combine heterogeneous data sets through a covariance based method.    
 
 -   `r pkg("wrMisc")` contains a collection of tools to manipulate omics data
@@ -110,15 +133,21 @@ If you think we have missed some important packages in this list, please e-mail 
 [**Specific tasks**]{#tasks}
 
 -   *Multiple testing*:
+`r pkg("bayefdr")` implements a bayesian estimation and optimisation of expected False Discovery Rate.
 
 -   *High dimensional data - regularization*: `r pkg("whitening")` implements 
     whitening methods and CCA for high-dimensional omics data.
 
 -   *Networks*:
 
+ 
+
 -   *Visualization*: 
+
+ `r pkg("BioInsight")` filters and plots the abundance of different RNA biotypes present in a count matrix. 
+
     `r pkg("cRegulome")` builds a 'SQLite' database and enables the visualization of Regulome-Gene    Expression Correlations in Cancer.\
-    
+    `r pkg("chromoMap")` provides interactive genomic visualization of the chromosomes or chromosome regions of any living organism.
 `r pkg("tinyarray")` is dedicated to the visualization of
     GEO and TCGA expression data.\ 
     `r pkg("valr")` can be used to visualize genome-scale data. 
@@ -134,6 +163,9 @@ If you think we have missed some important packages in this list, please e-mail 
 -   *Cancer*: `r pkg("tidyestimate")` infers tumor purity from expression data.
 
 -   *Plant breeding*:
+
+-   *Nutrition*:
+`r pkg("BRINDA")` computes a Biomarkers Reflecting Inflammation and Nutritional Determinants of Anemia (BRINDA) adjustment method from the BRINDA multi-agency and multi-country partnership.
 
 ### Other ressources
 
