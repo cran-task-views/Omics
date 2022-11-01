@@ -118,12 +118,14 @@ If you think we have missed some important packages in this list, please e-mail 
     immune cells from expression data.
 
 *RNA-seq*
--   `r pkg("BisqueRNA")` provides tools to accurately estimate cell type abundances from heterogeneous bulk expression based either on reference-based or marker-based method.
--   `r pkg("Tmisc")`is a collection of utility functions to manipulate gene
+-   `r pkg("BisqueRNA")` provides tools to accurately estimate cell type abundances from heterogeneous bulk expression based either on reference-based or marker-based methods.
+-   `r pkg("Tmisc")` is a collection of utility functions to manipulate gene
     expression data.
 -   `r pkg("seqgendiff")` provides a framework to simulate RNA-seq data under
     various assumptions and `r pkg("SeqNet")` offers simulations of RNA-seq data
     based on regulatory networks.
+-   `r pkg("QuasiSeq")` includes function to perform differential analysis of
+    RNA-seq data using quasi-Poisson or quasi-negative binomial models.
 -   `r pkg("SIBERG")` implements a method to identify bimodally expressed genes.
 -   `r pkg("CeRNASeek")` provides several functions to identify and analyse miRNA sponge.
 
