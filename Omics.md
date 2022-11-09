@@ -33,7 +33,7 @@ If you think we have missed some important packages in this list, please e-mail 
 
 -   `r pkg("BED")` for Biological Entity Dictionary is an interface for the [Neo4j](https://neo4j.com/) database providing mapping between different identifiers of biological entities.
 
--   `r pkg("biomart")` provides  an interface to the 'BioMart' database and a standardized way to automate genome, proteome, 'RNA', coding sequence ('CDS'), 'GFF', and metagenome retrieval from 'NCBI RefSeq', 'NCBI Genbank', 'ENSEMBL', and 'UniProt' databases.
+-   `r pkg("biomartr")` provides  an interface to the 'BioMart' database and a standardized way to automate genome, proteome, 'RNA', coding sequence ('CDS'), 'GFF', and metagenome retrieval from 'NCBI RefSeq', 'NCBI Genbank', 'ENSEMBL', and 'UniProt' databases.
 -   `r pkg("cbioportalR")` browse and query clinical and genomic Data from [cBioPortal](http://www.cbioportal.org/).
 -   `r pkg("CePa")` aims to find significant pathways through network topology information.
 -   `r pkg("toprdata")` provides gene and exon information from Ensembl genome builds.
@@ -73,7 +73,9 @@ If you think we have missed some important packages in this list, please e-mail 
 -   `r pkg("alakazam")` provides methods for for high-throughput adaptive immune receptor repertoire sequencing (AIRR-Seq; Rep-Seq) analysis.
 -   `r pkg("AnaCoDa")` contains a collection of models to analyze genome scale codon data using a Bayesian framework.
 -   `r pkg("apex")` contains a collection of tools for the analysis aligned DNA sequences from multiple genes.
--   `r pkg("aroma.cn")` implements several methods for normalizing and analyzing DNA copy-number data.
+-   `r pkg("aroma.cn")` implements several methods for normalizing and analyzing 
+    DNA copy-number data and `r pkg("PSCBS")` focuses on the analysis of 
+    parent-specific DNA copy-number data.
 -   `r pkg("babelgene")` converts between human and non-human gene orthologs/homologs and integrates orthology assertion predictions sourced from multiple databases as compiled by the HGNC Comparison of Orthology Predictions.
 -     `r pkg("BASiNET")` implements a method to classify RNA Sequences using Complex Network Theory.
 
@@ -87,6 +89,8 @@ If you think we have missed some important packages in this list, please e-mail 
     using a Poisson-Binomial model.
 -   `r pkg("Signac")` is a framework for the analysis and exploration of 
     single-cell chromatin data.
+-   `r pkg("PSSMCOOL")` contains the computation of various features from 
+    Position Specific Scoring Matrix (PSSM).
 
 [**Methylation**]{#methylation}
 
@@ -103,7 +107,7 @@ If you think we have missed some important packages in this list, please e-mail 
     datasets. `r pkg("SMVar")` implements structural model for variances for
     differential analysis of gene expression data. `r pkg("RNentropy")`
     implements a method based on information theory to detect significant 
-    variation in gene expression.  `r pkg("depthTools` (and its 
+    variation in gene expression.  `r pkg("depthTools")` (and its 
     [R commander](https://socialsciences.mcmaster.ca/jfox/Misc/Rcmdr/) 
     plugin `r pkg("RcmdrPlugin.depthTools")`) is a collection of statistical
     tools based on data depth for gene expression analysis.
@@ -153,6 +157,8 @@ If you think we have missed some important packages in this list, please e-mail 
     by using a deconvolution method.
 -   `r pkg("rPanglaoDB")` can download and merge single-cell RNA-seq data from
     the PanglaoDB https://panglaodb.se/
+    
+
 
 *???*
 - `r pkg("cubfits")` estimates mutation and selection coefficients on synonymous codon bias usage based on models of ribosome overhead cost (ROC), and estimates and predicts protein production rates.
@@ -167,22 +173,36 @@ If you think we have missed some important packages in this list, please e-mail 
 
 [**Proteomics**]{#proteomics}
 
-- `r pkg("ampir")` is a toolkit to predict antimicrobial peptides from protein sequences on a genome-wide scale.
--   `r pkg("canprot")`contains data files of published differentially expressed proteins in cancer and cell culture proteomics experiments and tools for calculate chemical metrics.
+-   *Protein structure*: `r pkg("compas")` manipulates and analyzes 3-D 
+    structural geometry of Protein Data Bank (PDB) files. `r pkg("bio3d")` 
+    contains tools to process, organize and explore protein structure, sequence 
+    and dynamics data.\ 
+    `r pkg("ampir")` is a toolkit to predict antimicrobial peptides from protein
+    sequences on a genome-wide scale. \ 
+    `r pkg("PredCRG")` contains a computational model to predict proteins 
+    encoded by circadian genes.\ 
+    `r pkg("ptm")` contains functions for the analysis of post-translational
+    modifications in proteins.
+-   *Databases*: `r pkg("canprot")`contains data files of published 
+    differentially expressed proteins in cancer and cell culture experiments.
+-   *Mass spectrometry proteomics*: `r pkg("aLFQ", priority = "core")` 
+    implements the most common absolute label-free protein abundance estimation 
+    methods for LC-MS/MS and `r pkg("wrProteo", priority = "core")` contains a
+    collection of functions for the analysis of mass spectrometry proteomic 
+    data.\ 
+    `r pkg("PTXQC")` and `r pkg("ypssc")` are both designed to analyze outputs 
+    of [MaxQuant](https://www.maxquant.org)] (a quantitative proteomics tool for
+    large mass-spectrometric datasets). `r pkg("protti")` can also analyze 
+    outputs of MaxQuant in addition to outputs of 
+    [Spectronaut](https://biognosys.com/software/spectronaut/) or of
+    [Proteome Discoverer](https://www.thermofisher.com/fr/fr/home/industrial/mass-spectrometry/liquid-chromatography-mass-spectrometry-lc-ms/lc-ms-software/multi-omics-data-analysis/proteome-discoverer-software.html).\ 
+    `r pkg("prozor")` determines the minimal protein set explaining peptide 
+    spectrum matches. \ 
+    `r pkg("protViz")` contains functions to visualize and analyze small mass 
+    spectrometry proteomic datasets.
+    
 -   `r pkg("ChemoSpec", priority = "core")` contains a collection of functions for top-down exploratory chemometrics for spectroscopy.
--   `r pkg("compas")` manipulates and analyzes 3-D structural geometry of Protein Data Bank (PDB) files.
 -   `r pkg("cp4p")` provides calibration plot for proteomics to check assumptions of FDR (false discovery rate) control procedures and to compute adjusted p-values.
--   `r pkg("bio3d")` contains utilities to process, organize and explore protein
-    structure, sequence and dynamics data.
--   `r pkg("aLFQ")` implements the most common absolute label-free protein 
-    abundance estimation methods for LC-MS/MS.
--   `r pkg("wrProteo", priority = "core")` contains a collection of functions 
-    for the analysis of mass spectrometry proteomic data.
--   `r pkg("ypssc")` is designed to analyzed outputs of 
-    [MaxQuant](https://www.maxquant.org)], which is a quantitative proteomics 
-    tool for large mass-spectrometric datasets.
--   `r pkg("RPPASAPACE")` provides tools for the analysis of reverse-phase 
-    protein arrays.
 
 [**Metabolomics**]{#metabolomics}
 
@@ -211,6 +231,9 @@ If you think we have missed some important packages in this list, please e-mail 
 -   `r pkg("CovCombR")` can be used to combine heterogeneous data sets through a
     covariance based method. `r pkg("semmcmc")` also provides a omics 
     integration method based on structural equation modelling (SEM).
+-   *Prediction*: `r pkg("prioritylasso")` performs prediction from multiple
+    omics using successive Lasso models using different priorities for the 
+    omics.
 
 
 
@@ -242,7 +265,9 @@ If you think we have missed some important packages in this list, please e-mail 
     `r pkg("SIMMS")` enables integration of molecular profiles with functional 
     networks (such as PPI networks) to detect biomarkers from survival data.
     Similarly, `r pkg("regnet")` provides network-base regularized models to 
-    perform variable selection in high-dimensional biological data.
+    perform variable selection in high-dimensional biological data.\ 
+    `r pkg("prioGene")` can be used to define disease specific PPI networks and
+    to deduce candidate gene prioritization.
 
  
 
