@@ -71,6 +71,8 @@ If you think we have missed some important packages in this list, please e-mail 
     fragments. Similarly, `r pkg("scoper")` perform spectral clustering to 
     identify clones from B cell data.
     
+    `r pkg("diffEnrich")` compares functional enrichment between two experimentally-derived groups of genes or proteins.
+    
 [**Genomics**](#genomics)
 *CRISPR*
 -   `r pkg("crispRdesignR")` designs guide sequences for CRISPR/Cas9 genome editing.
@@ -92,7 +94,7 @@ If you think we have missed some important packages in this list, please e-mail 
 - `r pkg("Cascade")` implements a modeling tool allowing gene selection, reverse engineering, and prediction in cascade networks. Some such experimental data are available in the `r pkg("CascadeData")`
 
 -   `r pkg("cumSeg")` estimates the number and location of change points in mean-shift (piecewise constant) models, such as genomic sequences.
-
+-   `r pkg("desiR")` provides functions for ranking, selecting, and integrating genes, proteins and metabolite data.
 -   `r pkg("sigminer")` computes alteration signatures from genomic alteration 
     records and `r pkg("Rediscover")` identify mutually exclusive mutations 
     using a Poisson-Binomial model.
@@ -142,6 +144,7 @@ If you think we have missed some important packages in this list, please e-mail 
 *RNA-seq*
 -   `r pkg("BisqueRNA")` provides tools to estimate cell type abundances from 
     bulk expression data.
+-   `r pkg("DGEobj")` and  `r pkg("DGEobj.utils")` provides a flexible container and a function toolkit to manage and annotate Differential Gene Expression (DGE) analysis results.
 -   `r pkg("Tmisc")` is a collection of utility functions to manipulate gene
     expression data.
 -   `r pkg("seqgendiff")` provides a framework to simulate RNA-seq data under
@@ -307,7 +310,7 @@ If you think we have missed some important packages in this list, please e-mail 
     perform variable selection in high-dimensional biological data.\ 
     `r pkg("prioGene")` can be used to define disease specific PPI networks and
     to deduce candidate gene prioritization.
-
+ `r pkg("DiffCorr")` implements a method for identifying pattern changes between 2 experimental conditions in correlation networks.
  
 
 -   *Visualization*: 
