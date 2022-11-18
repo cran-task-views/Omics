@@ -36,7 +36,11 @@ If you think we have missed some important packages in this list, please e-mail 
 -   *Databases*: `r pkg("cbioportalR")` makes available clinical and genomic 
     data from [cBioPortal](http://www.cbioportal.org/). `r pkg("pinfsc50")`
     provides genomic data for the plant pathogen *Phytophthora infestans*.
--   *Functional annotation*: `r pkg("biomartr", priority = "core")` provides  
+-   *Functional annotation*: 
+
+`r pkg("enrichR")` provides an interface to the [Enrichr](https://maayanlab.cloud/Enrichr/) databases.
+
+`r pkg("biomartr", priority = "core")` provides  
     an interface to the 
     [BioMart](https://www.ensembl.org/info/data/biomart/index.html) database. 
     `r pkg("toprdata")` provides gene and exon information from Ensembl genome 
@@ -121,6 +125,7 @@ If you think we have missed some important packages in this list, please e-mail 
 
 *Microarray or other continuous expression data*
 
+-   `r pkg("EMMIXgene")` implements a mixture model-based approach to the clustering of microarray expression data.
 -   `r pkg("POD")` computes the probability of detection (POD) curve and the 
     limit of detection (LOD).
 -   `r pkg("TailRank")`provides a tail-rank non parametric test for microarray
@@ -140,6 +145,7 @@ If you think we have missed some important packages in this list, please e-mail 
     latent factor model.
 -   `r pkg("SMDIC")` performs the identification of somatic mutation-driven 
     immune cells from expression data.
+    
 
 *RNA-seq*
 -   `r pkg("BisqueRNA")` provides tools to estimate cell type abundances from 
@@ -235,15 +241,15 @@ If you think we have missed some important packages in this list, please e-mail 
 
 [**Metabolomics**]{#metabolomics}
 
--   `r pkg("RAMClustR")` includes a clustering algorithm for mass spectrometry
-    metabolomic data.
-
+-   `r pkg("RAMClustR")` includes a clustering algorithm for mass spectrometry metabolomic data.
+-   `r pkg("erah")` can be used to identfy metabolites by spectral library matching in GC-MS untarget metabolomics.  
 
 [**Bacterial genomics, microbiome and metagenomics**]{#metagenomics}
 
 -   `r pkg("BarcodingR")` performs species identification using DNA barcodes.
 -   `r pkg("BacArena")` can be used for simulation of organisms living in 
     communities. 
+-   `r pkg("enveomics.R")` contains a collection of functions for microbial ecology and other applications of genomics and metagenomics, companion package for the [Enveomics](	http://enve-omics.ce.gatech.edu/enveomics/) collection.
 
 [**Integration**]{#integration}
 
@@ -346,7 +352,7 @@ If you think we have missed some important packages in this list, please e-mail 
 
 [**Specific application fields**]{#applications}
 
--   *Cancer*: `r pkg("tidyestimate")` infers tumor purity from expression data.
+-   *Cancer*: `r pkg("emba")` enables the analysis and visualization of an ensemble of boolean models for biomarker discovery in cancer cell networks using simlated data from the results of the [DrugLogics](https://druglogics.eu/) software. `r pkg("tidyestimate")` infers tumor purity from expression data.
 
 -   *Plant breeding*:
 
