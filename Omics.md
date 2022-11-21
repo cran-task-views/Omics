@@ -125,17 +125,21 @@ If you think we have missed some important packages in this list, please e-mail 
 
 *Microarray or other continuous expression data*
 
--   `r pkg("EMMIXgene")` implements a mixture model-based approach to the clustering of microarray expression data.
 -   `r pkg("POD")` computes the probability of detection (POD) curve and the 
     limit of detection (LOD).
+-   `r pkg("depthTools")` (and its 
+    [R commander](https://socialsciences.mcmaster.ca/jfox/Misc/Rcmdr/) 
+    plugin `r pkg("RcmdrPlugin.depthTools")`) is a collection of statistical
+    tools based on data depth for gene expression analysis.
+    [OOMPA](http://oompa.r-forge.r-project.org/) provides a collection of 
+    CRAN packages for microarray and proteomics analysis.
 -   `r pkg("TailRank")`provides a tail-rank non parametric test for microarray
     datasets. `r pkg("SMVar")` implements structural model for variances for
     differential analysis of gene expression data. `r pkg("RNentropy")`
     implements a method based on information theory to detect significant 
-    variation in gene expression.  `r pkg("depthTools")` (and its 
-    [R commander](https://socialsciences.mcmaster.ca/jfox/Misc/Rcmdr/) 
-    plugin `r pkg("RcmdrPlugin.depthTools")`) is a collection of statistical
-    tools based on data depth for gene expression analysis.
+    variation in gene expression. `r pkg("ORdensity")` detects differentially
+    expressed genes with a permutation procedure. `r pkg("optBiomarker")`
+    estimates the optimal number of biomarkers in 2-group assays.
 -   `r pkg("ssize.fdr")` provides functions that calculate appropriate sample 
     sizes for gene expression tests.
 -   `r pkg("TcGSA")` and `r pkg("TGS")` implement methods for longitudinal 
@@ -187,7 +191,8 @@ If you think we have missed some important packages in this list, please e-mail 
 -   `r pkg("scBio")` proposes a deconvolution algorithm for bulk RNA-seq data 
     when one single-cell reference sample is available. `r pkg("scMappR")`
     assigns cell-type specificity score to DEGs obtained from bulk RNA-seq data
-    by using a deconvolution method.
+    by using a deconvolution method. `r pkg("omicswas")` tests association 
+    with phenotypes that are cell-type specific in bulk omics experiments.
 -   `r pkg("rPanglaoDB")` can download and merge single-cell RNA-seq data from
     the PanglaoDB https://panglaodb.se/
     
@@ -241,8 +246,12 @@ If you think we have missed some important packages in this list, please e-mail 
 
 [**Metabolomics**]{#metabolomics}
 
--   `r pkg("RAMClustR")` includes a clustering algorithm for mass spectrometry metabolomic data.
--   `r pkg("erah")` can be used to identfy metabolites by spectral library matching in GC-MS untarget metabolomics.  
+-   `r pkg("erah")` can be used to identfy metabolites by spectral library 
+    matching in GC-MS untarget metabolomics.
+-   `r pkg("omu")` provides metabolomics analysis tools (including 
+    visualization).
+-   `r pkg("RAMClustR")` includes a clustering algorithm for mass spectrometry
+    metabolomic data.
 
 [**Bacterial genomics, microbiome and metagenomics**]{#metagenomics}
 
@@ -253,7 +262,7 @@ If you think we have missed some important packages in this list, please e-mail 
 
 [**Integration**]{#integration}
 
-- `r pkg("ActivePathways")` uses p-value merging to combine gene- or protein-level signals, followed by ranked hypergeometric tests to determine enriched pathways and processes. 
+-   `r pkg("ActivePathways")` uses p-value merging to combine gene- or protein-level signals, followed by ranked hypergeometric tests to determine enriched pathways and processes. 
 
 -   `r pkg("solvebio")` is a binding for the 
     [SolveBio](https://www.solvebio.com/) API that is a biomedical knowledge hub
@@ -261,12 +270,13 @@ If you think we have missed some important packages in this list, please e-mail 
 -   `r pkg("wrMisc")` contains a collection of tools to manipulate omics data
     and to perform various simple statistical analyses (including normalization
     and some statistical tests).
--   `r pkg("CovCombR")` can be used to combine heterogeneous data sets through a
-    covariance based method. Similarly, `r pkg("PMA", priority = "core")` 
-    proposes a sparse canonical correlation analysis to integrate multiple omics
-    datasets. `r pkg("CovCombR")` and `r pkg("packMBPLSDA")` contains another 
-    method to combine heterogeneous data sets through a covariance based method
-    (the second being based on PLS-DA). 
+-   `r pkg("o2plsda", priority = "core")` provides function to perform O2PLS-DA
+    for multi-omics data integration. Similarly, `r pkg("CovCombR")` can be used
+    to combine heterogeneous data sets through a covariance based method, and
+    `r pkg("PMA", priority = "core")` proposes a sparse canonical correlation
+    analysis to integrate multiple omics datasets. `r pkg("CovCombR")` and 
+    `r pkg("packMBPLSDA")` contain other methods to combine heterogeneous data 
+    sets through a covariance based method (the second being based on PLS-DA). 
     `r pkg("semmcmc")` also provides a omics integration method based on 
     structural equation modelling (SEM).
 -   *Prediction*: `r pkg("prioritylasso")` performs prediction from multiple
@@ -299,12 +309,15 @@ If you think we have missed some important packages in this list, please e-mail 
     `r pkg("supclust")` implements methods for supervised clustering of
     potentially many predictor variables (including 'PELORA' and 'WILMA').
 
--   *Networks*:
-    `r pkg("RGBM")` implements bootstrap based algorithm for network inference
-    from microarray and RNA-seq data. `r pkg("Patterns")` to infer biological
-    networks with approaches designed for single or multiple joint omics.
-    `r pkg("parmigene")` performs network inference with mutual information
-    methods. \ 
+-   *Networks*: \ 
+    `r pkg("WGCNA", priority = "core")` implements gene network inference with 
+    correlation based methods. `r pkg("RGBM")` implements bootstrap based
+    algorithm for network inference from microarray and RNA-seq data. 
+    `r pkg("RNAseqNet")` implements network inference with a log-linear Poisson
+    model and can handle missing individuals. `r pkg("Patterns")` to infer 
+    biological networks with approaches designed for single or multiple joint 
+    omics. `r pkg("parmigene")` performs network inference with mutual
+    information methods. \ 
     `r pkg("scLink")` and `r pkg("scTenifoldNet")` can be used to infer 
     co-expression networks from single-cell data, the latter including an 
     approach to compare these networks between different conditions. \ 
@@ -317,12 +330,20 @@ If you think we have missed some important packages in this list, please e-mail 
     `r pkg("prioGene")` can be used to define disease specific PPI networks and
     to deduce candidate gene prioritization.
  `r pkg("DiffCorr")` implements a method for identifying pattern changes between 2 experimental conditions in correlation networks.
- 
+    
+-   *Clustering*: \ 
+    `r pkg("EMMIXgene")` implements a mixture model-based approach for the 
+    clustering of microarray expression data and `r pkg("ORIClust")` performs
+    clustering of short time-course or dose-response microarray gene 
+    expressions.\ 
+    `r pkg("OptCirClust")` performs clustering for circular data (like circular 
+    DNA or RNA molecules).
 
 -   *Visualization*: 
-
- `r pkg("BioInsight")` filters and plots the abundance of different RNA biotypes present in a count matrix. 
-    `r pkg("chromoMap")` provides interactive genomic visualization of the chromosomes or chromosome regions of any living organism.
+    `r pkg("BioInsight")` filters and plots the abundance of different RNA 
+    biotypes present in a count matrix. 
+    `r pkg("chromoMap")` provides interactive genomic visualization of the
+    chromosomes or chromosome regions of any living organism.
     `r pkg("seqinr")` provides visualizations for biological sequence (DNA and 
     protein) data. \ 
     `r pkg("RVA")` is dedicated to visualization of RNA-seq data and especially 
@@ -341,6 +362,7 @@ If you think we have missed some important packages in this list, please e-mail 
     and biomarker discovery. Similarly, `r pkg("volcano3D")` provides 3D volcano
     and polar plots that is well suited to visualize biomarker differential 
     analysis results for 3-class problems.\ 
+    `r pkg("OmicNavigator")` is dedicated to the visualization of omic data.
     `r pkg("wilson")` is a web-based tool dedicated to the visualization of 
     multi-omics data in an interactive way. \ 
     `r pkg("PACVr")` provides function to visualize the coverage depth of a 
@@ -352,7 +374,11 @@ If you think we have missed some important packages in this list, please e-mail 
 
 [**Specific application fields**]{#applications}
 
--   *Cancer*: `r pkg("emba")` enables the analysis and visualization of an ensemble of boolean models for biomarker discovery in cancer cell networks using simlated data from the results of the [DrugLogics](https://druglogics.eu/) software. `r pkg("tidyestimate")` infers tumor purity from expression data.
+-   *Cancer*: `r pkg("emba")` enables biomarker discovery using simulated data 
+    from the results of the [DrugLogics](https://druglogics.eu/) software and
+    `r pkg("oncoPredict")` provides iomarker discovery from cell line screening
+    data.\ 
+    `r pkg("tidyestimate")` infers tumor purity from expression data.
 
 -   *Plant breeding*:
 
