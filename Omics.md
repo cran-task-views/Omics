@@ -65,10 +65,10 @@ If you think we have missed some important packages in this list, please e-mail 
     `r pkg("sigora")` corrects over-representation biases in pathway enrichment 
     analysis. `r pkg("permPATH")` performs pathway enrichment analysis with
     permutation tests. `r pkg("CePa")` aims to find significant pathways through 
-    network topology information and `r pkg("pathfindR")` also uses network 
-    information for enrichment analysis (and is accompanied by the data package
-    `r pkg("pathfindR.data")`). `r pkg("SlaPMEG")` performs pathway enrichment 
-    analysis for longitudinal omics data.
+    network topology information and `r pkg("pathfindR")` and `r pkg("netgsa")` 
+    also use network information for enrichment analysis (and is accompanied by 
+    the data package `r pkg("pathfindR.data")`). `r pkg("SlaPMEG")` performs 
+    pathway enrichment analysis for longitudinal omics data.
 -   `r pkg("topologyGSA")` performs gene expression data tests using given
     pathway information on genes.
 -   `r pkg("sonicLength")` estimates the abundance of cell clones from DNA
@@ -149,12 +149,13 @@ If you think we have missed some important packages in this list, please e-mail 
     latent factor model.
 -   `r pkg("SMDIC")` performs the identification of somatic mutation-driven 
     immune cells from expression data.
+-   `r pkg("NACHO")` and `r pkg("nanostringr")` provide tools for quality 
+    control or normalization of NanoString nCounter data.
     
 
 *RNA-seq*
 -   `r pkg("BisqueRNA")` provides tools to estimate cell type abundances from 
     bulk expression data.
--   `r pkg("DGEobj")` and  `r pkg("DGEobj.utils")` provides a flexible container and a function toolkit to manage and annotate Differential Gene Expression (DGE) analysis results.
 -   `r pkg("Tmisc")` is a collection of utility functions to manipulate gene
     expression data.
 -   `r pkg("seqgendiff")` provides a framework to simulate RNA-seq data under
@@ -164,7 +165,12 @@ If you think we have missed some important packages in this list, please e-mail 
     differential analysis of RNA-seq data using quasi-Poisson or quasi-negative
     binomial models. `r pkg("PQLseq")` implements a mixed model to account for 
     population structure in RNA-seq (and other count data) differential 
-    analyses.
+    analyses. `r pkg("NBPSeq")` and `r pgk("NBBttest")` are two packages that 
+    use (respectively) Negative Binomial and Negative Binomial Beta tests for 
+    differential analyses of RNA-seq data.
+-   `r pkg("DGEobj")` and  `r pkg("DGEobj.utils")` provides a flexible container
+    and a function toolkit to manage and annotate Differential Gene Expression 
+    (DGE) analysis results.
 -   `r pkg("SIBERG")` implements a method to identify bimodally expressed genes.
 -   `r pkg("CeRNASeek")` provides several functions to identify and analyse 
     miRNA sponge.
@@ -237,7 +243,8 @@ If you think we have missed some important packages in this list, please e-mail 
     [Spectronaut](https://biognosys.com/software/spectronaut/) or of
     [Proteome Discoverer](https://www.thermofisher.com/fr/fr/home/industrial/mass-spectrometry/liquid-chromatography-mass-spectrometry-lc-ms/lc-ms-software/multi-omics-data-analysis/proteome-discoverer-software.html).\ 
     `r pkg("prozor")` determines the minimal protein set explaining peptide 
-    spectrum matches. \ 
+    spectrum matches. `r pkg("net4pg")` implements a method to handle ambiguity
+    for the identification in shotgun proteomics. \ 
     `r pkg("protViz")` contains functions to visualize and analyze small mass 
     spectrometry proteomic datasets.
     
@@ -299,10 +306,12 @@ If you think we have missed some important packages in this list, please e-mail 
     regions.
 
 -   *Multiple testing*: `r pkg("bayefdr")` implements a bayesian estimation and 
-    optimisation of expected False Discovery Rate. `r pkg("rSEA")` performs 
+    optimization of expected False Discovery Rate. `r pkg("rSEA")` performs 
     simultaneous enrichment analysis that controls the FWER.
     `r pkg("RobustRankAggreg")` provides a method for aggregating rank lists,
-    especially lists of genes.
+    especially lists of genes.\ 
+    `r pkg("NewmanOmics")` implements Newman studentized range statistics for
+    genome scale transcriptomics.
 
 -   *High dimensional data - regularization*: `r pkg("whitening")` implements 
     whitening methods and CCA for high-dimensional omics data.\
@@ -317,7 +326,8 @@ If you think we have missed some important packages in this list, please e-mail 
     model and can handle missing individuals. `r pkg("Patterns")` to infer 
     biological networks with approaches designed for single or multiple joint 
     omics. `r pkg("parmigene")` performs network inference with mutual
-    information methods. \ 
+    information methods. `r pkg("networkABC")` performs network inference with
+    Approximate Bayesian Computation.\ 
     `r pkg("scLink")` and `r pkg("scTenifoldNet")` can be used to infer 
     co-expression networks from single-cell data, the latter including an 
     approach to compare these networks between different conditions. \ 
