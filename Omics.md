@@ -36,13 +36,13 @@ If you think we have missed some important packages in this list, please e-mail 
 -   *Databases*: `r pkg("cbioportalR")` makes available clinical and genomic 
     data from [cBioPortal](http://www.cbioportal.org/). `r pkg("pinfsc50")`
     provides genomic data for the plant pathogen *Phytophthora infestans*.
--   *Functional annotation*: 
-
-`r pkg("enrichR")` provides an interface to the [Enrichr](https://maayanlab.cloud/Enrichr/) databases.
-
-`r pkg("biomartr", priority = "core")` provides  
-    an interface to the 
+-   *Functional annotation*: `r pkg("enrichR")` provides an interface to the
+    [Enrichr](https://maayanlab.cloud/Enrichr/) databases. 
+    `r pkg("biomartr", priority = "core")` provides  an interface to the 
     [BioMart](https://www.ensembl.org/info/data/biomart/index.html) database. 
+    `r pkg("msigdbr")` provides an interface for the 
+    [MSigDB](https://www.gsea-msigdb.org/gsea/msigdb/) for Gene Set 
+    Enrichment Analysis.\ 
     `r pkg("toprdata")` provides gene and exon information from Ensembl genome 
     builds. `r pkg("read.gb")` can read records with `.gb` extension form the 
     NCBI Nucleotide database. `r pkg("babelgene")` converts between human and 
@@ -100,8 +100,9 @@ If you think we have missed some important packages in this list, please e-mail 
 -   `r pkg("cumSeg")` estimates the number and location of change points in mean-shift (piecewise constant) models, such as genomic sequences.
 -   `r pkg("desiR")` provides functions for ranking, selecting, and integrating genes, proteins and metabolite data.
 -   `r pkg("sigminer")` computes alteration signatures from genomic alteration 
-    records and `r pkg("Rediscover")` identify mutually exclusive mutations 
-    using a Poisson-Binomial model.
+    records, `r pkg("Rediscover")` identify mutually exclusive mutations 
+    using a Poisson-Binomial model, and `r pkg("mutSignatures")` identify
+    mutation signatures from somatic mutational catalogs.
 -   `r pkg("Signac")` is a framework for the analysis and exploration of 
     single-cell chromatin data.
 -   `r pkg("PSSMCOOL")` contains the computation of various features from 
@@ -283,9 +284,10 @@ If you think we have missed some important packages in this list, please e-mail 
     `r pkg("PMA", priority = "core")` proposes a sparse canonical correlation
     analysis to integrate multiple omics datasets. `r pkg("CovCombR")` and 
     `r pkg("packMBPLSDA")` contain other methods to combine heterogeneous data 
-    sets through a covariance based method (the second being based on PLS-DA). 
-    `r pkg("semmcmc")` also provides a omics integration method based on 
-    structural equation modelling (SEM).
+    sets through a covariance based method (the second being based on PLS-DA),
+    and `r pkg("MOSS")` provides a sparse SVD-based multi-omic integration 
+    method. `r pkg("semmcmc")` also provides a omics integration method based on 
+    structural equation modelling (SEM). 
 -   *Prediction*: `r pkg("prioritylasso")` performs prediction from multiple
     omics using successive Lasso models using different priorities for the 
     omics.
@@ -316,7 +318,9 @@ If you think we have missed some important packages in this list, please e-mail 
 -   *High dimensional data - regularization*: `r pkg("whitening")` implements 
     whitening methods and CCA for high-dimensional omics data.\
     `r pkg("supclust")` implements methods for supervised clustering of
-    potentially many predictor variables (including 'PELORA' and 'WILMA').
+    potentially many predictor variables (including 'PELORA' and 'WILMA').\
+    `r pkg("mpmi")` uses a kernel smoothing approach for comparison of pairs of
+    variables in large genomic datasets.
 
 -   *Networks*: \ 
     `r pkg("WGCNA", priority = "core")` implements gene network inference with 
@@ -361,6 +365,8 @@ If you think we have missed some important packages in this list, please e-mail 
     a 'SQLite' database and enables the visualization of Regulome-Gene 
     Expression Correlations in Cancer and `r pkg("tinyarray")` is dedicated to 
     the visualization of GEO and TCGA expression data.\ 
+    `r pkg("mpm")` provides exploratory graphical analysis of gene expression
+    data with various factorial approaches (including PCA).\ 
     `r pkg("phateR")` can be used to single-cell data with trajectories.\ 
     `r pkg("valr")` can be used to visualize genome-scale data, 
     `r pkg("RCircos")` includes collection of 2D circos plots for genomic 
