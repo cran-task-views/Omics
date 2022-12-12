@@ -36,6 +36,7 @@ If you think we have missed some important packages in this list, please e-mail 
 -   *Databases*: `r pkg("cbioportalR")` makes available clinical and genomic 
     data from [cBioPortal](http://www.cbioportal.org/). `r pkg("pinfsc50")`
     provides genomic data for the plant pathogen *Phytophthora infestans*.
+    `r pkg("metaboData")` contains examples of various metabolomics datasets.
 -   *Functional annotation*: `r pkg("enrichR")` provides an interface to the
     [Enrichr](https://maayanlab.cloud/Enrichr/) databases. 
     `r pkg("biomartr", priority = "core")` provides  an interface to the 
@@ -112,6 +113,8 @@ If you think we have missed some important packages in this list, please e-mail 
     
 -   `r pkg("pathwayTMB")` estimates tumor mutational burden (TMB) with a new 
     pathway-based gene panel.
+-   `r pkg("MINTplates")` is a complete framework dedicated to exploration and
+    annotation of tRNA and other genomic sequences.
     
 
 [**Methylation**]{#methylation}
@@ -134,6 +137,7 @@ If you think we have missed some important packages in this list, please e-mail 
     tools based on data depth for gene expression analysis.
     [OOMPA](http://oompa.r-forge.r-project.org/) provides a collection of 
     CRAN packages for microarray and proteomics analysis.
+-   `r pkg("mi4p")` implements multiple imputation for proteomics data.
 -   `r pkg("TailRank")`provides a tail-rank non parametric test for microarray
     datasets. `r pkg("SMVar")` implements structural model for variances for
     differential analysis of gene expression data. `r pkg("RNentropy")`
@@ -176,6 +180,7 @@ If you think we have missed some important packages in this list, please e-mail 
 -   `r pkg("CeRNASeek")` provides several functions to identify and analyse 
     miRNA sponge.
 
+
 *Single-cell RNA-seq*
 
 -   `r pkg("Seurat", priority = "core")` and 
@@ -209,7 +214,8 @@ If you think we have missed some important packages in this list, please e-mail 
 - `r pkg("cubfits")` estimates mutation and selection coefficients on synonymous codon bias usage based on models of ribosome overhead cost (ROC), and estimates and predicts protein production rates.
 - `r pkg("bda")` implements algorithms for binned data analysis, gene expression data analysis and measurement error models for ordinal data analysis. 
 - `r pkg("BClustLonG")` implements a dirichlet process mixture model for clustering longitudinal gene expression data.
-
+- `r pkg("MiRNAQCB")` is a complete toolbox for QC control of miRNA expression 
+data.
 
 
 
@@ -254,12 +260,17 @@ If you think we have missed some important packages in this list, please e-mail 
 
 [**Metabolomics**]{#metabolomics}
 
--   `r pkg("erah")` can be used to identfy metabolites by spectral library 
+-   `r pkg("erah")` can be used to identify metabolites by spectral library 
     matching in GC-MS untarget metabolomics.
 -   `r pkg("omu")` provides metabolomics analysis tools (including 
-    visualization).
+    visualization) and `r pkg("MetabolomicsBasics")` also includes basic
+    functions (peak picking, deconvolution, ...) to explore metabolomics data.
 -   `r pkg("RAMClustR")` includes a clustering algorithm for mass spectrometry
     metabolomic data.
+-   `r pkg("MetSizeR")` computes sample size for target statistical power in 
+    metabolomics experiments.
+-   `r pkg("MetabolicSurv")` contains biomarker discovery and survival analysis
+    methods for metabolomics signatures.
 
 [**Bacterial genomics, microbiome and metagenomics**]{#metagenomics}
 
@@ -293,6 +304,10 @@ If you think we have missed some important packages in this list, please e-mail 
     omics.
 -   *Clustering*: `r pkg("PINSPlus")` implements a robust clustering method
     for omics data integration.
+-   *Meta-analyses*: `r pkg("metaRNASeq")` and `r pkg("metaMA")`  implement
+    p-value combination techniques for meta-analysis of RNA-seq data and 
+    microarray data respectively. `r pkg("MetaIntegretor")` provides a pipeline
+    for the meta-analysis of gene expression data.
 
 
 
@@ -335,6 +350,8 @@ If you think we have missed some important packages in this list, please e-mail 
     `r pkg("scLink")` and `r pkg("scTenifoldNet")` can be used to infer 
     co-expression networks from single-cell data, the latter including an 
     approach to compare these networks between different conditions. \ 
+    `r pkg("miic")` can be used to infer causal and non causal networks using
+    information theory. \ 
     `r pkg("scTenifoldKnk")` uses co-expression networks to identify 
     differentially regulated genes by a virtual knockout approach and 
     `r pkg("SIMMS")` enables integration of molecular profiles with functional 
