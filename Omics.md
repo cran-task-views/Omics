@@ -48,6 +48,8 @@ If you think we have missed some important packages in this list, please e-mail 
     builds. `r pkg("read.gb")` can read records with `.gb` extension form the 
     NCBI Nucleotide database. `r pkg("babelgene")` converts between human and 
     non-human gene orthologs/homologs from multiple databases. 
+    `r pkg("Map2NCBI")` provides information on markers described by their 
+    positions by querying the [NCBI](www.ncbi.nlm.nih.gov/) database.
     `r pkg("riceidconverter")` can be used to convert rice biological 
     identifiers. 
     
@@ -75,8 +77,8 @@ If you think we have missed some important packages in this list, please e-mail 
 -   `r pkg("sonicLength")` estimates the abundance of cell clones from DNA
     fragments. Similarly, `r pkg("scoper")` perform spectral clustering to 
     identify clones from B cell data.
-    
-    `r pkg("diffEnrich")` compares functional enrichment between two experimentally-derived groups of genes or proteins.
+-   `r pkg("diffEnrich")` compares functional enrichment between two 
+    experimentally-derived groups of genes or proteins.
     
 [**Genomics**](#genomics)
 *CRISPR*
@@ -131,20 +133,23 @@ If you think we have missed some important packages in this list, please e-mail 
 
 -   `r pkg("POD")` computes the probability of detection (POD) curve and the 
     limit of detection (LOD).
+-   `r pkg("maGUI")` provides a graphical user interface to analyze microarray
+    data (including annotation, tests, or network inference).
 -   `r pkg("depthTools")` (and its 
     [R commander](https://socialsciences.mcmaster.ca/jfox/Misc/Rcmdr/) 
     plugin `r pkg("RcmdrPlugin.depthTools")`) is a collection of statistical
     tools based on data depth for gene expression analysis.
     [OOMPA](http://oompa.r-forge.r-project.org/) provides a collection of 
     CRAN packages for microarray and proteomics analysis.
--   `r pkg("mi4p")` implements multiple imputation for proteomics data.
 -   `r pkg("TailRank")`provides a tail-rank non parametric test for microarray
     datasets. `r pkg("SMVar")` implements structural model for variances for
     differential analysis of gene expression data. `r pkg("RNentropy")`
     implements a method based on information theory to detect significant 
     variation in gene expression. `r pkg("ORdensity")` detects differentially
     expressed genes with a permutation procedure. `r pkg("optBiomarker")`
-    estimates the optimal number of biomarkers in 2-group assays.
+    estimates the optimal number of biomarkers in 2-group assays. 
+    `r pkg("MCMC.qpcr")` implements Bayesian approaches for normalization and
+    differential analysis of qPCR data.
 -   `r pkg("ssize.fdr")` provides functions that calculate appropriate sample 
     sizes for gene expression tests.
 -   `r pkg("TcGSA")` and `r pkg("TGS")` implement methods for longitudinal 
@@ -159,6 +164,7 @@ If you think we have missed some important packages in this list, please e-mail 
     
 
 *RNA-seq*
+-   `r pkg("MAAPER")` assigns 3' RNA-seq reads to polyA sites. 
 -   `r pkg("BisqueRNA")` provides tools to estimate cell type abundances from 
     bulk expression data.
 -   `r pkg("Tmisc")` is a collection of utility functions to manipulate gene
@@ -173,6 +179,7 @@ If you think we have missed some important packages in this list, please e-mail 
     analyses. `r pkg("NBPSeq")` and `r pgk("NBBttest")` are two packages that 
     use (respectively) Negative Binomial and Negative Binomial Beta tests for 
     differential analyses of RNA-seq data.
+-   `r pkg("markerpen")` uses penalized PCA for biomarker discovery.
 -   `r pkg("DGEobj")` and  `r pkg("DGEobj.utils")` provides a flexible container
     and a function toolkit to manage and annotate Differential Gene Expression 
     (DGE) analysis results.
@@ -254,6 +261,7 @@ data.
     for the identification in shotgun proteomics. \ 
     `r pkg("protViz")` contains functions to visualize and analyze small mass 
     spectrometry proteomic datasets.
+-   `r pkg("mi4p")` implements multiple imputation for proteomics data.
     
 -   `r pkg("ChemoSpec", priority = "core")` contains a collection of functions for top-down exploratory chemometrics for spectroscopy.
 -   `r pkg("cp4p")` provides calibration plot for proteomics to check assumptions of FDR (false discovery rate) control procedures and to compute adjusted p-values.
