@@ -61,7 +61,8 @@ If you think we have missed some important packages in this list, please e-mail 
     elements from their divergence compared with regular genes.
 -   *Gene set/pathway enrichment*: `r pkg("WebGestaltR", priority = "core")`
     uses [WebGestalt](http://www.webgestalt.org/) to perform Gene Set 
-    Enrichment and Network Topology analysis. `r pkg("VAM")` proposes a gene set 
+    Enrichment and Network Topology analysis. `r pgk("liger")` also proposes a 
+    method for gene set enrichment analysis. `r pkg("VAM")` proposes a gene set 
     testing method that is better designed than standard ones to handle 
     single-cell RNA-seq data. `r pkg("tmod")` provides functions for gene set 
     enrichment analysis in transcriptomic and metabolic profiling data. 
@@ -147,16 +148,21 @@ If you think we have missed some important packages in this list, please e-mail 
     implements a method based on information theory to detect significant 
     variation in gene expression. `r pkg("ORdensity")` detects differentially
     expressed genes with a permutation procedure. `r pkg("optBiomarker")`
-    estimates the optimal number of biomarkers in 2-group assays. 
-    `r pkg("MCMC.qpcr")` implements Bayesian approaches for normalization and
-    differential analysis of qPCR data.
+    estimates the optimal number of biomarkers in 2-group assays.  
+    `r pkg("leapp")` proposes an latent effect adjustment method to counter
+    their effects on ranking of hypothesis in tests. `r pkg("MCMC.qpcr")` 
+    implements Bayesian approaches for normalization and differential analysis 
+    of qPCR data.
 -   `r pkg("ssize.fdr")` provides functions that calculate appropriate sample 
     sizes for gene expression tests.
 -   `r pkg("TcGSA")` and `r pkg("TGS")` implement methods for longitudinal 
     gene-expression data analysis. `r pkg("survival666")` implements a method
     to eliminate influence of co-expressed genes in survival analyses.
--   `r pkg("slfm")` performs gene expression analysis with a Bayesian sparse 
-    latent factor model.
+-   **Clustering**: `r pkg("slfm")` performs gene expression analysis with a 
+    Bayesian sparse latent factor model. `r pkg("lmQCM")` implements a 
+    graph-based method for gene co-expression module discovery.
+-   **Prediction**: `r pkg("LPS")` implements the linear prediction score
+    approach for gene expression signatures.
 -   `r pkg("SMDIC")` performs the identification of somatic mutation-driven 
     immune cells from expression data.
 -   `r pkg("NACHO")` and `r pkg("nanostringr")` provide tools for quality 
@@ -262,17 +268,22 @@ data.
     `r pkg("protViz")` contains functions to visualize and analyze small mass 
     spectrometry proteomic datasets.
 -   `r pkg("mi4p")` implements multiple imputation for proteomics data.
-    
--   `r pkg("ChemoSpec", priority = "core")` contains a collection of functions for top-down exploratory chemometrics for spectroscopy.
--   `r pkg("cp4p")` provides calibration plot for proteomics to check assumptions of FDR (false discovery rate) control procedures and to compute adjusted p-values.
+-   `r pkg("ChemoSpec", priority = "core")` contains a collection of functions 
+    for top-down exploratory chemometrics for spectroscopy.
+-   **Visualization**: `r pkg("cp4p")` provides calibration plot for proteomics 
+    to check assumptions of FDR control procedures and to compute adjusted 
+    p-values. `r pkg("LSPFP")` provides plots of peptides from shotgun 
+    proteomics analysis.
 
 [**Metabolomics**]{#metabolomics}
 
 -   `r pkg("erah")` can be used to identify metabolites by spectral library 
     matching in GC-MS untarget metabolomics.
 -   `r pkg("omu")` provides metabolomics analysis tools (including 
-    visualization) and `r pkg("MetabolomicsBasics")` also includes basic
-    functions (peak picking, deconvolution, ...) to explore metabolomics data.
+    visualization) and `r pkg("lilikoi")` is a set of tool for metabolomics,
+    including normalization and various prediction methods. 
+    `r pkg("MetabolomicsBasics")` also includes basic functions (peak picking, 
+    deconvolution, ...) to explore metabolomics data.
 -   `r pkg("RAMClustR")` includes a clustering algorithm for mass spectrometry
     metabolomic data.
 -   `r pkg("MetSizeR")` computes sample size for target statistical power in 
@@ -311,7 +322,8 @@ data.
     omics using successive Lasso models using different priorities for the 
     omics.
 -   *Clustering*: `r pkg("PINSPlus")` implements a robust clustering method
-    for omics data integration.
+    for omics data integration and `r pkg("LUCIDus")` includes a ML based
+    method for integrated clustering.
 -   *Meta-analyses*: `r pkg("metaRNASeq")` and `r pkg("metaMA")`  implement
     p-value combination techniques for meta-analysis of RNA-seq data and 
     microarray data respectively. `r pkg("MetaIntegretor")` provides a pipeline
@@ -320,6 +332,9 @@ data.
 
 
 [**Specific tasks**]{#tasks}
+
+-   *Design of the experiment*: `r pkg("lineup")` and `r pkg("lineup2")` include
+    tools for detecting and correcting sample mix-ups in omics data.
 
 -   *Data normalization*: `r pkg("RUVIIIC")` performs normalization using
     negative control variables and replications.\
