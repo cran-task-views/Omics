@@ -87,6 +87,8 @@ If you think we have missed some important packages in this list, please e-mail 
 -   `r pkg("CB2")` provided functions for CRISPR pooled screen analysis using Beta-Binomial Test.
 
 *To be classified*
+-   `r pkg("KRIS")` provides various routine functions for bioinformatics 
+    analysis of sequences.
 -   `r pkg("agvgd")` is an extension of the original 'Grantham' distance to multiple sequence alignments to predict "missense" based on the properties of amino acid side chains and protein multiple sequence alignments.
 
 -   `r pkg("alakazam")` provides methods for for high-throughput adaptive immune receptor repertoire sequencing (AIRR-Seq; Rep-Seq) analysis.
@@ -249,6 +251,8 @@ data.
     encoded by circadian genes.\ 
     `r pkg("ptm")` contains functions for the analysis of post-translational
     modifications in proteins.
+-   `r pkg("krm")` is a package dedicated to kernel based regression method that
+    includes a kernel for protein sequence.
 -   *Databases*: `r pkg("canprot")`contains data files of published 
     differentially expressed proteins in cancer and cell culture experiments.
 -   *Mass spectrometry proteomics*: `r pkg("aLFQ", priority = "core")` 
@@ -369,7 +373,8 @@ data.
     biological networks with approaches designed for single or multiple joint 
     omics. `r pkg("parmigene")` performs network inference with mutual
     information methods. `r pkg("networkABC")` performs network inference with
-    Approximate Bayesian Computation.\ 
+    Approximate Bayesian Computation. `r pkg("JSparO")` implements joint sparse
+    optimization for gene network inference for cell fate conversion.\ 
     `r pkg("scLink")` and `r pkg("scTenifoldNet")` can be used to infer 
     co-expression networks from single-cell data, the latter including an 
     approach to compare these networks between different conditions. \ 
@@ -395,9 +400,11 @@ data.
 
 -   *Visualization*: 
     `r pkg("BioInsight")` filters and plots the abundance of different RNA 
-    biotypes present in a count matrix. 
+    biotypes present in a count matrix. \ 
+    `r pkg("JBrowseR")` provides an R interface to the 
+    [JBrowse 2](https://jbrowse.org/jb2/) genome browser.\ 
     `r pkg("chromoMap")` provides interactive genomic visualization of the
-    chromosomes or chromosome regions of any living organism.
+    chromosomes or chromosome regions of any living organism. \ 
     `r pkg("seqinr")` provides visualizations for biological sequence (DNA and 
     protein) data. \ 
     `r pkg("RVA")` is dedicated to visualization of RNA-seq data and especially 
