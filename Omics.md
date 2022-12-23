@@ -195,6 +195,8 @@ If you think we have missed some important packages in this list, please e-mail 
     use (respectively) Negative Binomial and Negative Binomial Beta tests for 
     differential analyses of RNA-seq data.
 -   `r pkg("markerpen")` uses penalized PCA for biomarker discovery.
+-   `r pkg("HTSCluster")` contains a model based on Poisson mixture to cluster
+    RNA-seq datasets.
 -   `r pkg("DGEobj")` and  `r pkg("DGEobj.utils")` provides a flexible container
     and a function toolkit to manage and annotate Differential Gene Expression 
     (DGE) analysis results.
@@ -383,14 +385,17 @@ data.
     `r pkg("RobustRankAggreg")` provides a method for aggregating rank lists,
     especially lists of genes.\ 
     `r pkg("NewmanOmics")` implements Newman studentized range statistics for
-    genome scale transcriptomics.
+    genome scale transcriptomics.\ 
+    `r pkg("hommel")` includes methods for close testing with Simes' inequality.
 
 -   *High dimensional data - regularization*: `r pkg("whitening")` implements 
     whitening methods and CCA for high-dimensional omics data.\
     `r pkg("supclust")` implements methods for supervised clustering of
     potentially many predictor variables (including 'PELORA' and 'WILMA').\
     `r pkg("mpmi")` uses a kernel smoothing approach for comparison of pairs of
-    variables in large genomic datasets.
+    variables in large genomic datasets.\ 
+    `r pkg("hsstan")` uses a hierarchical Bayesian approach for biomarker 
+    discovery in high dimensional datasets.
 
 -   *Networks*: \ 
     `r pkg("WGCNA", priority = "core")` implements gene network inference with 
@@ -415,8 +420,13 @@ data.
     Similarly, `r pkg("regnet")` provides network-base regularized models to 
     perform variable selection in high-dimensional biological data.\ 
     `r pkg("prioGene")` can be used to define disease specific PPI networks and
-    to deduce candidate gene prioritization.
- `r pkg("DiffCorr")` implements a method for identifying pattern changes between 2 experimental conditions in correlation networks.
+    to deduce candidate gene prioritization. \ 
+    `r pkg("DiffCorr")` implements a method for identifying pattern changes 
+    between 2 experimental conditions in correlation networks.
+    `r pkg("HiveR")` implements hive plots for displaying regulatory networks
+    and `r pkg("HEMDAG")` provides an implementation of several hierarchical
+    ensemble methods for directed acyclic graphs, useful for taxonomy models for
+    instance.
     
 -   *Clustering*: \ 
     `r pkg("EMMIXgene")` implements a mixture model-based approach for the 
