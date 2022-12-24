@@ -44,7 +44,9 @@ If you think we have missed some important packages in this list, please e-mail 
     [BioMart](https://www.ensembl.org/info/data/biomart/index.html) database. 
     `r pkg("msigdbr")` provides an interface for the 
     [MSigDB](https://www.gsea-msigdb.org/gsea/msigdb/) for Gene Set 
-    Enrichment Analysis.\ 
+    Enrichment Analysis. `r pkg("gprofiler2")` provides an interface for 
+    [g:Profiler](https://biit.cs.ut.ee/gprofiler/) (including functional 
+    enrichment analysis, identifier conversion, or orthology accross species).\ 
     `r pkg("toprdata")` provides gene and exon information from Ensembl genome 
     builds. `r pkg("read.gb")` can read records with `.gb` extension form the 
     NCBI Nucleotide database. `r pkg("babelgene")` converts between human and 
@@ -62,18 +64,20 @@ If you think we have missed some important packages in this list, please e-mail 
     elements from their divergence compared with regular genes.
 -   *Gene set/pathway enrichment*: `r pkg("WebGestaltR", priority = "core")`
     uses [WebGestalt](http://www.webgestalt.org/) to perform Gene Set 
-    Enrichment and Network Topology analysis. `r pkg("liger")` also proposes a 
-    method for gene set enrichment analysis. `r pkg("VAM")` proposes a gene set 
-    testing method that is better designed than standard ones to handle 
-    single-cell RNA-seq data. `r pkg("tmod")` provides functions for gene set 
-    enrichment analysis in transcriptomic and metabolic profiling data. 
-    `r pkg("sigora")` corrects over-representation biases in pathway enrichment 
-    analysis. `r pkg("permPATH")` performs pathway enrichment analysis with
-    permutation tests. `r pkg("CePa")` aims to find significant pathways through 
-    network topology information and `r pkg("pathfindR")` and `r pkg("netgsa")` 
-    also use network information for enrichment analysis (and is accompanied by 
-    the data package `r pkg("pathfindR.data")`). `r pkg("SlaPMEG")` performs 
-    pathway enrichment analysis for longitudinal omics data.
+    Enrichment and Network Topology analysis. `r pkg("GOxploreR")` provides a
+    method to explore the gene ontology. `r pkg("liger")` and `r pkg("GSA")` 
+    also propose methods for gene set enrichment analysis. `r pkg("VAM")` 
+    proposes a gene set testing method that is better designed than standard 
+    ones to handle single-cell RNA-seq data. `r pkg("tmod")` provides functions 
+    for gene set enrichment analysis in transcriptomic and metabolic profiling 
+    data. `r pkg("sigora")` corrects over-representation biases in pathway 
+    enrichment analysis. `r pkg("permPATH")` performs pathway enrichment 
+    analysis with permutation tests. `r pkg("CePa")` aims to find significant 
+    pathways through network topology information and `r pkg("pathfindR")` and 
+    `r pkg("netgsa")` also use network information for enrichment analysis (and 
+    is accompanied by the data package `r pkg("pathfindR.data")`). 
+    `r pkg("SlaPMEG")` performs pathway enrichment analysis for longitudinal 
+    omics data.
 -   `r pkg("topologyGSA")` performs gene expression data tests using given
     pathway information on genes.
 -   `r pkg("sonicLength")` estimates the abundance of cell clones from DNA
@@ -185,15 +189,17 @@ If you think we have missed some important packages in this list, please e-mail 
 -   `r pkg("Tmisc")` is a collection of utility functions to manipulate gene
     expression data.
 -   `r pkg("seqgendiff")` provides a framework to simulate RNA-seq data under
-    various assumptions and `r pkg("SeqNet")` offers simulations of RNA-seq data
-    based on regulatory networks.
+    various assumptions and `r pkg("SeqNet")` and `r pkg("graphsim")` both 
+    offer simulations of RNA-seq data based on regulatory networks.
 -   *Differential analysis*: `r pkg("QuasiSeq")` includes function to perform 
     differential analysis of RNA-seq data using quasi-Poisson or quasi-negative
     binomial models. `r pkg("PQLseq")` implements a mixed model to account for 
     population structure in RNA-seq (and other count data) differential 
-    analyses. `r pkg("NBPSeq")` and `r pkg("NBBttest")` are two packages that 
-    use (respectively) Negative Binomial and Negative Binomial Beta tests for 
-    differential analyses of RNA-seq data.
+    analyses and `r pkg("glmmSeq")` also uses a mixed model for repeated 
+    measurements in transcriptomic datasets. `r pkg("NBPSeq")` and 
+    `r pkg("NBBttest")` are two packages that use (respectively) Negative 
+    Binomial and Negative Binomial Beta tests for differential analyses of
+    RNA-seq data.
 -   `r pkg("markerpen")` uses penalized PCA for biomarker discovery.
 -   `r pkg("HTSCluster")` contains a model based on Poisson mixture to cluster
     RNA-seq datasets.
