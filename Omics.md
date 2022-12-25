@@ -34,9 +34,11 @@ If you think we have missed some important packages in this list, please e-mail 
 
 -   `r pkg("BED")` for Biological Entity Dictionary is an interface for the [Neo4j](https://neo4j.com/) database providing mapping between different identifiers of biological entities.
 
--   *Databases*: `r pkg("cbioportalR")` makes available clinical and genomic 
-    data from [cBioPortal](http://www.cbioportal.org/). `r pkg("pinfsc50")`
-    provides genomic data for the plant pathogen *Phytophthora infestans*.
+-   *Databases*: `r pkg("geneExpressionFromGEO")` can be used to easily download
+    a gene expression dataset from [GEO](https://www.ncbi.nlm.nih.gov/geo/).
+    `r pkg("cbioportalR")` makes available clinical and genomic data from
+    [cBioPortal](http://www.cbioportal.org/). `r pkg("pinfsc50")` provides 
+    genomic data for the plant pathogen *Phytophthora infestans*.
     `r pkg("metaboData")` contains examples of various metabolomics datasets.
 -   *Functional annotation*: `r pkg("enrichR")` provides an interface to the
     [Enrichr](https://maayanlab.cloud/Enrichr/) databases. 
@@ -90,7 +92,8 @@ If you think we have missed some important packages in this list, please e-mail 
 *CRISPR*
 -   `r pkg("CB2")` provided functions for CRISPR pooled screen analysis using Beta-Binomial Test.
 
-*To be classified*
+-   `r pkg("GenomicTools.fileHandler", priority = "core")` is a collection of 
+    I/O tools for handling the most commonly used genomic datafile types.
 -   `r pkg("KRIS")` provides various routine functions for bioinformatics 
     analysis of sequences.
 -   `r pkg("agvgd")` is an extension of the original 'Grantham' distance to multiple sequence alignments to predict "missense" based on the properties of amino acid side chains and protein multiple sequence alignments.
@@ -105,8 +108,8 @@ If you think we have missed some important packages in this list, please e-mail 
 -   `r pkg("babelgene")` converts between human and non-human gene orthologs/homologs and integrates orthology assertion predictions sourced from multiple databases as compiled by the HGNC Comparison of Orthology Predictions.
 -     `r pkg("BASiNET")` implements a method to classify RNA Sequences using Complex Network Theory.
 
--     `r pkg("bioseq")` is a toolbox for manipulating biological (DNA, RNA and amino acid) sequences.
-- `r pkg("Cascade")` implements a modeling tool allowing gene selection, reverse engineering, and prediction in cascade networks. Some such experimental data are available in the `r pkg("CascadeData")`
+-   `r pkg("bioseq")` is a toolbox for manipulating biological (DNA, RNA and amino acid) sequences.
+-   `r pkg("Cascade")` implements a modeling tool allowing gene selection, reverse engineering, and prediction in cascade networks. Some such experimental data are available in the `r pkg("CascadeData")`
 
 -   `r pkg("cumSeg")` estimates the number and location of change points in mean-shift (piecewise constant) models, such as genomic sequences.
 -   `r pkg("desiR")` provides functions for ranking, selecting, and integrating genes, proteins and metabolite data.
@@ -166,6 +169,8 @@ If you think we have missed some important packages in this list, please e-mail 
 -   `r pkg("TcGSA")` and `r pkg("TGS")` implement methods for longitudinal 
     gene-expression data analysis. `r pkg("survival666")` implements a method
     to eliminate influence of co-expressed genes in survival analyses.
+    `r pkg("GeneCycle")` also analyses gene expression time series to detect
+    periodically expressed genes.
 -   **Clustering**: `r pkg("slfm")` performs gene expression analysis with a 
     Bayesian sparse latent factor model. `r pkg("lmQCM")` implements a 
     graph-based method for gene co-expression module discovery.
@@ -258,6 +263,9 @@ data.
     structural geometry of Protein Data Bank (PDB) files. `r pkg("bio3d")` 
     contains tools to process, organize and explore protein structure, sequence 
     and dynamics data.\ 
+    `r pkg("geno2proteo")` allows to find the DNA and protein sequences of any
+    given genomic loci using the [ENSEMBL](https://www.ensembl.org/index.html)
+    annotations.
     `r pkg("pbm")` contains various models to analyze protein-ligand 
     interactions. \ 
     `r pkg("ampir")` is a toolkit to predict antimicrobial peptides from protein
@@ -405,15 +413,17 @@ data.
 
 -   *Networks*: \ 
     `r pkg("WGCNA", priority = "core")` implements gene network inference with 
-    correlation based methods. `r pkg("RGBM")` implements bootstrap based
-    algorithm for network inference from microarray and RNA-seq data. 
-    `r pkg("RNAseqNet")` implements network inference with a log-linear Poisson
-    model and can handle missing individuals. `r pkg("Patterns")` to infer 
-    biological networks with approaches designed for single or multiple joint 
-    omics. `r pkg("parmigene")` performs network inference with mutual
-    information methods. `r pkg("networkABC")` performs network inference with
-    Approximate Bayesian Computation. `r pkg("JSparO")` implements joint sparse
-    optimization for gene network inference for cell fate conversion.\ 
+    correlation based methods and `r pkg("GeneNet", priority = "core")` 
+    implements gene network inference with Gaussian Graphical Models. 
+    `r pkg("RGBM")` implements bootstrap based algorithm for network inference 
+    from microarray and RNA-seq data. `r pkg("RNAseqNet")` implements network 
+    inference with a log-linear Poisson model and can handle missing 
+    individuals. `r pkg("Patterns")` to infer biological networks with
+    approaches designed for single or multiple joint omics. `r pkg("parmigene")`
+    performs network inference with mutual information methods. 
+    `r pkg("networkABC")` performs network inference with Approximate Bayesian
+    Computation. `r pkg("JSparO")` implements joint sparse optimization for gene
+    network inference for cell fate conversion.\ 
     `r pkg("scLink")` and `r pkg("scTenifoldNet")` can be used to infer 
     co-expression networks from single-cell data, the latter including an 
     approach to compare these networks between different conditions. \ 
@@ -449,18 +459,21 @@ data.
     [JBrowse 2](https://jbrowse.org/jb2/) genome browser.\ 
     `r pkg("chromoMap")` provides interactive genomic visualization of the
     chromosomes or chromosome regions of any living organism. \ 
-    `r pkg("seqinr")` provides visualizations for biological sequence (DNA and 
-    protein) data. \ 
+    Similarly, `r pkg("seqinr")` provides visualizations for biological
+    sequence (DNA and protein) data.\ 
+    `r pkg("genoPlotR")` produces various genes or genome map figures ready for
+    publications. Similarly, `r pkg("valr")` can be used to visualize 
+    genome-scale data, `r pkg("RCircos")` includes collection of 2D circos 
+    plots for genomic visualization, and `r pkg("RIdeogram")` provides functions
+    to display genome-wide data on ideograms. More specifically, 
+    `r pkg("gggenes")` draws gene arrow maps with a
+    [ggplot2](https://ggplot2.tidyverse.org/) approach.\ 
     `r pkg("RVA")` is dedicated to visualization of RNA-seq data and especially 
     of results of differential analysis. Similarly, `r pkg("tinyarray")` is 
     dedicated to the visualization of GEO and TCGA expression data.\ 
     `r pkg("mpm")` provides exploratory graphical analysis of gene expression
     data with various factorial approaches (including PCA).\ 
     `r pkg("phateR")` can be used to single-cell data with trajectories.\ 
-    `r pkg("valr")` can be used to visualize genome-scale data, 
-    `r pkg("RCircos")` includes collection of 2D circos plots for genomic 
-    visualization, and `r pkg("RIdeogram")` provides functions to display 
-    genome-wide data on ideograms.\ 
     `r pkg("VALERIE")` enables visualization of alternative splicing event from
     single-cell data.\ 
     `r pkg("statVisual")` implements visualizations for translational medicine 
