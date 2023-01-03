@@ -102,12 +102,9 @@ If you think we have missed some important packages in this list, please e-mail 
 -   `r pkg("alakazam")` provides methods for for high-throughput adaptive immune receptor repertoire sequencing (AIRR-Seq; Rep-Seq) analysis.
 -   `r pkg("AnaCoDa")` contains a collection of models to analyze genome scale codon data using a Bayesian framework.
 -   `r pkg("apex")` contains a collection of tools for the analysis aligned DNA sequences from multiple genes.
--   `r pkg("ioncopy")` implements calculation of copy-numbers in amplicon
-    sequencing data. `r pkg("aroma.cn")` implements several methods for 
-    normalizing and analyzing  DNA copy-number data and `r pkg("PSCBS")` focuses
-    on the analysis of parent-specific DNA copy-number data.
+-   `r pkg("ioncopy")` implements calculation of copy-numbers in amplicon sequencing data. `r pkg("aroma.cn")` implements several methods for normalizing and analyzing  DNA copy-number data and `r pkg("PSCBS")` focuses on the analysis of parent-specific DNA copy-number data.
 -   `r pkg("babelgene")` converts between human and non-human gene orthologs/homologs and integrates orthology assertion predictions sourced from multiple databases as compiled by the HGNC Comparison of Orthology Predictions.
--     `r pkg("BASiNET")` implements a method to classify RNA Sequences using Complex Network Theory.
+-   `r pkg("BASiNET")` implements a method to classify RNA Sequences using Complex Network Theory.
 
 -   `r pkg("bioseq")` is a toolbox for manipulating biological (DNA, RNA and amino acid) sequences.
 -   `r pkg("Cascade")` implements a modeling tool allowing gene selection, reverse engineering, and prediction in cascade networks. Some such experimental data are available in the `r pkg("CascadeData")`
@@ -362,7 +359,6 @@ data.
     `r pkg("packMBPLSDA")` contain other methods to combine heterogeneous data 
     sets through a covariance based method (the second being based on PLS-DA),
     and `r pkg("MOSS")` provides a sparse SVD-based multi-omic integration 
-<<<<<<< Updated upstream
     method. `r pkg("semmcmc")` also provides a omics integration method based on 
     structural equation modelling (SEM), and `r pkg("IMIX")` uses Gaussian
     mixtures for multi-omics data integration. More specifically, 
@@ -374,11 +370,8 @@ data.
     consistently altered in cancer across different omics and similarly,
     `r pkg("ICDS")` identifies pathways dysfunctional in cancer based on the 
     integration of multiple omics.
-=======
-    method. `r pkg("semmcmc")` also provides a omics integration method based on structural equation modelling (SEM). 
--   `r pkg("dnet")` performs integration from different angles including: integration with molecular networks, enrichments using ontologies, and relevance to gene evolutionary ages. 
+    `r pkg("dnet")` performs integration from different angles including: integration with molecular networks, enrichments using ontologies, and relevance to gene evolutionary ages.
 
->>>>>>> Stashed changes
 -   *Prediction*: `r pkg("prioritylasso")` performs prediction from multiple
     omics using successive Lasso models using different priorities for the 
     omics.
@@ -389,8 +382,6 @@ data.
     p-value combination techniques for meta-analysis of RNA-seq data and 
     microarray data respectively. `r pkg("MetaIntegrator")` provides a pipeline
     for the meta-analysis of gene expression data.
-
-
 
 [**Specific tasks**]{#tasks}
 
