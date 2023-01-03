@@ -87,6 +87,7 @@ If you think we have missed some important packages in this list, please e-mail 
     identify clones from B cell data.
 -   `r pkg("diffEnrich")` compares functional enrichment between two 
     experimentally-derived groups of genes or proteins.
+-   `r pkg("DysPIA")` identifies dysregulated pathways based on a pre-ranked gene pair list, using the `r pkg("DysPIAData")`.
     
 [**Genomics**](#genomics)
 *CRISPR*
@@ -180,7 +181,7 @@ If you think we have missed some important packages in this list, please e-mail 
     immune cells from expression data.
 -   `r pkg("NACHO")` and `r pkg("nanostringr")` provide tools for quality 
     control or normalization of NanoString nCounter data.
-    
+-   `r pkg("directPA")` is a set of tools designed to identify combinatorial effects of multiple treatments/conditions on pathways and kinases profiled by different omics. 
 
 *RNA-seq*
 -   `r pkg("MAAPER")` assigns 3' RNA-seq reads to polyA sites. 
@@ -214,7 +215,7 @@ If you think we have missed some important packages in this list, please e-mail 
 -   `r pkg("SIBERG")` implements a method to identify bimodally expressed genes.
 -   `r pkg("CeRNASeek")` provides several functions to identify and analyse 
     miRNA sponge.
-
+-   `r pkg("DiPALM")` enables differential analysis for time-course gene expression patterns in different conditions.
 
 *Single-cell RNA-seq*
 
@@ -242,7 +243,10 @@ If you think we have missed some important packages in this list, please e-mail 
     B-cells.
 -   `r pkg("rPanglaoDB")` can download and merge single-cell RNA-seq data from
     the PanglaoDB https://panglaodb.se/
-    
+-   `r pkg("DIscBIO")` is a user-friendly multi-algorithmic pipeline for biomarker discovery in Single-Cell transcriptomics
+`r pkg("DUBStepR")` implements a correlation-based feature selection for single-cell RNA sequencing data.
+-   `r pkg("dynwrap")` provides functionality to infer trajectories from single-cell data.
+- `r pkg("FiRE")` may be useful to discover rare cells from voluminous single cell expression data. 
 
 
 *???*
@@ -251,10 +255,9 @@ If you think we have missed some important packages in this list, please e-mail 
 - `r pkg("BClustLonG")` implements a dirichlet process mixture model for clustering longitudinal gene expression data.
 - `r pkg("MiRNAQCD")` is a complete toolbox for QC control of miRNA expression 
 data.
-
-
-
-
+- `r pkg("flippant")` offers an integrated solution for the analysis and publication-grade graphical presentation of dithionite scramblase assays.
+- `r pkg("ftrCOOL")` extracts features from nucleotide and peptide sequences and converts them to discrete numbers in order be used as predictors in machine learning models.
+- `r pkg("DRaWR")` is a network-based method for ranking genes or properties related to a given gene set.
     
 
 [**Proteomics**]{#proteomics}
@@ -309,6 +312,10 @@ data.
     p-values. `r pkg("LSPFP")` provides plots of peptides from shotgun 
     proteomics analysis.
 
+-   `r pkg("fbar")` is a toolkit for flux balance analysis and related metabolic modeling techniques.
+- *Single-cell Protein Data (Cite-Seq)*
+`r pkg("dsb")` contains functions to normalize and denoise droplet single cell protein data.
+
 [**Metabolomics**]{#metabolomics}
 
 -   `r pkg("erah")` can be used to identify metabolites by spectral library 
@@ -355,6 +362,7 @@ data.
     `r pkg("packMBPLSDA")` contain other methods to combine heterogeneous data 
     sets through a covariance based method (the second being based on PLS-DA),
     and `r pkg("MOSS")` provides a sparse SVD-based multi-omic integration 
+<<<<<<< Updated upstream
     method. `r pkg("semmcmc")` also provides a omics integration method based on 
     structural equation modelling (SEM), and `r pkg("IMIX")` uses Gaussian
     mixtures for multi-omics data integration. More specifically, 
@@ -366,6 +374,11 @@ data.
     consistently altered in cancer across different omics and similarly,
     `r pkg("ICDS")` identifies pathways dysfunctional in cancer based on the 
     integration of multiple omics.
+=======
+    method. `r pkg("semmcmc")` also provides a omics integration method based on structural equation modelling (SEM). 
+-   `r pkg("dnet")` performs integration from different angles including: integration with molecular networks, enrichments using ontologies, and relevance to gene evolutionary ages. 
+
+>>>>>>> Stashed changes
 -   *Prediction*: `r pkg("prioritylasso")` performs prediction from multiple
     omics using successive Lasso models using different priorities for the 
     omics.
@@ -401,6 +414,7 @@ data.
     `r pkg("NewmanOmics")` implements Newman studentized range statistics for
     genome scale transcriptomics.\ 
     `r pkg("hommel")` includes methods for close testing with Simes' inequality.
+     `r pkg("DiscreteFDR")` implements multiple testing procedures adapted for discrete tests.
 
 -   *High dimensional data - regularization*: `r pkg("whitening")` implements 
     whitening methods and CCA for high-dimensional omics data.\
@@ -438,12 +452,9 @@ data.
     `r pkg("prioGene")` can be used to define disease specific PPI networks and
     to deduce candidate gene prioritization. \ 
     `r pkg("DiffCorr")` implements a method for identifying pattern changes 
-    between 2 experimental conditions in correlation networks.
-    `r pkg("HiveR")` implements hive plots for displaying regulatory networks
-    and `r pkg("HEMDAG")` provides an implementation of several hierarchical
-    ensemble methods for directed acyclic graphs, useful for taxonomy models for
-    instance.
-    
+    between 2 experimental conditions in correlation networks.\ `r pkg("dnapath")` integrates pathway information into the differential network analysis of two gene expression datasets. \
+ `r pkg("GANPA")` is network-based gene weighting algorithm for pathway enrichment analysis, using either RNA-seq or microarray data.
+
 -   *Clustering*: \ 
     `r pkg("EMMIXgene")` implements a mixture model-based approach for the 
     clustering of microarray expression data and `r pkg("ORIClust")` performs
@@ -460,15 +471,14 @@ data.
     `r pkg("chromoMap")` provides interactive genomic visualization of the
     chromosomes or chromosome regions of any living organism. \ 
     Similarly, `r pkg("seqinr")` provides visualizations for biological
-    sequence (DNA and protein) data.\ 
+    sequence (DNA and protein) data.\ `r pkg("func2vis")` provides visualization and clean-up of enriched gene ontologies (GO) terms, protein complexes and pathways (obtained from multiple databases) using [ConsensusPathDB](http://www.consensuspathdb.org/YCPDB) from gene set over-expression analysis.
     `r pkg("genoPlotR")` produces various genes or genome map figures ready for
     publications. Similarly, `r pkg("valr")` can be used to visualize 
     genome-scale data, `r pkg("RCircos")` includes collection of 2D circos 
     plots for genomic visualization, and `r pkg("RIdeogram")` provides functions
     to display genome-wide data on ideograms. More specifically, 
     `r pkg("gggenes")` draws gene arrow maps with a
-    [ggplot2](https://ggplot2.tidyverse.org/) approach.\ 
-    `r pkg("RVA")` is dedicated to visualization of RNA-seq data and especially 
+    [ggplot2](https://ggplot2.tidyverse.org/) approach. \`r pkg("RVA")` is dedicated to visualization of RNA-seq data and especially 
     of results of differential analysis. Similarly, `r pkg("tinyarray")` is 
     dedicated to the visualization of GEO and TCGA expression data.\ 
     `r pkg("mpm")` provides exploratory graphical analysis of gene expression
@@ -497,6 +507,8 @@ data.
     `r pkg("oncoPredict")` provides iomarker discovery from cell line screening
     data.\ 
     `r pkg("tidyestimate")` infers tumor purity from expression data.
+    `r pkg("driveR")` is a tool for personalized or batch analysis of genomic data for cancer driver gene prioritization by combining genomic information and prior biological knowledge. 
+    `r pkg("DRomics")`is especially dedicated to omics data obtained using a dose-response design, favoring a great number of tested doses (or concentrations) rather than a great number of replicates.    
 
 -   *Plant breeding*:
 
