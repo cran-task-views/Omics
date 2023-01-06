@@ -250,33 +250,31 @@ If you think we have missed some important packages in this list, please e-mail 
     data from the [PanglaoDB](https://panglaodb.se/)
 
 
-[**Proteomics**]{#proteomics}
+### [Proteomics]{#proteomics}
 
--   *Protein structure*: `r pkg("compas")` manipulates and analyzes 3-D 
-    structural geometry of Protein Data Bank (PDB) files. `r pkg("bio3d")` 
-    contains tools to process, organize and explore protein structure, sequence 
-    and dynamics data.\ 
-    `r pkg("geno2proteo")` allows to find the DNA and protein sequences of any
-    given genomic loci using the [ENSEMBL](https://www.ensembl.org/index.html)
-    annotations.
-    `r pkg("pbm")` contains various models to analyze protein-ligand 
-    interactions. \ 
-    `r pkg("ampir")` is a toolkit to predict antimicrobial peptides from protein
-    sequences on a genome-wide scale. \ 
+-   *Generic tool*: `r pkg("ChemoSpec", priority = "core")` contains a 
+    collection of functions for top-down exploratory chemometrics for various 
+    proteomics spectroscopy data.
+-   *Relation between proteins and DNA*: `r pkg("geno2proteo")` allows to find 
+    the DNA and protein sequences of any given genomic loci using the 
+    [ENSEMBL](https://www.ensembl.org/index.html) annotations. 
     `r pkg("PredCRG")` contains a computational model to predict proteins 
-    encoded by circadian genes.\ 
-    `r pkg("ptm")` contains functions for the analysis of post-translational
-    modifications in proteins.
--   `r pkg("krm")` is a package dedicated to kernel based regression method that
-    includes a kernel for protein sequence.
--   *Databases*: `r pkg("canprot")`contains data files of published 
-    differentially expressed proteins in cancer and cell culture experiments.
+    encoded by circadian genes.
+-   *Protein structure and sequence*: `r pkg("compas")` manipulates and 
+    analyzes 3-D structural geometry of Protein Data Bank (PDB) files. 
+    `r pkg("bio3d")` contains tools to process, organize and explore protein 
+    structure, sequence and dynamics data. `r pkg("ampir")` is a toolkit to 
+    predict antimicrobial peptides from protein sequences on a genome-wide 
+    scale. `r pkg("ptm")` contains functions for the analysis of 
+    post-translational modifications in proteins. `r pkg("pbm")` contains 
+    various models to analyze protein-ligand interactions. \ 
 -   *Mass spectrometry proteomics*: `r pkg("wrProteo", priority = "core")` 
     contains a collection of functions for the analysis of mass spectrometry 
     proteomic data.`r pkg("aLFQ", priority = "core")` implements the most common
     absolute label-free protein abundance estimation methods for LC-MS/MS and 
     `r pkg("iq")` also implements protein quantification for mass 
-    spectrometry. \ 
+    spectrometry. `r pkg("protViz")` contains functions to visualize and analyze
+    small mass spectrometry proteomic datasets. \ 
     `r pkg("PTXQC")` and `r pkg("ypssc")` are both designed to analyze outputs 
     of [MaxQuant](https://www.maxquant.org)] (a quantitative proteomics tool for
     large mass-spectrometric datasets). `r pkg("protti")` can also analyze 
@@ -286,25 +284,23 @@ If you think we have missed some important packages in this list, please e-mail 
     `r pkg("prozor")` determines the minimal protein set explaining peptide 
     spectrum matches. `r pkg("net4pg")` implements a method to handle ambiguity
     for the identification in shotgun proteomics. \ 
-    `r pkg("protViz")` contains functions to visualize and analyze small mass 
-    spectrometry proteomic datasets.\ 
     `r pkg("Inflect")` contains functions to compute melt temparature and shifts
     from LC-MS/MS abundance data in TPP experiments.
--   **Imputation**: Several packages implements functions for imputation of
+-   *Imputation*: Several packages implements functions for imputation of
     proteomics datasets: `r pkg("imputeLCMD")` (left-censored iputation), 
     `r pkg("imp4p")` (including estimation of the missing value mechanism), and
     `r pkg("mi4p")` (multiple imputation). See also the `r view("MissingData")`
     view.
--   `r pkg("ChemoSpec", priority = "core")` contains a collection of functions 
-    for top-down exploratory chemometrics for spectroscopy.
--   **Visualization**: `r pkg("cp4p")` provides calibration plot for proteomics 
+-   *Differential analysis*: `r pkg("canprot")`contains data files of published 
+    differentially expressed proteins in cancer and cell culture experiments.
+-   *Visualization*: `r pkg("cp4p")` provides calibration plot for proteomics 
     to check assumptions of FDR control procedures and to compute adjusted 
     p-values. `r pkg("LSPFP")` provides plots of peptides from shotgun 
     proteomics analysis.
-
--   `r pkg("fbar")` is a toolkit for flux balance analysis and related metabolic modeling techniques.
-- *Single-cell Protein Data (Cite-Seq)*
-`r pkg("dsb")` contains functions to normalize and denoise droplet single cell protein data.
+-   *Prediction*: `r pkg("krm")` is a package dedicated to kernel based 
+    regression method that includes a kernel for protein sequence.
+-   *single-cell protein data (CITE-seq)*: `r pkg("dsb")` contains functions to 
+    normalize and denoise droplet single-cell proteomics data.
 
 [**Metabolomics**]{#metabolomics}
 
@@ -323,6 +319,7 @@ If you think we have missed some important packages in this list, please e-mail 
     metabolomics experiments.
 -   `r pkg("MetabolicSurv")` contains biomarker discovery and survival analysis
     methods for metabolomics signatures.
+-   `r pkg("fbar")` is a toolkit for flux balance analysis and related metabolic modeling techniques.
 
 [**Bacterial genomics, microbiome and metagenomics**]{#metagenomics}
 
