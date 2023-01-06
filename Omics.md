@@ -1,7 +1,7 @@
 ---
 name: Omics
 topic: Genomics
-maintainer: Julie Aubert, Florian Privé and Nathalie Vialaneix 
+maintainer: Julie Aubert and Nathalie Vialaneix 
 email: 
 version: 2022-08-25
 source: 
@@ -12,7 +12,6 @@ In this task view, we focused on the most important CRAN packages, which have be
 -   [Annotation and databases](#annotation)
 -   [Genomics](#genomics)
 -   [Human genetic epidemiology](#human)
--   [Methylation](#methylation)
 -   [Transcriptomics](#transcriptomics)
 -   [Proteomics](#proteomics)
 -   [Metabolomics](#metabolomics)
@@ -89,6 +88,8 @@ If you think we have missed some important packages in this list, please e-mail 
     experimentally-derived groups of genes or proteins.
 -   `r pkg("DysPIA")` identifies dysregulated pathways based on a pre-ranked gene pair list, using the `r pkg("DysPIAData")`.
     
+- `r pkg("ftrCOOL")` extracts features from nucleotide and peptide sequences and converts them to discrete numbers in order be used as predictors in machine learning models.    
+    
 [**Genomics**](#genomics)
 *CRISPR*
 -   `r pkg("CB2")` provided functions for CRISPR pooled screen analysis using Beta-Binomial Test.
@@ -128,60 +129,58 @@ If you think we have missed some important packages in this list, please e-mail 
     pathway-based gene panel.
 -   `r pkg("MINTplates")` is a complete framework dedicated to exploration and
     annotation of tRNA and other genomic sequences.
-    
 
-[**Methylation**]{#methylation}
 
--   `r pkg("BiasCorrector")` is a GUI to correct measurement bias in DNA methylation analyses.
+### [Transcriptomics]{#transcriptomics}
 
--   `r pkg("TCA")` can deconvolve bulk condition-specific DNA methylation data
-    into condition and individual specific methylation levels and detect 
-    associations with phenotypes.
+#### Microarray or other continuous expression data
 
-[**Transcriptomics**]{#transcriptomics}
-
-*Microarray or other continuous expression data*
-
--   `r pkg("POD")` computes the probability of detection (POD) curve and the 
-    limit of detection (LOD).
--   `r pkg("maGUI")` provides a graphical user interface to analyze microarray
-    data (including annotation, tests, or network inference).
--   `r pkg("depthTools")` (and its 
+-   *Quality control and normalization*: `r pkg("POD")` computes the 
+    probability of detection (POD) curve and the limit of detection (LOD). 
+    `r pkg("NACHO")` and `r pkg("nanostringr")` provide tools for quality 
+    control or normalization of NanoString nCounter data. `r pkg("MiRNAQCD")` 
+    is a complete toolbox for QC control of miRNA expression data.
+-   *Integrated tools (with GUI)*: `r pkg("maGUI")` provides a graphical user 
+    interface to analyze microarray data (including annotation, tests, or 
+    network inference). `r pkg("depthTools")` (and its 
     [R commander](https://socialsciences.mcmaster.ca/jfox/Misc/Rcmdr/) 
     plugin `r pkg("RcmdrPlugin.depthTools")`) is a collection of statistical
     tools based on data depth for gene expression analysis.
     [OOMPA](http://oompa.r-forge.r-project.org/) provides a collection of 
     CRAN packages for microarray and proteomics analysis.
--   `r pkg("TailRank")`provides a tail-rank non parametric test for microarray
-    datasets. `r pkg("SMVar")` implements structural model for variances for
-    differential analysis of gene expression data. `r pkg("RNentropy")`
-    implements a method based on information theory to detect significant 
-    variation in gene expression. `r pkg("optBiomarker")` estimates the optimal 
-    number of biomarkers in 2-group assays.  
+-   *Differential analysis*: `r pkg("TailRank")`provides a tail-rank non
+    parametric test for microarray datasets. `r pkg("SMVar")` implements 
+    structural model for variances for differential analysis of gene expression 
+    data. `r pkg("RNentropy")`implements a method based on information theory 
+    to detect significant variation in gene expression. `r pkg("optBiomarker")` 
+    estimates the optimal number of biomarkers in 2-group assays. 
     `r pkg("leapp")` proposes an latent effect adjustment method to counter
     their effects on ranking of hypothesis in tests. `r pkg("MCMC.qpcr")` 
     implements Bayesian approaches for normalization and differential analysis 
-    of qPCR data.
--   `r pkg("ssize.fdr")` provides functions that calculate appropriate sample 
+    of qPCR data. From a more global point of view, `r pkg("directPA")` can
+    identify combinatorial effects of multiple treatments/conditions on pathways
+    from different omics, including microarray and RNA-seq data. \ 
+    `r pkg("ssize.fdr")` provides functions that calculate appropriate sample 
     sizes for gene expression tests.
--   `r pkg("TcGSA")` and `r pkg("TGS")` implement methods for longitudinal 
-    gene-expression data analysis. `r pkg("survival666")` implements a method
-    to eliminate influence of co-expressed genes in survival analyses.
-    `r pkg("GeneCycle")` also analyses gene expression time series to detect
-    periodically expressed genes.
--   **Clustering**: `r pkg("slfm")` performs gene expression analysis with a 
+-   *Time series*: `r pkg("TcGSA")` and `r pkg("TGS")` implement methods for 
+    longitudinal gene-expression data analysis. `r pkg("survival666")` 
+    implements a method to eliminate influence of co-expressed genes in 
+    survival analyses. `r pkg("GeneCycle")` also analyses gene expression time 
+    series to detect periodically expressed genes. `r pkg("BClustLonG")` 
+    implements a Dirichlet process mixture model for clustering longitudinal 
+    gene expression data.
+-   *Clustering*: `r pkg("slfm")` performs gene expression analysis with a 
     Bayesian sparse latent factor model. `r pkg("lmQCM")` implements a 
     graph-based method for gene co-expression module discovery.
--   **Prediction**: `r pkg("LPS")` implements the linear prediction score
-    approach for gene expression signatures.
--   `r pkg("SMDIC")` performs the identification of somatic mutation-driven 
-    immune cells from expression data.
--   `r pkg("NACHO")` and `r pkg("nanostringr")` provide tools for quality 
-    control or normalization of NanoString nCounter data.
--   `r pkg("directPA")` is a set of tools designed to identify combinatorial effects of multiple treatments/conditions on pathways and kinases profiled by different omics. 
+-   *Prediction*: `r pkg("LPS")` implements the linear prediction score
+    approach for gene expression signatures. `r pkg("SMDIC")` performs the 
+    identification of somatic mutation-driven immune cells from expression data.
+    `r pkg("cubfits")` uses sequence and expression data to predict protein 
+    production rates.
 
-*RNA-seq*
--   `r pkg("MAAPER")` assigns 3' RNA-seq reads to polyA sites. 
+#### RNA-seq data
+
+-   *Mapping*: `r pkg("MAAPER")` assigns 3' RNA-seq reads to polyA sites. 
 -   *Deconvolution*: `r pkg("BisqueRNA")` and `r pkg("InteRD")` provide methods 
     to estimate cell type abundances from bulk expression data. `r pkg("scBio")`
     also proposes a deconvolution algorithm for bulk RNA-seq data but requires 
@@ -189,11 +188,12 @@ If you think we have missed some important packages in this list, please e-mail 
     estimates the abundance of immune subpopulation cells in solid tumours.
     Finally, `r pkg("omicwas")` tests association with phenotypes that are 
     cell-type specific in bulk omics experiments.  
--   `r pkg("Tmisc")` is a collection of utility functions to manipulate gene
-    expression data.
--   `r pkg("seqgendiff")` provides a framework to simulate RNA-seq data under
-    various assumptions and `r pkg("SeqNet")` and `r pkg("graphsim")` both 
-    offer simulations of RNA-seq data based on regulatory networks.
+-   *Generic tool*: `r pkg("Tmisc")` is a collection of utility functions to 
+    manipulate gene expression data.
+-   *Simulation*: `r pkg("seqgendiff")` provides a framework to simulate 
+    RNA-seq data under various assumptions and `r pkg("SeqNet")` and 
+    `r pkg("graphsim")` both offer simulations of RNA-seq data based on 
+    regulatory networks.
 -   *Differential analysis*: `r pkg("QuasiSeq")` includes function to perform 
     differential analysis of RNA-seq data using quasi-Poisson or quasi-negative
     binomial models. `r pkg("PQLseq")` implements a mixed model to account for 
@@ -202,60 +202,53 @@ If you think we have missed some important packages in this list, please e-mail 
     measurements in transcriptomic datasets. `r pkg("NBPSeq")` and 
     `r pkg("NBBttest")` are two packages that use (respectively) Negative 
     Binomial and Negative Binomial Beta tests for differential analyses of
-    RNA-seq data.
--   `r pkg("markerpen")` uses penalized PCA for biomarker discovery.
--   `r pkg("HTSCluster")` contains a model based on Poisson mixture to cluster
-    RNA-seq datasets.
--   `r pkg("DGEobj")` and  `r pkg("DGEobj.utils")` provides a flexible container
-    and a function toolkit to manage and annotate Differential Gene Expression 
-    (DGE) analysis results.
--   `r pkg("SIBERG")` implements a method to identify bimodally expressed genes.
--   `r pkg("CeRNASeek")` provides several functions to identify and analyse 
-    miRNA sponge.
--   `r pkg("DiPALM")` enables differential analysis for time-course gene expression patterns in different conditions.
+    RNA-seq data. `r pkg("DiPALM")` enables differential analysis of
+    time-course gene expression in different conditions. \ 
+    Similarly, `r pkg("markerpen")` uses penalized PCA for biomarker discovery.
+    After differential analysis, `r pkg("DGEobj")` and  `r pkg("DGEobj.utils")` 
+    provide a flexible container and a function toolkit to manage and annotate 
+    Differential Gene Expression (DGE) analysis results.
+-   *Clustering*: `r pkg("HTSCluster")` contains a model based on Poisson 
+    mixture to cluster RNA-seq datasets. 
+-   *Misc*: `r pkg("SIBERG")` implements a method to identify bimodally 
+    expressed genes. `r pkg("CeRNASeek")` provides several functions to 
+    identify and analyse miRNA sponge.
 
-*Single-cell RNA-seq*
+#### Single-cell RNA-seq
 
--   `r pkg("Seurat", priority = "core")`, `r pkg("iCellR")` and 
-    `r pkg("pagoda2", priority = "core")`contain a collection of functions for 
-    single-cell data analysis, including differential analysis (the first one is
-    based on the structure of `r pkg("SeuratObject")`). `r pkg("sccore")` and 
-    `r pkg("singleCellHaystack")` also provide methods for single-cell 
-    differential analysis, the second being based on KL divergence.
--   `r pkg("SoupX")` provides a method to remove mRNA contamination from 
-    single-cell RNA-seq data.
--   `r pkg("conos")` and `r pkg("scINSIGHT")` can be used to identify recurrent 
-    cell clusters in collections of single-cell RNA-seq datasets obtained in
-    various conditions. `r pkg("stochprofML")` models heterogeneity from 
-    populations of cells using a mixture of log-normal distributions.
--   `r pkg("ADAPTS")` constructs cell-type signature matrices using flow sorted 
-    or single cell samples and deconvolve bulk gene expression data.  
--   `r pkg("scSorter")` assigns cell to known cell types according to marker
+-   *Generic tools*: `r pkg("Seurat", priority = "core")`, `r pkg("iCellR")` 
+    and `r pkg("pagoda2", priority = "core")` contain a collection of functions 
+    for single-cell data analysis, including differential analysis (the first 
+    one is based on the structure of `r pkg("SeuratObject")`). 
+    `r pkg("sccore")` and `r pkg("singleCellHaystack")` also provide methods 
+    for single-cell differential analysis, the second being based on KL 
+    divergence.
+-   *Quality control*: `r pkg("SoupX")` provides a method to remove mRNA 
+    contamination from single-cell RNA-seq data.
+-   *Cell clustering and annotation*: `r pkg("conos")` and `r pkg("scINSIGHT")` 
+    can be used to identify recurrent cell clusters in collections of 
+    single-cell RNA-seq datasets obtained in various conditions. 
+    `r pkg("stochprofML")` models heterogeneity from populations of cells using 
+    a mixture of log-normal distributions. `r pkg("ADAPTS")` constructs 
+    cell-type signature matrices using flow sorted or single cell samples and 
+    deconvolve bulk gene expression data. `r pkg("FiRE")` can discover rare 
+    cells from voluminous single cell expression data. \ 
+   `r pkg("scSorter")` assigns cell to known cell types according to marker
     genes and `r pkg("SignacX")` uses neural network to identify cell types. 
     `r pkg("clustermole")` can be used to identify human and mouse single-cell 
-    transcriptomic data cell type.
--   `r pkg("treefit")` and `r pkg("SCORPIUS")` infer cell trajectories from 
-    single-cell gene expression data.
--   `r pkg("immunarch")` can be used to analyze specifically T-cells and 
+    transcriptomic data cell type. \ 
+    `r pkg("immunarch")` can be used to analyze specifically T-cells and 
     B-cells.
--   `r pkg("rPanglaoDB")` can download and merge single-cell RNA-seq data from
-    the PanglaoDB https://panglaodb.se/
--   `r pkg("DIscBIO")` is a user-friendly multi-algorithmic pipeline for biomarker discovery in Single-Cell transcriptomics
-`r pkg("DUBStepR")` implements a correlation-based feature selection for single-cell RNA sequencing data.
--   `r pkg("dynwrap")` provides functionality to infer trajectories from single-cell data.
-- `r pkg("FiRE")` may be useful to discover rare cells from voluminous single cell expression data. 
+-   *Biomarker discovery*: `r pkg("DIscBIO")` is a user-friendly 
+    multi-algorithmic pipeline for biomarker discovery in single-cell 
+    transcriptomics. `r pkg("DUBStepR")` implements a correlation-based feature 
+    selection for single-cell RNA sequencing data.
+-   *Cell trajectories*: `r pkg("dynwrap")`, `r pkg("treefit")`, and
+    `r pkg("SCORPIUS")` infer cell trajectories from single-cell gene 
+    expression data.
+-   *Misc*: `r pkg("rPanglaoDB")` can download and merge single-cell RNA-seq 
+    data from the [PanglaoDB](https://panglaodb.se/)
 
-
-*???*
-- `r pkg("cubfits")` estimates mutation and selection coefficients on synonymous codon bias usage based on models of ribosome overhead cost (ROC), and estimates and predicts protein production rates.
-- `r pkg("bda")` implements algorithms for binned data analysis, gene expression data analysis and measurement error models for ordinal data analysis. 
-- `r pkg("BClustLonG")` implements a dirichlet process mixture model for clustering longitudinal gene expression data.
-- `r pkg("MiRNAQCD")` is a complete toolbox for QC control of miRNA expression 
-data.
-- `r pkg("flippant")` offers an integrated solution for the analysis and publication-grade graphical presentation of dithionite scramblase assays.
-- `r pkg("ftrCOOL")` extracts features from nucleotide and peptide sequences and converts them to discrete numbers in order be used as predictors in machine learning models.
-- `r pkg("DRaWR")` is a network-based method for ranking genes or properties related to a given gene set.
-    
 
 [**Proteomics**]{#proteomics}
 
@@ -336,10 +329,17 @@ data.
 -   `r pkg("BarcodingR")` performs species identification using DNA barcodes.
 -   `r pkg("enveomics.R")` contains a collection of functions for microbial ecology and other applications of genomics and metagenomics, companion package for the [Enveomics](	http://enve-omics.ce.gatech.edu/enveomics/) collection.
 
-[**Other omics**]{#other}
+### [Other omics]{#other}
 
--   `r pkg("interep")` can perform interaction analysis in high dimensional 
-    lipidomics datasets with repeated measurements.
+-   *Methylation*: `r pkg("BiasCorrector")` is a GUI to correct measurement 
+    bias in DNA methylation analyses. `r pkg("TCA")` can deconvolve bulk 
+    condition-specific DNA methylation data into condition and individual 
+    specific methylation levels and detect associations with phenotypes.
+-   *Lipidomics*: `r pkg("interep")` can perform interaction analysis in high 
+    dimensional lipidomics datasets with repeated measurements. 
+    `r pkg("flippant")` allows the analysis of the activity of the lipid 
+    scrambling activity based on a fluorescence assay (dithionite scramblase 
+    assay).
 
 [**Integration**]{#integration}
 
@@ -445,6 +445,7 @@ data.
     `r pkg("DiffCorr")` implements a method for identifying pattern changes 
     between 2 experimental conditions in correlation networks.\ `r pkg("dnapath")` integrates pathway information into the differential network analysis of two gene expression datasets. \
  `r pkg("GANPA")` is network-based gene weighting algorithm for pathway enrichment analysis, using either RNA-seq or microarray data.
+    `r pkg("DRaWR")` is a network-based method for ranking genes or properties related to a given gene set.
 
 -   *Clustering*: \ 
     `r pkg("EMMIXgene")` implements a mixture model-based approach for the 
