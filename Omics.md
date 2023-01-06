@@ -3,7 +3,7 @@ name: Omics
 topic: Genomics
 maintainer: Julie Aubert and Nathalie Vialaneix 
 email: 
-version: 2022-08-25
+version: 2023-01-06
 source: 
 ---
 
@@ -24,20 +24,13 @@ Complementary information might also be found in `r view("Phylogenetics")`, `r v
 
 If you think we have missed some important packages in this list, please e-mail the maintainers or submit an issue or pull request in the GitHub repository linked above.
 
-[**Annotation and Databases**]{#annotation}
-
--   `r pkg("aliases2entrez")` converts human gene symbols to curated gene entrezID from NCBI database.
-
--   `r pkg("AnnotationBustR")` extracts subsequences into FASTA files from GenBank annotations where gene names may vary among accessions.
-
--   `r pkg("BED")` for Biological Entity Dictionary is an interface for the [Neo4j](https://neo4j.com/) database providing mapping between different identifiers of biological entities.
+### [Annotation and Databases]{#annotation}
 
 -   *Databases*: `r pkg("geneExpressionFromGEO")` can be used to easily download
     a gene expression dataset from [GEO](https://www.ncbi.nlm.nih.gov/geo/).
     `r pkg("cbioportalR")` makes available clinical and genomic data from
     [cBioPortal](http://www.cbioportal.org/). `r pkg("pinfsc50")` provides 
     genomic data for the plant pathogen *Phytophthora infestans*.
-    `r pkg("metaboData")` contains examples of various metabolomics datasets.
 -   *Functional annotation*: `r pkg("enrichR")` provides an interface to the
     [Enrichr](https://maayanlab.cloud/Enrichr/) databases. 
     `r pkg("biomartr", priority = "core")` provides  an interface to the 
@@ -49,19 +42,22 @@ If you think we have missed some important packages in this list, please e-mail 
     enrichment analysis, identifier conversion, or orthology accross species).\ 
     `r pkg("toprdata")` provides gene and exon information from Ensembl genome 
     builds. `r pkg("read.gb")` can read records with `.gb` extension form the 
-    NCBI Nucleotide database. `r pkg("babelgene")` converts between human and 
-    non-human gene orthologs/homologs from multiple databases. 
-    `r pkg("Map2NCBI")` provides information on markers described by their 
-    positions by querying the [NCBI](www.ncbi.nlm.nih.gov/) database.
+    NCBI Nucleotide database. `r pkg("Map2NCBI")` provides information on
+    markers described by their positions by querying the 
+    [NCBI](www.ncbi.nlm.nih.gov/) database.  `r pkg("PSSMCOOL")` contains the 
+    computation of various features from Position Specific Scoring Matrix
+    (PSSM).
+-   *Gene symbol conversions*: `r pkg("aliases2entrez")` converts human gene 
+    symbols to curated gene entrezID from [NCBI](https://www.ncbi.nlm.nih.gov/) 
+    database. `r pkg("AnnotationBustR")` extracts subsequences into FASTA files  
+    from [GenBank](https://www.ncbi.nlm.nih.gov/genbank/) annotations where gene 
+    names may vary among accessions. `r pkg("BED")` is an interface for the 
+    [Neo4j](https://neo4j.com/) database providing mapping between different 
+    identifiers of biological entities. More specifically, 
     `r pkg("riceidconverter")` can be used to convert rice biological 
-    identifiers. 
-    
--   `r pkg("RNAsmc")` provides functions to mine, compare and plot RNA secondary
-    structure.
--   `r pkg("valr")` can be used to read and manipulate genome intervals and
-    signals.
--   `r pkg("vhica")` can be used to detect horizontal transfers of transposable 
-    elements from their divergence compared with regular genes.
+    identifiers.\ 
+    `r pkg("babelgene")` converts between human and non-human gene 
+    orthologs/homologs from multiple databases. 
 -   *Gene set/pathway enrichment*: `r pkg("WebGestaltR", priority = "core")`
     uses [WebGestalt](http://www.webgestalt.org/) to perform Gene Set 
     Enrichment and Network Topology analysis. `r pkg("GOxploreR")` provides a
@@ -77,58 +73,57 @@ If you think we have missed some important packages in this list, please e-mail 
     `r pkg("netgsa")` also use network information for enrichment analysis (and 
     is accompanied by the data package `r pkg("pathfindR.data")`). 
     `r pkg("SlaPMEG")` performs pathway enrichment analysis for longitudinal 
-    omics data.
--   `r pkg("topologyGSA")` performs gene expression data tests using given
-    pathway information on genes.
--   `r pkg("sonicLength")` estimates the abundance of cell clones from DNA
-    fragments. Similarly, `r pkg("scoper")` perform spectral clustering to 
-    identify clones from B cell data.
--   `r pkg("diffEnrich")` compares functional enrichment between two 
-    experimentally-derived groups of genes or proteins.
--   `r pkg("DysPIA")` identifies dysregulated pathways based on a pre-ranked gene pair list, using the `r pkg("DysPIAData")`.
+    omics data. `r pkg("topologyGSA")` performs gene expression data tests using 
+    given pathway information on genes. `r pkg("diffEnrich")` compares
+    functional enrichment between two experimentally-derived groups of genes or
+    proteins. `r pkg("DysPIA")` identifies dysregulated pathways based on a 
+    pre-ranked gene pair list, using the `r pkg("DysPIAData")`.
     
-- `r pkg("ftrCOOL")` extracts features from nucleotide and peptide sequences and converts them to discrete numbers in order be used as predictors in machine learning models.    
-    
-[**Genomics**](#genomics)
-*CRISPR*
--   `r pkg("CB2")` provided functions for CRISPR pooled screen analysis using Beta-Binomial Test.
+### [**Genomics**]{#genomics}
 
--   `r pkg("GenomicTools.fileHandler", priority = "core")` is a collection of 
+-   *Sequence manipulation and analysis*: 
+    `r pkg("GenomicTools.fileHandler", priority = "core")` is a collection of 
     I/O tools for handling the most commonly used genomic datafile types.
--   `r pkg("KRIS")` provides various routine functions for bioinformatics 
-    analysis of sequences.
--   `r pkg("agvgd")` is an extension of the original 'Grantham' distance to multiple sequence alignments to predict "missense" based on the properties of amino acid side chains and protein multiple sequence alignments.
-
--   `r pkg("alakazam")` provides methods for for high-throughput adaptive immune receptor repertoire sequencing (AIRR-Seq; Rep-Seq) analysis.
--   `r pkg("AnaCoDa")` contains a collection of models to analyze genome scale codon data using a Bayesian framework.
--   `r pkg("apex")` contains a collection of tools for the analysis aligned DNA sequences from multiple genes.
--   `r pkg("ioncopy")` implements calculation of copy-numbers in amplicon sequencing data. `r pkg("aroma.cn")` implements several methods for normalizing and analyzing  DNA copy-number data and `r pkg("PSCBS")` focuses on the analysis of parent-specific DNA copy-number data.
--   `r pkg("babelgene")` converts between human and non-human gene orthologs/homologs and integrates orthology assertion predictions sourced from multiple databases as compiled by the HGNC Comparison of Orthology Predictions.
--   `r pkg("BASiNET")` implements a method to classify RNA Sequences using Complex Network Theory.
-
--   `r pkg("bioseq")` is a toolbox for manipulating biological (DNA, RNA and amino acid) sequences.
--   `r pkg("Cascade")` implements a modeling tool allowing gene selection, reverse engineering, and prediction in cascade networks. Some such experimental data are available in the `r pkg("CascadeData")`
-
--   `r pkg("cumSeg")` estimates the number and location of change points in mean-shift (piecewise constant) models, such as genomic sequences.
--   `r pkg("desiR")` provides functions for ranking, selecting, and integrating genes, proteins and metabolite data.
--   `r pkg("sigminer")` computes alteration signatures from genomic alteration 
-    records, `r pkg("Rediscover")` identify mutually exclusive mutations 
-    using a Poisson-Binomial model, and `r pkg("mutSignatures")` identify
-    mutation signatures from somatic mutational catalogs. More generally,
-    `r pkg("ICAMS")` analyses mutational signatures. Also, based on mutation 
-    data, `r pkg("ICBioMark")` identifies immunotherapy biomarkers.
--   `r pkg("Signac")` is a framework for the analysis and exploration of 
-    single-cell chromatin data.
--   `r pkg("PSSMCOOL")` contains the computation of various features from 
-    Position Specific Scoring Matrix (PSSM).
--   `r pkg("popPCR")` allows the classification of droplets in fluorescence
+    `r pkg("valr")` can be used to read and manipulate genome intervals and 
+    signals. `r pkg("KRIS")` provides various routine functions for 
+    bioinformatics analysis of sequences. `r pkg("bioseq")` is a toolbox
+    for manipulating biological (DNA, RNA and amino acid) sequences. 
+    `r pkg("ftrCOOL")` extracts features from nucleotide and peptide sequences
+    and converts them to discrete numbers in order be used as predictors in 
+    machine learning models.\ 
+    `r pkg("agvgd")` predicts "missense" based on the properties of amino acid 
+    side chains and protein multiple sequence alignments. `r pkg("RNAsmc")` 
+    provides functions to mine, compare and plot RNA secondary structure. 
+    `r pkg("vhica")` can be used to detect horizontal transfers of transposable
+    elements from their divergence compared with regular genes.\ 
+    `r pkg("AnaCoDa")` contains a collection of models to analyze genome scale
+    codon data using a Bayesian framework. `r pkg("apex")` contains a collection
+    of tools for the analysis of aligned DNA sequences from multiple genes. 
+    `r pkg("BASiNET")` implements a method to classify RNA Sequences using 
+    network theory. `r pkg("MINTplates")` is a complete framework dedicated to
+    exploration and annotation of tRNA and other genomic sequences. 
+    `r pkg("cumSeg")` estimates the number and location of change points in 
+    mean-shift (piecewise constant) models, such as genomic sequences.
+-   *Cell analyses*: `r pkg("sonicLength")` estimates the abundance of cell 
+    clones from DNA fragments. Similarly, `r pkg("scoper")` perform spectral 
+    clustering to identify clones from B cell data. `r pkg("Signac")` is a
+    framework for the analysis and exploration of single-cell chromatin data.
+    `r pkg("popPCR")` allows the classification of droplets in fluorescence
     activated cell sorting data to estimate DNA target concentration.
-    
--   `r pkg("pathwayTMB")` estimates tumor mutational burden (TMB) with a new 
-    pathway-based gene panel.
--   `r pkg("MINTplates")` is a complete framework dedicated to exploration and
-    annotation of tRNA and other genomic sequences.
-
+-   *Copy number data*: `r pkg("ioncopy")` implements calculation of 
+    copy-numbers in amplicon sequencing data. `r pkg("aroma.cn")` implements 
+    several methods for normalizing and analyzing  DNA copy-number data and 
+    `r pkg("PSCBS")` focuses on the analysis of parent-specific DNA copy-number 
+    data.
+-   *Mutation and CRISPR*: `r pkg("sigminer")` computes alteration signatures
+    from genomic alteration records, `r pkg("Rediscover")` identify mutually 
+    exclusive mutations using a Poisson-Binomial model, and 
+    `r pkg("mutSignatures")` identify mutation signatures from somatic 
+    mutational catalogs. More generally, `r pkg("ICAMS")` analyses mutational 
+    signatures. Also, based on mutation data, `r pkg("ICBioMark")` identifies 
+    immunotherapy biomarkers. `r pkg("pathwayTMB")` estimates tumor mutational
+    burden (TMB) with a new pathway-based gene panel. `r pkg("CB2")` provides
+    functions for CRISPR pooled screen analysis using Beta-Binomial Test.
 
 ### [Transcriptomics]{#transcriptomics}
 
@@ -256,7 +251,6 @@ If you think we have missed some important packages in this list, please e-mail 
 -   *Misc*: `r pkg("rPanglaoDB")` can download and merge single-cell RNA-seq 
     data from the [PanglaoDB](https://panglaodb.se/)
 
-
 ### [Proteomics]{#proteomics}
 
 -   *Generic tool*: `r pkg("ChemoSpec", priority = "core")` contains a 
@@ -311,6 +305,8 @@ If you think we have missed some important packages in this list, please e-mail 
 
 ### [Metabolomics]{#metabolomics}
 
+-   *Data*: `r pkg("metaboData")` contains examples of various metabolomics 
+    datasets.
 -   *Generic tools*: `r pkg("omu")` provides metabolomics analysis tools 
     (including visualization) and `r pkg("lilikoi")` is a set of tools for 
     metabolomics, including normalization and various prediction methods. 
@@ -346,6 +342,9 @@ If you think we have missed some important packages in this list, please e-mail 
     contains a collection of functions for microbial ecology and other 
     applications of genomics and metagenomics and is the companion package for 
     the [Enveomics](http://enve-omics.ce.gatech.edu/enveomics/) collection.
+-   *AIRR-seq / Rep-seq*: `r pkg("alakazam")` provides methods for
+    high-throughput adaptive immune receptor repertoire sequencing
+    (AIRR-Seq; Rep-Seq) analysis.
 
 ### [Multiple omics]{#integration}
 
@@ -375,8 +374,10 @@ If you think we have missed some important packages in this list, please e-mail 
     performs integration from different angles including: integration with 
     molecular networks, enrichments using ontologies, etc.\ 
     More specifically, `r pkg("intePareto")` proposes an approach to integrate
-    RNA-seq and ChIP-seq data and `r pkg("iBATCGH")` integrates transcriptomic
-    and CGH data with a Bayesian approach.
+    RNA-seq and ChIP-seq data, `r pkg("iBATCGH")` integrates transcriptomic
+    and CGH data with a Bayesian approach, and `r pkg("desiR")` provides 
+    functions for ranking, selecting, and integrating genes, proteins and 
+    metabolite data.
 -   *Prediction*: `r pkg("prioritylasso")` performs prediction from multiple
     omics using successive Lasso models using different priorities for the 
     omics.
@@ -423,7 +424,10 @@ If you think we have missed some important packages in this list, please e-mail 
     omics. `r pkg("parmigene")` performs network inference with mutual 
     information methods. `r pkg("networkABC")` performs network inference with 
     Approximate Bayesian Computation. `r pkg("JSparO")` implements joint sparse 
-    optimization for gene network inference for cell fate conversion.\ 
+    optimization for gene network inference for cell fate conversion. 
+    `r pkg("Cascade")` implements a modeling tool allowing gene selection, 
+    reverse engineering, and prediction in cascade networks with experimental 
+    data provided in `r pkg("CascadeData")`.\ 
     `r pkg("scLink")` and `r pkg("scTenifoldNet")` can be used to infer 
     co-expression networks from *single-cell data*, the latter including an 
     approach to compare these networks between different conditions. \ 
@@ -496,6 +500,6 @@ If you think we have missed some important packages in this list, please e-mail 
 -   *Nutrition*: `r pkg("BRINDA")` computes a biomarkers reflecting inflammation
     and nutritional determinants of anemia.
 
-### Other ressources
+### Links
 
 -   [The Bioconductor project](https://www.bioconductor.org/)
