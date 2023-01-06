@@ -16,7 +16,7 @@ In this task view, we focused on the most important CRAN packages, which have be
 -   [Proteomics](#proteomics)
 -   [Metabolomics](#metabolomics)
 -   [Other omics](#other)
--   [Integration of differents omics](#integration)
+-   [Multiple omics](#integration)
 -   [Specific tasks](#tasks)
 -   [Specific application fields](#applications)
 
@@ -338,37 +338,36 @@ If you think we have missed some important packages in this list, please e-mail 
     applications of genomics and metagenomics and is the companion package for 
     the [Enveomics](http://enve-omics.ce.gatech.edu/enveomics/) collection.
 
-[**Integration**]{#integration}
+## [Multiple omics]{#integration}
 
--   `r pkg("ActivePathways")` uses p-value merging to combine gene- or protein-level signals, followed by ranked hypergeometric tests to determine enriched pathways and processes. 
-
--   `r pkg("solvebio")` is a binding for the 
-    [SolveBio](https://www.solvebio.com/) API that is a biomedical knowledge hub
-    oriented toward omics data integration.
--   `r pkg("wrMisc")` contains a collection of tools to manipulate omics data
-    and to perform various simple statistical analyses (including normalization
-    and some statistical tests).
--   `r pkg("o2plsda", priority = "core")` provides function to perform O2PLS-DA
-    for multi-omics data integration. Similarly, `r pkg("CovCombR")` can be used
-    to combine heterogeneous data sets through a covariance based method, and
+-   *Single omics analysis*: `r pkg("wrMisc")` contains a collection of tools 
+    to manipulate omics data and to perform various simple statistical analyses 
+    (including normalization and some statistical tests). `r pkg("integIRTy")` 
+    provides a method to identify genes that are consistently altered in cancer 
+    across different omics.
+-   *Pathway analyses*: `r pkg("ActivePathways")` combines p-values to obtain
+    enriched pathways and processes. `r pkg("ICDS")` identifies pathways 
+    dysfunctional in cancer based on the integration of multiple omics.
+-   *Exploratory integrative analyses*: `r pkg("o2plsda", priority = "core")` 
+    provides function to perform O2PLS-DA for multi-omics data integration. 
+    Similarly, `r pkg("CovCombR")` can be used to combine heterogeneous data 
+    sets through a covariance based method, and
     `r pkg("PMA", priority = "core")` proposes a sparse canonical correlation
     analysis to integrate multiple omics datasets. `r pkg("CovCombR")` and 
     `r pkg("packMBPLSDA")` contain other methods to combine heterogeneous data 
     sets through a covariance based method (the second being based on PLS-DA),
     and `r pkg("MOSS")` provides a sparse SVD-based multi-omic integration 
-    method. `r pkg("semmcmc")` also provides a omics integration method based on 
+    method. `r pkg("semmcmc")` also provides a omics integration method based on
     structural equation modelling (SEM), and `r pkg("IMIX")` uses Gaussian
-    mixtures for multi-omics data integration. More specifically, 
-    `r pkg("IntLIM")` integrates two omics using linear modeling.
--   More specifically, `r pkg("intePareto")` proposes an approach to integrate
+    mixtures for multi-omics data integration. `r pkg("solvebio")` is a binding 
+    for the [SolveBio](https://www.solvebio.com/) API that is a biomedical 
+    knowledge hub oriented toward omics data integration. `r pkg("IntLIM")` 
+    integrates two omics using linear modeling. More generally, `r pkg("dnet")` 
+    performs integration from different angles including: integration with 
+    molecular networks, enrichments using ontologies, etc.\ 
+    More specifically, `r pkg("intePareto")` proposes an approach to integrate
     RNA-seq and ChIP-seq data and `r pkg("iBATCGH")` integrates transcriptomic
     and CGH data with a Bayesian approach.
--   `r pkg("integIRTy")` provides a method to identify genes that are 
-    consistently altered in cancer across different omics and similarly,
-    `r pkg("ICDS")` identifies pathways dysfunctional in cancer based on the 
-    integration of multiple omics.
-    `r pkg("dnet")` performs integration from different angles including: integration with molecular networks, enrichments using ontologies, and relevance to gene evolutionary ages.
-
 -   *Prediction*: `r pkg("prioritylasso")` performs prediction from multiple
     omics using successive Lasso models using different priorities for the 
     omics.
