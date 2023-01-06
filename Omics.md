@@ -15,7 +15,6 @@ In this task view, we focused on the most important CRAN packages, which have be
 -   [Transcriptomics](#transcriptomics)
 -   [Proteomics](#proteomics)
 -   [Metabolomics](#metabolomics)
--   [Bacterial genomics, microbiome and metagenomics](#metagenomics)
 -   [Other omics](#other)
 -   [Integration of differents omics](#integration)
 -   [Specific tasks](#tasks)
@@ -302,29 +301,24 @@ If you think we have missed some important packages in this list, please e-mail 
 -   *single-cell protein data (CITE-seq)*: `r pkg("dsb")` contains functions to 
     normalize and denoise droplet single-cell proteomics data.
 
-[**Metabolomics**]{#metabolomics}
+### [Metabolomics]{#metabolomics}
 
--   `r pkg("erah")` can be used to identify metabolites by spectral library 
-    matching in GC-MS untarget metabolomics.
--   `r pkg("omu")` provides metabolomics analysis tools (including 
-    visualization) and `r pkg("lilikoi")` is a set of tool for metabolomics,
-    including normalization and various prediction methods. 
+-   *Generic tools*: `r pkg("omu")` provides metabolomics analysis tools 
+    (including visualization) and `r pkg("lilikoi")` is a set of tools for 
+    metabolomics, including normalization and various prediction methods. 
     `r pkg("MetabolomicsBasics")` also includes basic functions (peak picking, 
     deconvolution, ...) to explore metabolomics data.
--   `r pkg("iCARH")` implements a method for the analysis of time course 
-    metabolomic datasets, including biomarker discovery.
--   `r pkg("RAMClustR")` includes a clustering algorithm for mass spectrometry
-    metabolomic data.
--   `r pkg("MetSizeR")` computes sample size for target statistical power in 
-    metabolomics experiments.
--   `r pkg("MetabolicSurv")` contains biomarker discovery and survival analysis
-    methods for metabolomics signatures.
--   `r pkg("fbar")` is a toolkit for flux balance analysis and related metabolic modeling techniques.
-
-[**Bacterial genomics, microbiome and metagenomics**]{#metagenomics}
-
--   `r pkg("BarcodingR")` performs species identification using DNA barcodes.
--   `r pkg("enveomics.R")` contains a collection of functions for microbial ecology and other applications of genomics and metagenomics, companion package for the [Enveomics](	http://enve-omics.ce.gatech.edu/enveomics/) collection.
+-   *Identification*: `r pkg("erah")` can be used to identify metabolites by 
+    spectral library matching in GC-MS untarget metabolomics.
+-   *Tests and biomarker discovery*: `r pkg("iCARH")` implements a method for 
+    the analysis of time course metabolomic datasets, including biomarker discovery. `r pkg("MetabolicSurv")` contains biomarker discovery and 
+    survival analysis methods for metabolomics signatures. `r pkg("MetSizeR")` 
+    computes sample size for target statistical power in metabolomics 
+    experiments.
+-   *Clustering*: `r pkg("RAMClustR")` includes a clustering algorithm for mass 
+    spectrometry metabolomic data.
+-   *Flux data*: `r pkg("fbar")` is a toolkit for flux balance analysis and 
+    related metabolic modeling techniques.
 
 ### [Other omics]{#other}
 
@@ -337,6 +331,11 @@ If you think we have missed some important packages in this list, please e-mail 
     `r pkg("flippant")` allows the analysis of the activity of the lipid 
     scrambling activity based on a fluorescence assay (dithionite scramblase 
     assay).
+-   *Bacterial genomics, microbiome and metagenomics*: `r pkg("BarcodingR")` 
+    performs species identification using DNA barcodes. `r pkg("enveomics.R")` 
+    contains a collection of functions for microbial ecology and other 
+    applications of genomics and metagenomics and is the companion package for 
+    the [Enveomics](http://enve-omics.ce.gatech.edu/enveomics/) collection.
 
 [**Integration**]{#integration}
 
