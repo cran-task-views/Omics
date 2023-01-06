@@ -311,7 +311,8 @@ If you think we have missed some important packages in this list, please e-mail 
 -   *Identification*: `r pkg("erah")` can be used to identify metabolites by 
     spectral library matching in GC-MS untarget metabolomics.
 -   *Tests and biomarker discovery*: `r pkg("iCARH")` implements a method for 
-    the analysis of time course metabolomic datasets, including biomarker discovery. `r pkg("MetabolicSurv")` contains biomarker discovery and 
+    the analysis of time course metabolomic datasets, including biomarker 
+    discovery. `r pkg("MetabolicSurv")` contains biomarker discovery and 
     survival analysis methods for metabolomics signatures. `r pkg("MetSizeR")` 
     computes sample size for target statistical power in metabolomics 
     experiments.
