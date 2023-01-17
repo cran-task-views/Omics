@@ -405,11 +405,14 @@ linked above.
     normalization using negative control variables and replications (originally 
     designed for proteomics).
     
-#### Peak calling
+#### Peak calling and analysis
 
--   `r pkg("PeakSegDisk")` implements a change point detection method for peak 
-    calling in very large datasets. `r pkg("PeakError")` computes true and false
-    positive in peak calling with respect to annotated regions.
+-   `r pkg("PeakSegOptimal")` implements a change point detection method based 
+    on the Poisson distribution for count data that includes a constraint suited
+    for peak calling and `r pkg("PeakSegDisk")` provides a large scale 
+    implementation of the method using on-disk storage. `r pkg("PeakError")` 
+    computes true and false positive in peak calling with respect to annotated 
+    regions.
     
 #### Multiple testing
 
