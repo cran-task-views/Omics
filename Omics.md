@@ -7,9 +7,14 @@ version: 2023-01-26
 source: 
 ---
 
-In this task view, we focused on the most important CRAN packages, which have 
-been published more than one year ago and are regularly updated. The task view 
-is structured into main topics:
+[The Bioconductor project](https://www.bioconductor.org/) is the most important
+source of packages dedicated to genomics data. In this task view, we focus on 
+the most important CRAN packages, which have been published more than one year 
+ago and are regularly updated. A few additional packages from Bioconductor are
+included, not looking for an exhaustive description but pointing to the must-see
+packages or to packages focused on omics not well covered by CRAN packages.
+
+The task view is structured into main topics:
 
 -   [Annotation and databases](#annotation)
 -   [Genomics](#genomics)
@@ -186,6 +191,8 @@ linked above.
 
 #### RNA-seq data
 
+-   *Generic*: `r bioc("DESeq")` and `r bioc("edgeR")` are among the most two
+    important packages for RNA-seq preprocessing and differential analysis.
 -   *Mapping*: `r pkg("MAAPER")` assigns 3' RNA-seq reads to polyA sites. 
 -   *Deconvolution*: `r pkg("BisqueRNA")` and `r pkg("InteRD")` provide methods 
     to estimate cell type abundances from bulk expression data. `r pkg("scBio")`
@@ -339,6 +346,10 @@ linked above.
     correction in methylation data. `r pkg("TCA")` can deconvolve bulk 
     condition-specific DNA methylation data into condition and individual 
     specific methylation levels and detect associations with phenotypes.
+-   *Hi-C*: `r bioc("InteractionSet")` is a Bioconductor package providing a 
+    data structure adapted to Hi-C data. `r bioc("HiTC")` is a package to 
+    manipulate and analyze Hi-C data and `r bioc("diffHic")` is focused on 
+    differential analysis of Hi-C experiments.
 -   *Lipidomics*: `r pkg("interep")` can perform interaction analysis in high 
     dimensional lipidomics datasets with repeated measurements. 
     `r pkg("flippant")` allows the analysis of the activity of the lipid 
@@ -482,7 +493,9 @@ linked above.
     clustering of microarray expression data and `r pkg("ORIClust")` performs
     clustering of short time-course or dose-response microarray gene 
     expressions. `r pkg("OptCirClust")` performs clustering for circular data 
-    (like circular DNA or RNA molecules).
+    (like circular DNA or RNA molecules) and `r pkg("adjclust")` performs
+    constrained clustering well adapted to genomic constraints. The latter 
+    includes a wrapper for Hi-C datasets.
 
 #### Visualization
 
