@@ -1,7 +1,7 @@
 ---
 name: Omics
 topic: Genomics
-maintainer: Julie Aubert, Nathalie Vialaneix, Toby Dylan Hocking
+maintainer: Julie Aubert, Toby Dylan Hocking, Nathalie Vialaneix
 email: 
 version: 2023-01-26
 source: 
@@ -380,11 +380,9 @@ linked above.
     integrates two omics using linear modeling. More generally, `r pkg("dnet")` 
     performs integration from different angles including: integration with 
     molecular networks, enrichments using ontologies, etc.\
-    More specifically, `r pkg("intePareto")` proposes an approach to integrate
-    RNA-seq and ChIP-seq data, `r pkg("iBATCGH")` integrates transcriptomic
-    and CGH data with a Bayesian approach, and `r pkg("desiR")` provides 
-    functions for ranking, selecting, and integrating genes, proteins and 
-    metabolite data.
+    More specifically, `r pkg("iBATCGH")` integrates transcriptomic and CGH data
+    with a Bayesian approach, and `r pkg("desiR")` provides functions for 
+    ranking, selecting, and integrating genes, proteins and metabolite data.
 -   *Prediction*: `r pkg("prioritylasso")` performs prediction from multiple
     omics using successive Lasso models using different priorities for the 
     omics.
@@ -413,13 +411,12 @@ linked above.
     implementation of the method using on-disk storage. `r pkg("PeakError")` 
     computes true and false positive in peak calling with respect to annotated 
     region labels.
--   `r bioc("triform")`
-    uses model-free statistics to identify peak-like distributions of
-    TF ChIP sequencing reads.
--   `r bioc("ChIPSeqSpike")` is a peak caller that can handle spike-in
-    control data.
--   `r bioc("DBChIP")` detects differentially bound sharp binding
-    sites across multiple conditions.
+-   `r bioc("triform")` uses model-free statistics to identify peak-like 
+    distributions of TF ChIP sequencing reads.
+-   `r bioc("ChIPSeqSpike")` is a peak caller that can handle spike-in control 
+    data.
+-   `r bioc("DBChIP")` detects differentially bound sharp binding sites across 
+    multiple conditions.
     
 #### Multiple testing
 
