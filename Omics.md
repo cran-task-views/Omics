@@ -1,9 +1,9 @@
 ---
 name: Omics
 topic: Genomics
-maintainer: Julie Aubert and Nathalie Vialaneix 
+maintainer: Julie Aubert, Nathalie Vialaneix, Toby Dylan Hocking
 email: 
-version: 2023-01-06
+version: 2023-01-26
 source: 
 ---
 
@@ -405,14 +405,21 @@ linked above.
     normalization using negative control variables and replications (originally 
     designed for proteomics).
     
-#### Peak calling and analysis
+#### Peak calling and analysis in data like ChIP-seq and ATAC-seq
 
 -   `r pkg("PeakSegOptimal")` implements a change point detection method based 
     on the Poisson distribution for count data that includes a constraint suited
     for peak calling and `r pkg("PeakSegDisk")` provides a large scale 
     implementation of the method using on-disk storage. `r pkg("PeakError")` 
     computes true and false positive in peak calling with respect to annotated 
-    regions.
+    region labels.
+-   `r bioc("triform")`
+    uses model-free statistics to identify peak-like distributions of
+    TF ChIP sequencing reads.
+-   `r bioc("ChIPSeqSpike")` is a peak caller that can handle spike-in
+    control data.
+-   `r bioc("DBChIP")` detects differentially bound sharp binding
+    sites across multiple conditions.
     
 #### Multiple testing
 
