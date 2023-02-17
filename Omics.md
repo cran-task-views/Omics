@@ -16,7 +16,7 @@ packages or to packages focused on omics not well covered by CRAN packages.
 
 The task view is structured into main topics:
 
--   [Annotation and databases](#annotation)
+-   [Annotation and Databases](#annotation)
 -   [Genomics](#genomics)
 -   [Transcriptomics](#transcriptomics)
 -   [Proteomics](#proteomics)
@@ -27,7 +27,7 @@ The task view is structured into main topics:
 -   [Specific application fields](#applications)
 
 Complementary information might also be found in `r view("Phylogenetics")`, 
-`r view("MachineLearning")` `r view("Agriculture")`. Note that packages covering
+`r view("MachineLearning")`, `r view("Agriculture")` or `r view("MissingData")` task views. Note that packages covering
 statistical genetics data (DNA data, haplotype estimation, population structure,
 genetic epidemiology), phylogenetics and phylogenomics are not covered by the 
 Genomics task view.
@@ -355,8 +355,7 @@ linked above.
     `r pkg("flippant")` allows the analysis of the activity of the lipid 
     scrambling activity based on a fluorescence assay (dithionite scramblase 
     assay).
--   *Bacterial genomics, microbiome and metagenomics*: `r pkg("BarcodingR")` 
-    performs species identification using DNA barcodes. `r pkg("enveomics.R")` 
+-   *Bacterial genomics, microbiome and metagenomics*: `r bioc("phyloseq")` is one of the most      important package for the analysis of high-throughput microbiome data. `r pkg("BarcodingR")`     performs species identification using DNA barcodes. `r pkg("enveomics.R")` 
     contains a collection of functions for microbial ecology and other 
     applications of genomics and metagenomics and is the companion package for 
     the [Enveomics](http://enve-omics.ce.gatech.edu/enveomics/) collection.
@@ -366,6 +365,8 @@ linked above.
 
 ### [Multiple omics]{#integration}
 
+-   *Generic*: `r bioc("MOFA2")` and `r bioc("mixOmics")` are among the most two
+    important packages for integration multi-omics data sets.
 -   *Single omics analysis*: `r pkg("wrMisc")` contains a collection of tools 
     to manipulate omics data and to perform various simple statistical analyses 
     (including normalization and some statistical tests). `r pkg("integIRTy")` 
