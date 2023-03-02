@@ -8,8 +8,8 @@ source:
 ---
 
 [The Bioconductor project](https://www.bioconductor.org/) is the most important
-source of packages dedicated to genomics data. In this task view, we focus on 
-the most important CRAN packages, which have been published more than one year 
+source of packages dedicated to omics data. The term omics concerns various biological disciplines ending with the suffix -omics, such as genomics, proteomics, metabolomics, transcriptomics. In this task view, we focus on 
+the most important CRAN packages dedicated to omics data analysis including those related to annotation and databases, which have been published more than one year 
 ago and are regularly updated. A few additional packages from Bioconductor are
 included, not looking for an exhaustive description but pointing to the must-see
 packages or to packages focused on omics not well covered by CRAN packages.
