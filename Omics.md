@@ -1,18 +1,26 @@
 ---
 name: Omics
-topic: Genomics
+topic: Genomics, Proteomics, Metabolomics, Transcriptomics, and Other Omics
 maintainer: Julie Aubert, Toby Dylan Hocking, Nathalie Vialaneix
 email: 
 version: 2023-01-26
 source: 
 ---
 
-[The Bioconductor project](https://www.bioconductor.org/) is the most important
-source of packages dedicated to omics data. The term omics concerns various biological disciplines ending with the suffix -omics, such as genomics, proteomics, metabolomics, transcriptomics. In this task view, we focus on 
-the most important CRAN packages dedicated to omics data analysis including those related to annotation and databases, which have been published more than one year 
-ago and are regularly updated. A few additional packages from Bioconductor are
+In this task view, we focus on 
+the most important CRAN packages dedicated to omics data analysis including those related to annotation and databases. The term omics concerns various biological disciplines ending with the suffix -omics, such as genomics, proteomics, metabolomics, transcriptomics. 
+This is an active research area and many R packages are not on CRAN: either they were formerly on CRAN and were later archived (for example, if they failed to incorporate necessary changes as R is updated) or they are developed elsewhere. Such packages may be found on GitHub, R-Forge, Bioconductor, or authors’ websites. We include CRAN packages which have been published more than one year ago and are regularly updated. Therefore, very recent packages may not appear yet but may be included soon if they are maintained. A few additional packages from [the Bioconductor project](https://www.bioconductor.org/) are
 included, not looking for an exhaustive description but pointing to the must-see
-packages or to packages focused on omics not well covered by CRAN packages.
+packages or to packages focused on omics not well covered by CRAN packages. 
+Complementary information might also be found in `r view("Phylogenetics")`, 
+`r view("MachineLearning")`, `r view("Agriculture")` or `r view("MissingData")` task views. Note that packages covering
+statistical genetics data (DNA data, haplotype estimation, population structure,
+genetic epidemiology), phylogenetics and phylogenomics are not covered by the 
+this task view.
+
+If you think we have missed some important packages in this list, please e-mail
+the maintainers or submit an issue or pull request in the GitHub repository 
+linked above. 
 
 The task view is structured into main topics:
 
@@ -26,15 +34,7 @@ The task view is structured into main topics:
 -   [Specific tasks](#tasks)
 -   [Specific application fields](#applications)
 
-Complementary information might also be found in `r view("Phylogenetics")`, 
-`r view("MachineLearning")`, `r view("Agriculture")` or `r view("MissingData")` task views. Note that packages covering
-statistical genetics data (DNA data, haplotype estimation, population structure,
-genetic epidemiology), phylogenetics and phylogenomics are not covered by the 
-Genomics task view.
 
-If you think we have missed some important packages in this list, please e-mail
-the maintainers or submit an issue or pull request in the GitHub repository 
-linked above.
 
 ### [Annotation and Databases]{#annotation}
 
@@ -261,7 +261,7 @@ linked above.
 -   *Cell trajectories*: `r pkg("dynwrap")`, `r pkg("treefit")`, and
     `r pkg("SCORPIUS")` infer cell trajectories from single-cell gene 
     expression data. `r pkg("phateR")` can be used to visualize single-cell data
-    with trajectories.\
+    with trajectories.
 -   *Misc*: `r pkg("rPanglaoDB")` can download and merge single-cell RNA-seq 
     data from the [PanglaoDB](https://panglaodb.se/).
 
@@ -282,7 +282,7 @@ linked above.
     predict antimicrobial peptides from protein sequences on a genome-wide 
     scale. `r pkg("ptm")` contains functions for the analysis of 
     post-translational modifications in proteins. `r pkg("pbm")` contains 
-    various models to analyze protein-ligand interactions.\
+    various models to analyze protein-ligand interactions.
 -   *Mass spectrometry proteomics*: `r pkg("wrProteo", priority = "core")` 
     contains a collection of functions for the analysis of mass spectrometry 
     proteomic data. `r pkg("aLFQ", priority = "core")` implements the most common
@@ -291,7 +291,7 @@ linked above.
     spectrometry. `r pkg("protViz")` contains functions to visualize and analyze
     small mass spectrometry proteomic datasets.\
     `r pkg("PTXQC")` and `r pkg("ypssc")` are both designed to analyze outputs 
-    of [MaxQuant](https://www.maxquant.org)] (a quantitative proteomics tool for
+    of [MaxQuant](https://www.maxquant.org) (a quantitative proteomics tool for
     large mass-spectrometric datasets). `r pkg("protti")` can also analyze 
     outputs of MaxQuant in addition to outputs of 
     [Spectronaut](https://biognosys.com/software/spectronaut/) or of
@@ -314,7 +314,7 @@ linked above.
     proteomics analysis.
 -   *Prediction*: `r pkg("krm")` is a package dedicated to kernel based 
     regression method that includes a kernel for protein sequence.
--   *single-cell protein data (CITE-seq)*: `r pkg("dsb")` contains functions to 
+-   *Single-cell protein data (CITE-seq)*: `r pkg("dsb")` contains functions to 
     normalize and denoise droplet single-cell proteomics data.
 
 ### [Metabolomics]{#metabolomics}
@@ -440,7 +440,7 @@ linked above.
     especially lists of genes, `r pkg("DiscreteFDR")` implements multiple 
     testing procedures adapted for discrete tests.
 
-#### High dimensional data - regularization
+#### High dimensional data regularization
 
 -   `r pkg("whitening")` implements whitening methods and CCA for 
     high-dimensional omics data. `r pkg("mpmi")` uses a kernel smoothing 
