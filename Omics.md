@@ -24,19 +24,19 @@ linked above.
 
 The task view is structured into main topics:
 
--   [Annotation and Databases](#annotation)
+-   [Annotation and databases](#annotation-and-databases)
 -   [Genomics](#genomics)
 -   [Transcriptomics](#transcriptomics)
 -   [Proteomics](#proteomics)
 -   [Metabolomics](#metabolomics)
--   [Other omics](#other)
--   [Multiple omics](#integration)
--   [Specific tasks](#tasks)
--   [Specific application fields](#applications)
+-   [Other omics](#other-omics)
+-   [Multiple omics](#multiple-omics)
+-   [Specific tasks](#specific-tasks)
+-   [Specific application fields](#specific-application-fields)
 
 
 
-### [Annotation and Databases]{#annotation}
+### Annotation and databases
 
 -   *Databases*: `r pkg("geneExpressionFromGEO")` can be used to easily download
     a gene expression dataset from [GEO](https://www.ncbi.nlm.nih.gov/geo/).
@@ -46,7 +46,7 @@ The task view is structured into main topics:
 -   *Functional annotation*: `r pkg("enrichR")` provides an interface to the
     [Enrichr](https://maayanlab.cloud/Enrichr/) databases. 
     `r pkg("biomartr", priority = "core")` provides  an interface to the 
-    [BioMart](https://www.ensembl.org/info/data/biomart/index.html) database. 
+    [BioMart](https://www.ensembl.org/info/data/biomart/) database. 
     `r pkg("msigdbr")` provides an interface for the 
     [MSigDB](https://www.gsea-msigdb.org/gsea/msigdb/) for Gene Set 
     Enrichment Analysis. `r pkg("gprofiler2")` provides an interface for 
@@ -91,7 +91,7 @@ The task view is structured into main topics:
     proteins. `r pkg("DysPIA")` identifies dysregulated pathways based on a 
     pre-ranked gene pair list, using the `r pkg("DysPIAData")`.
     
-### [**Genomics**]{#genomics}
+### Genomics
 
 -   *Sequence manipulation and analysis*: 
     `r pkg("GenomicTools.fileHandler", priority = "core")` is a collection of 
@@ -137,7 +137,7 @@ The task view is structured into main topics:
     burden (TMB) with a new pathway-based gene panel. `r pkg("CB2")` provides
     functions for CRISPR pooled screen analysis using Beta-Binomial Test.
 
-### [Transcriptomics]{#transcriptomics}
+### Transcriptomics
 
 #### Microarray or other continuous expression data
 
@@ -265,14 +265,14 @@ The task view is structured into main topics:
 -   *Misc*: `r pkg("rPanglaoDB")` can download and merge single-cell RNA-seq 
     data from the [PanglaoDB](https://panglaodb.se/).
 
-### [Proteomics]{#proteomics}
+### Proteomics
 
 -   *Generic tool*: `r pkg("ChemoSpec", priority = "core")` contains a 
     collection of functions for top-down exploratory chemometrics for various 
     proteomics spectroscopy data.
 -   *Relation between proteins and DNA*: `r pkg("geno2proteo")` allows to find 
     the DNA and protein sequences of any given genomic loci using the 
-    [ENSEMBL](https://www.ensembl.org/index.html) annotations. 
+    [ENSEMBL](https://www.ensembl.org/) annotations. 
     `r pkg("PredCRG")` contains a computational model to predict proteins 
     encoded by circadian genes.
 -   *Protein structure and sequence*: `r pkg("compas")` manipulates and 
@@ -317,7 +317,7 @@ The task view is structured into main topics:
 -   *Single-cell protein data (CITE-seq)*: `r pkg("dsb")` contains functions to 
     normalize and denoise droplet single-cell proteomics data.
 
-### [Metabolomics]{#metabolomics}
+### Metabolomics
 
 -   *Data*: `r pkg("metaboData")` contains examples of various metabolomics 
     datasets.
@@ -339,7 +339,7 @@ The task view is structured into main topics:
 -   *Flux data*: `r pkg("fbar")` is a toolkit for flux balance analysis and 
     related metabolic modeling techniques.
 
-### [Other omics]{#other}
+### Other omics
 
 -   *Methylation*: `r pkg("BiasCorrector")` is a GUI to correct measurement 
     bias in DNA methylation analyses. `r pkg("rBiasCorrection")` performs bias 
@@ -363,7 +363,7 @@ The task view is structured into main topics:
     high-throughput adaptive immune receptor repertoire sequencing
     (AIRR-Seq; Rep-Seq) analysis.
 
-### [Multiple omics]{#integration}
+### Multiple omics
 
 -   *Generic*: `r bioc("MOFA2")` and `r bioc("mixOmics")` are among the most two
     important packages for integration multi-omics data sets.
@@ -406,7 +406,7 @@ The task view is structured into main topics:
     microarray data respectively. `r pkg("MetaIntegrator")` provides a pipeline
     for the meta-analysis of gene expression data.
 
-### [Specific tasks]{#tasks}
+### Specific tasks
 
 #### Quality control and normalization
 
@@ -440,13 +440,13 @@ The task view is structured into main topics:
     especially lists of genes, `r pkg("DiscreteFDR")` implements multiple 
     testing procedures adapted for discrete tests.
 
-#### High dimensional data regularization
+#### High-dimensional data regularization
 
 -   `r pkg("whitening")` implements whitening methods and CCA for 
     high-dimensional omics data. `r pkg("mpmi")` uses a kernel smoothing 
     approach for comparison of pairs of variables in large genomic datasets. 
     `r pkg("hsstan")` uses a hierarchical Bayesian approach for biomarker 
-    discovery in high dimensional datasets. `r pkg("supclust")` implements 
+    discovery in high-dimensional datasets. `r pkg("supclust")` implements 
     methods for supervised clustering of potentially many predictor variables 
     (including 'PELORA' and 'WILMA').
     
@@ -535,7 +535,7 @@ The task view is structured into main topics:
     partially missing target outcome while borrowing information from a 
     correlated surrogate outcome.
 
-### [Specific application fields]{#applications}
+### Specific application fields
 
 -   *Cancer*: `r pkg("emba")` enables biomarker discovery using simulated data 
     from the results of the [DrugLogics](https://druglogics.eu/) software and
