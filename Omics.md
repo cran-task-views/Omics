@@ -15,8 +15,7 @@ packages or to packages focused on omics not well covered by CRAN packages.
 Complementary information might also be found in `r view("Phylogenetics")`, 
 `r view("MachineLearning")`, `r view("Agriculture")` or `r view("MissingData")` task views. Note that packages covering
 statistical genetics data (DNA data, haplotype estimation, population structure,
-genetic epidemiology), phylogenetics and phylogenomics are not covered by the 
-this task view.
+genetic epidemiology), phylogenetics and phylogenomics are not covered by this task view.
 
 If you think we have missed some important packages in this list, please e-mail
 the maintainers or submit an issue or pull request in the GitHub repository 
