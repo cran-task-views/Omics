@@ -190,7 +190,7 @@ The task view is structured into main topics:
 
 #### RNA-seq data
 
--   *Generic*: `r bioc("DESeq")` and `r bioc("edgeR")` are among the most two
+-   *Generic*: `r bioc("DESeq2")` and `r bioc("edgeR")` are among the most two
     important packages for RNA-seq preprocessing and differential analysis.
 -   *Mapping*: `r pkg("MAAPER")` assigns 3' RNA-seq reads to polyA sites. 
 -   *Deconvolution*: `r pkg("BisqueRNA")` and `r pkg("InteRD")` provide methods 
