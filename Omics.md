@@ -422,12 +422,6 @@ The task view is structured into main topics:
     implementation of the method using on-disk storage. `r pkg("PeakError")` 
     computes true and false positive in peak calling with respect to annotated 
     region labels.
--   `r bioc("triform")` uses model-free statistics to identify peak-like 
-    distributions of TF ChIP sequencing reads.
--   `r bioc("ChIPSeqSpike")` is a peak caller that can handle spike-in control 
-    data.
--   `r bioc("DBChIP")` detects differentially bound sharp binding sites across 
-    multiple conditions.
     
 #### Multiple testing
 
