@@ -157,7 +157,9 @@ The task view is structured into main topics:
     GEO and TCGA expression data. `r pkg("mpm")` provides exploratory graphical 
     analysis of gene expression data with various factorial approaches 
     (including PCA).
--   *Differential analysis*: `r pkg("TailRank")` provides a tail-rank non
+-   *Differential analysis*: `r bioc("limma")` is probably the most important 
+    package for microarray differential analysis. In addition, 
+    `r pkg("TailRank")` provides a tail-rank non
     parametric test for microarray datasets. `r pkg("SMVar")` implements 
     structural model for variances for differential analysis of gene expression 
     data. `r pkg("RNentropy")` implements a method based on information theory 
