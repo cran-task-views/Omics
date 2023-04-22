@@ -7,15 +7,18 @@ version: 2023-04-03
 source: https://github.com/cran-task-views/Omics/
 ---
 
-In this task view, we focus on 
-the most important CRAN packages dedicated to omics data analysis including those related to annotation and databases. The term omics concerns various biological disciplines ending with the suffix -omics, such as genomics, proteomics, metabolomics, transcriptomics. 
-This is an active research area and many R packages are not on CRAN: either they were formerly on CRAN and were later archived (for example, if they failed to incorporate necessary changes as R is updated) or they are developed elsewhere. Such packages may be found on GitHub, R-Forge, Bioconductor, or authors’ websites. We include CRAN packages which have been published more than one year ago and are regularly updated. Therefore, very recent packages may not appear yet but may be included soon if they are maintained. A few additional packages from [the Bioconductor project](https://www.bioconductor.org/) are
+In this task view, we focus on
+the most-important CRAN packages dedicated to omics data analysis including those related to annotation and databases. The term omics concerns various biological disciplines ending with the suffix -omics, such as genomics, proteomics, metabolomics, transcriptomics. 
+We include CRAN packages which have been published more than one year ago and are regularly updated. Therefore, very recent packages may not appear yet but may be included soon if they are maintained. A few additional packages from [the Bioconductor project](https://www.bioconductor.org/) are
 included, not looking for an exhaustive description but pointing to the must-see
 packages or to packages focused on omics not well covered by CRAN packages. 
 Complementary information might also be found in `r view("Phylogenetics")`, 
 `r view("MachineLearning")`, `r view("Agriculture")` or `r view("MissingData")` task views. Note that packages covering
 statistical genetics data (DNA data, haplotype estimation, population structure,
 genetic epidemiology), phylogenetics and phylogenomics are not covered by this task view.
+Still further packages might be found on
+[Bioconductor](https://www.bioconductor.org/),
+[R-Forge](https://r-forge.r-project.org/), and [GitHub](https://github.com/).
 
 If you think we have missed some important packages in this list, please e-mail
 the maintainers or submit an issue or pull request in the GitHub repository 
@@ -50,9 +53,9 @@ The task view is structured into main topics:
     [MSigDB](https://www.gsea-msigdb.org/gsea/msigdb/) for Gene Set 
     Enrichment Analysis. `r pkg("gprofiler2")` provides an interface for 
     [g:Profiler](https://biit.cs.ut.ee/gprofiler/) (including functional 
-    enrichment analysis, identifier conversion, or orthology accross species).\
+    enrichment analysis, identifier conversion, or orthology across species).\
     `r pkg("toprdata")` provides gene and exon information from Ensembl genome 
-    builds. `r pkg("read.gb")` can read records with `.gb` extension form the 
+    builds. `r pkg("read.gb")` can read records with `.gb` extension from the 
     NCBI Nucleotide database. `r pkg("Map2NCBI")` provides information on
     markers described by their positions by querying the 
     [NCBI](www.ncbi.nlm.nih.gov/) database.  `r pkg("PSSMCOOL")` contains the 
@@ -63,7 +66,7 @@ The task view is structured into main topics:
     database. `r pkg("AnnotationBustR")` extracts subsequences into FASTA files  
     from [GenBank](https://www.ncbi.nlm.nih.gov/genbank/) annotations where gene 
     names may vary among accessions. `r pkg("BED")` is an interface for the 
-    [Neo4j](https://neo4j.com/) database providing mapping between different 
+    [Neo4j](https://neo4j.com/) database providing a mapping between different 
     identifiers of biological entities. More specifically, 
     `r pkg("riceidconverter")` can be used to convert rice biological 
     identifiers.\
@@ -80,9 +83,9 @@ The task view is structured into main topics:
     data. `r pkg("sigora")` corrects over-representation biases in pathway 
     enrichment analysis. `r pkg("permPATH")` performs pathway enrichment 
     analysis with permutation tests. `r pkg("CePa")` aims to find significant 
-    pathways through network topology information and `r pkg("pathfindR")` and 
-    `r pkg("netgsa")` also use network information for enrichment analysis (and 
-    is accompanied by the data package `r pkg("pathfindR.data")`). 
+    pathways through network topology information and `r pkg("pathfindR")` 
+    (accompanied by the data package `r pkg("pathfindR.data")`) and
+    `r pkg("netgsa")` also use network information for enrichment analysis. 
     `r pkg("SlaPMEG")` performs pathway enrichment analysis for longitudinal 
     omics data. `r pkg("topologyGSA")` performs gene expression data tests using 
     given pathway information on genes. `r pkg("diffEnrich")` compares
@@ -97,12 +100,12 @@ The task view is structured into main topics:
     I/O tools for handling the most commonly used genomic datafile types.
     `r pkg("valr")` can be used to read and manipulate genome intervals and 
     signals. `r pkg("KRIS")` provides various routine functions for 
-    bioinformatics analysis of sequences. `r pkg("bioseq")` is a toolbox
+    bioinformatics analyses of sequences. `r pkg("bioseq")` is a toolbox
     for manipulating biological (DNA, RNA and amino acid) sequences. 
     `r pkg("ftrCOOL")` extracts features from nucleotide and peptide sequences
-    and converts them to discrete numbers in order be used as predictors in 
+    and converts them to discrete numbers in order to be used as predictors in 
     machine learning models.\
-    `r pkg("agvgd")` predicts "missense" based on the properties of amino acid 
+    `r pkg("agvgd")` predicts "missense" substitutions based on the properties of amino acid
     side chains and protein multiple sequence alignments. `r pkg("RNAsmc")` 
     provides functions to mine, compare and plot RNA secondary structure. 
     `r pkg("vhica")` can be used to detect horizontal transfers of transposable
@@ -111,7 +114,7 @@ The task view is structured into main topics:
     codon data using a Bayesian framework. `r pkg("apex")` contains a collection
     of tools for the analysis of aligned DNA sequences from multiple genes. 
     `r pkg("BASiNET")` implements a method to classify RNA Sequences using 
-    network theory. `r pkg("MINTplates")` is a complete framework dedicated to
+    network theory. `r pkg("MINTplates")` is a framework dedicated to
     exploration and annotation of tRNA and other genomic sequences. 
     `r pkg("cumSeg")` estimates the number and location of change points in 
     mean-shift (piecewise constant) models, such as genomic sequences.
@@ -144,7 +147,7 @@ The task view is structured into main topics:
     probability of detection (POD) curve and the limit of detection (LOD). 
     `r pkg("NACHO")` and `r pkg("nanostringr")` provide tools for quality 
     control or normalization of NanoString nCounter data. `r pkg("MiRNAQCD")` 
-    is a complete toolbox for QC control of miRNA expression data.
+    is a toolbox for QC control of miRNA expression data.
 -   *Integrated tools (with GUI)*: `r pkg("maGUI")` provides a graphical user 
     interface to analyze microarray data (including annotation, tests, or 
     network inference). `r pkg("depthTools")` (and its 
@@ -157,8 +160,8 @@ The task view is structured into main topics:
     GEO and TCGA expression data. `r pkg("mpm")` provides exploratory graphical 
     analysis of gene expression data with various factorial approaches 
     (including PCA).
--   *Differential analysis*: `r bioc("limma")` is probably the most important 
-    package for microarray differential analysis. In addition, 
+-   *Differential analysis*: `r bioc("limma")` is among the most-important 
+    packages for microarray differential analysis. In addition, 
     `r pkg("TailRank")` provides a tail-rank non
     parametric test for microarray datasets. `r pkg("SMVar")` implements 
     structural model for variances for differential analysis of gene expression 
@@ -166,17 +169,17 @@ The task view is structured into main topics:
     to detect significant variation in gene expression. `r pkg("optBiomarker")` 
     estimates the optimal number of biomarkers in 2-group assays. 
     `r pkg("leapp")` proposes a latent effect adjustment method to counter
-    their effects on ranking of hypothesis in tests. `r pkg("MCMC.qpcr")` 
+    their effects on the rankings of hypotheses in tests. `r pkg("MCMC.qpcr")` 
     implements Bayesian approaches for normalization and differential analysis 
     of qPCR data. From a more global point of view, `r pkg("directPA")` can
     identify combinatorial effects of multiple treatments/conditions on pathways
     from different omics, including microarray and RNA-seq data.\
-    `r pkg("ssize.fdr")` provides functions that calculate appropriate sample 
+    `r pkg("ssize.fdr")` provides functions to calculate appropriate sample 
     sizes for gene expression tests and `r pkg("NewmanOmics")` implements Newman
     studentized range statistics for genome scale transcriptomics.
 -   *Time series*: `r pkg("TcGSA")` and `r pkg("TGS")` implement methods for 
     longitudinal gene-expression data analysis. `r pkg("survival666")` 
-    implements a method to eliminate influence of co-expressed genes in 
+    implements a method to eliminate the influence of co-expressed genes in 
     survival analyses. `r pkg("GeneCycle")` also analyses gene expression time 
     series to detect periodically expressed genes. `r pkg("BClustLonG")` 
     implements a Dirichlet process mixture model for clustering longitudinal 
@@ -192,8 +195,8 @@ The task view is structured into main topics:
 
 #### RNA-seq data
 
--   *Generic*: `r bioc("DESeq2")` and `r bioc("edgeR")` are among the most two
-    important packages for RNA-seq preprocessing and differential analysis.
+-   *Generic*: `r bioc("DESeq2")` and `r bioc("edgeR")` are among the
+    most-important packages for RNA-seq preprocessing and differential analysis.
 -   *Mapping*: `r pkg("MAAPER")` assigns 3' RNA-seq reads to polyA sites. 
 -   *Deconvolution*: `r pkg("BisqueRNA")` and `r pkg("InteRD")` provide methods 
     to estimate cell type abundances from bulk expression data. `r pkg("scBio")`
@@ -208,7 +211,7 @@ The task view is structured into main topics:
     RNA-seq data under various assumptions and `r pkg("SeqNet")` and 
     `r pkg("graphsim")` both offer simulations of RNA-seq data based on 
     regulatory networks.
--   *Differential analysis*: `r pkg("QuasiSeq")` includes function to perform 
+-   *Differential analysis*: `r pkg("QuasiSeq")` includes functions to perform 
     differential analysis of RNA-seq data using quasi-Poisson or quasi-negative
     binomial models. `r pkg("PQLseq")` implements a mixed model to account for 
     population structure in RNA-seq (and other count data) differential 
@@ -218,8 +221,8 @@ The task view is structured into main topics:
     Binomial and Negative Binomial Beta tests for differential analyses of
     RNA-seq data. `r pkg("DiPALM")` enables differential analysis of
     time-course gene expression in different conditions. `r pkg("RVA")` is 
-    dedicated to the visualization of RNA-seq data and especially of results of 
-    differential analysis.\
+    dedicated to the visualization of RNA-seq data and especially of the results
+    of differential analysis.\
     Similarly, `r pkg("markerpen")` uses penalized PCA for biomarker discovery.
     After differential analysis, `r pkg("DGEobj")` and  `r pkg("DGEobj.utils")` 
     provide a flexible container and a function toolkit to manage and annotate 
@@ -249,8 +252,8 @@ The task view is structured into main topics:
     cell-type signature matrices using flow sorted or single cell samples and 
     deconvolve bulk gene expression data. `r pkg("FiRE")` can discover rare 
     cells from voluminous single cell expression data.\
-   `r pkg("scSorter")` assigns cell to known cell types according to marker
-    genes and `r pkg("SignacX")` uses neural network to identify cell types. 
+   `r pkg("scSorter")` assigns cells to known cell types according to marker
+    genes and `r pkg("SignacX")` uses neural networks to identify cell types. 
     `r pkg("clustermole")` can be used to identify human and mouse single-cell 
     transcriptomic data cell type.\
     `r pkg("immunarch")` can be used to analyze specifically T-cells and 
@@ -302,19 +305,19 @@ The task view is structured into main topics:
     for the identification in shotgun proteomics.\
     `r pkg("Inflect")` contains functions to compute melt temperature and shifts
     from LC-MS/MS abundance data in TPP experiments.
--   *Imputation*: Several packages implements functions for imputation of
-    proteomics datasets: `r pkg("imputeLCMD")` (left-censored iputation), 
+-   *Imputation*: Several packages implement functions for the imputation of
+    proteomics datasets: `r pkg("imputeLCMD")` (left-censored imputation), 
     `r pkg("imp4p")` (including estimation of the missing value mechanism), and
     `r pkg("mi4p")` (multiple imputation). See also the `r view("MissingData")`
     view.
 -   *Differential analysis*: `r pkg("canprot")` contains data files of published 
     differentially expressed proteins in cancer and cell culture experiments.
--   *Visualization*: `r pkg("cp4p")` provides calibration plot for proteomics 
+-   *Visualization*: `r pkg("cp4p")` provides calibration plots for proteomics 
     to check assumptions of FDR control procedures and to compute adjusted 
     p-values. `r pkg("LSPFP")` provides plots of peptides from shotgun 
     proteomics analysis.
 -   *Prediction*: `r pkg("krm")` is a package dedicated to kernel based 
-    regression method that includes a kernel for protein sequence.
+    regression methods that includes a kernel for protein sequence.
 -   *Single-cell protein data (CITE-seq)*: `r pkg("dsb")` contains functions to 
     normalize and denoise droplet single-cell proteomics data.
 
@@ -328,7 +331,7 @@ The task view is structured into main topics:
     `r pkg("MetabolomicsBasics")` also includes basic functions (peak picking, 
     deconvolution, ...) to explore metabolomics data.
 -   *Identification*: `r pkg("erah")` can be used to identify metabolites by 
-    spectral library matching in GC-MS untarget metabolomics.
+    spectral library matching in GC-MS untargeted metabolomics.
 -   *Tests and biomarker discovery*: `r pkg("iCARH")` implements a method for 
     the analysis of time course metabolomic datasets, including biomarker 
     discovery. `r pkg("MetabolicSurv")` contains biomarker discovery and 
@@ -356,7 +359,10 @@ The task view is structured into main topics:
     `r pkg("flippant")` allows the analysis of the activity of the lipid 
     scrambling activity based on a fluorescence assay (dithionite scramblase 
     assay).
--   *Bacterial genomics, microbiome and metagenomics*: `r bioc("phyloseq")` is one of the most      important package for the analysis of high-throughput microbiome data. `r pkg("BarcodingR")`     performs species identification using DNA barcodes. `r pkg("enveomics.R")` 
+-   *Bacterial genomics, microbiome and metagenomics*: `r bioc("phyloseq")` is
+    among the most-important packages for the analysis of high-throughput
+    microbiome data. `r pkg("BarcodingR")` performs species identification
+    using DNA barcodes. `r pkg("enveomics.R")` 
     contains a collection of functions for microbial ecology and other 
     applications of genomics and metagenomics and is the companion package for 
     the [Enveomics](http://enve-omics.ce.gatech.edu/enveomics/) collection.
@@ -369,7 +375,7 @@ The task view is structured into main topics:
 -   *Generic*: `r bioc("MOFA2")` and `r bioc("mixOmics")` are among the most two
     important packages for integration multi-omics data sets.
 -   *Single omics analysis*: `r pkg("wrMisc")` contains a collection of tools 
-    to manipulate omics data and to perform various simple statistical analyses 
+    to manipulate omics data and to perform various statistical analyses 
     (including normalization and some statistical tests). `r pkg("integIRTy")` 
     provides a method to identify genes that are consistently altered in cancer 
     across different omics.
@@ -377,21 +383,21 @@ The task view is structured into main topics:
     enriched pathways and processes. `r pkg("ICDS")` identifies pathways 
     dysfunctional in cancer based on the integration of multiple omics.
 -   *Exploratory integrative analyses*: `r pkg("o2plsda", priority = "core")` 
-    provides function to perform O2PLS-DA for multi-omics data integration. 
+    provides functions to perform O2PLS-DA for multi-omics data integration. 
     Similarly, `r pkg("CovCombR")` can be used to combine heterogeneous data 
     sets through a covariance based method, and
     `r pkg("PMA", priority = "core")` proposes a sparse canonical correlation
     analysis to integrate multiple omics datasets. `r pkg("CovCombR")` and 
     `r pkg("packMBPLSDA")` contain other methods to combine heterogeneous data 
     sets through a covariance based method (the second being based on PLS-DA),
-    and `r pkg("MOSS")` provides a sparse SVD-based multi-omic integration 
-    method. `r pkg("semmcmc")` also provides a omics integration method based on
+    and `r pkg("MOSS")` provides a sparse SVD-based multi-omics integration 
+    method. `r pkg("semmcmc")` also provides an omics integration method based on
     structural equation modelling (SEM), and `r pkg("IMIX")` uses Gaussian
     mixtures for multi-omics data integration. `r pkg("solvebio")` is a binding 
-    for the [SolveBio](https://www.solvebio.com/) API that is a biomedical 
+    for the [SolveBio](https://www.solvebio.com/) API, a biomedical 
     knowledge hub oriented toward omics data integration. `r pkg("IntLIM")` 
     integrates two omics using linear modeling. More generally, `r pkg("dnet")` 
-    performs integration from different angles including: integration with 
+    performs integration from different angles including integration with 
     molecular networks, enrichments using ontologies, etc.\
     More specifically, `r pkg("iBATCGH")` integrates transcriptomic and CGH data
     with a Bayesian approach, and `r pkg("desiR")` provides functions for 
@@ -427,7 +433,7 @@ The task view is structured into main topics:
     
 #### Multiple testing
 
--   `r pkg("bayefdr")` implements a bayesian estimation and optimization of 
+-   `r pkg("bayefdr")` implements Bayesian estimation and optimization of 
     expected False Discovery Rate and `r pkg("hommel")` includes methods for 
     close testing with Simes' inequality. `r pkg("rSEA")` performs simultaneous 
     enrichment analysis that controls the FWER. More specifically, 
@@ -451,9 +457,10 @@ The task view is structured into main topics:
     gene network inference with correlation based methods and 
     `r pkg("GeneNet", priority = "core")` implements gene network inference with
     Gaussian Graphical Models. `r pkg("RGBM")` implements bootstrap based 
-    algorithm for network inference from microarray and RNA-seq data. 
+    algorithms for network inference from microarray and RNA-seq data. 
     `r pkg("RNAseqNet")` implements network inference with a log-linear Poisson 
-    model and can handle missing individuals. `r pkg("Patterns")` to infer 
+    model and can handle missing individuals. `r pkg("Patterns")` contains tools
+    to infer 
     biological networks with approaches designed for single or multiple joint 
     omics. `r pkg("parmigene")` performs network inference with mutual 
     information methods. `r pkg("networkABC")` performs network inference with 
@@ -471,7 +478,7 @@ The task view is structured into main topics:
     networks to identify differentially regulated genes by a virtual knockout 
     approach and `r pkg("SIMMS")` enables integration of molecular profiles with
     functional networks (such as PPI networks) to detect biomarkers from 
-    survival data. Similarly, `r pkg("regnet")` provides network-base 
+    survival data. Similarly, `r pkg("regnet")` provides network-based 
     regularized models to perform variable selection in high-dimensional 
     biological data. More generally, `r pkg("DiffCorr")` implements a method for
     identifying pattern changes between 2 experimental conditions in correlation
@@ -490,7 +497,7 @@ The task view is structured into main topics:
     clustering of short time-course or dose-response microarray gene 
     expressions. `r pkg("OptCirClust")` performs clustering for circular data 
     (like circular DNA or RNA molecules) and `r pkg("adjclust")` performs
-    constrained clustering well adapted to genomic constraints. The latter 
+    constrained clustering adapted to genomic constraints. The latter 
     includes a wrapper for Hi-C datasets.
 
 #### Visualization
@@ -500,14 +507,14 @@ The task view is structured into main topics:
     provides interactive genomic visualization of the chromosomes or chromosome 
     regions of any living organism. Similarly, `r pkg("seqinr")` provides 
     visualizations for biological sequence (DNA and protein) data.
--   *Genome scale data*: `r pkg("genoPlotR")` produces various genes or genome 
+-   *Genome scale data*: `r pkg("genoPlotR")` produces various gene or genome 
     map figures ready for publications. Similarly, `r pkg("valr")` can be used
-    to visualize genome-scale data, `r pkg("RCircos")` includes collection of 2D 
+    to visualize genome-scale data, `r pkg("RCircos")` includes a collection of 2D 
     circos plots for genomic visualization, and `r pkg("RIdeogram")` provides 
     functions to display genome-wide data on ideograms. More specifically, 
     `r pkg("gggenes")` draws gene arrow maps with a
     [ggplot2](https://ggplot2.tidyverse.org/) approach. `r pkg("VALERIE")` 
-    enables the visualization of alternative splicing event from single-cell 
+    enables the visualization of alternative splicing events from single-cell 
     data. `r pkg("PACVr")` provides a function to visualize the coverage depth 
     of a complete plastid genome.
 -   *Results of biomarker discovery methods*: `r pkg("func2vis")` provides 
@@ -516,10 +523,10 @@ The task view is structured into main topics:
     [ConsensusPathDB](http://www.consensuspathdb.org/YCPDB). 
     `r pkg("statVisual")` implements visualizations for translational medicine 
     and biomarker discovery. Similarly, `r pkg("volcano3D")` provides 3D volcano
-    and polar plots that is well suited to visualize biomarker differential 
+    and polar plots that is suited to visualize biomarker differential 
     analysis results for 3-class problems.
 -   *Multiple omics*:  `r pkg("OmicNavigator")` is dedicated to the 
-    visualization of omic data. `r pkg("wilson")` is a web-based tool dedicated 
+    visualization of omics data. `r pkg("wilson")` is a web-based tool dedicated 
     to the visualization of multi-omics data in an interactive way. 
 -   *Misc*: `r pkg("BioInsight")` filters and plots the abundance of different 
     RNA biotypes present in a count matrix. 
@@ -534,14 +541,14 @@ The task view is structured into main topics:
 
 -   *Cancer*: `r pkg("emba")` enables biomarker discovery using simulated data 
     from the results of the [DrugLogics](https://druglogics.eu/) software and
-    `r pkg("oncoPredict")` provides iomarker discovery from cell line screening
+    `r pkg("oncoPredict")` provides biomarker discovery from cell line screening
     data. `r pkg("tidyestimate")` infers tumor purity from expression data.
     `r pkg("driveR")` is a tool for personalized or batch analysis of genomic 
     data for cancer driver gene prioritization by combining genomic information 
     and prior biological knowledge. `r pkg("DRomics")` is dedicated to
     omics data obtained using a dose-response design, with a large number of 
     tested doses.    
--   *Nutrition*: `r pkg("BRINDA")` computes a biomarkers reflecting inflammation
+-   *Nutrition*: `r pkg("BRINDA")` computes biomarkers reflecting inflammation
     and nutritional determinants of anemia.
 
 ### Links
