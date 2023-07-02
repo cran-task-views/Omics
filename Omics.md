@@ -539,9 +539,8 @@ The task view is structured into main topics:
 
 ### Specific application fields
 
--   *Cancer*: `r pkg("emba")` enables biomarker discovery using simulated data 
-    from the results of the [DrugLogics](https://druglogics.eu/) software and
-    `r pkg("oncoPredict")` provides biomarker discovery from cell line screening
+-   *Cancer*: `r pkg("oncoPredict")` provides biomarker discovery from cell line
+    screening
     data. `r pkg("tidyestimate")` infers tumor purity from expression data.
     `r pkg("driveR")` is a tool for personalized or batch analysis of genomic 
     data for cancer driver gene prioritization by combining genomic information 
