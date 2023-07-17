@@ -259,8 +259,7 @@ The task view is structured into main topics:
     B-cells.
 -   *Biomarker discovery*: `r pkg("DIscBIO")` is a user-friendly 
     multi-algorithmic pipeline for biomarker discovery in single-cell 
-    transcriptomics. `r pkg("DUBStepR")` implements a correlation-based feature 
-    selection for single-cell RNA sequencing data.
+    transcriptomics. 
 -   *Cell trajectories*: `r pkg("dynwrap")`, `r pkg("treefit")`, and
     `r pkg("SCORPIUS")` infer cell trajectories from single-cell gene 
     expression data. `r pkg("phateR")` can be used to visualize single-cell data
