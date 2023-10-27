@@ -404,8 +404,9 @@ The task view is structured into main topics:
     omics using successive Lasso models using different priorities for the 
     omics.
 -   *Clustering*: `r pkg("PINSPlus")` implements a robust clustering method
-    for omics data integration and `r pkg("LUCIDus")` includes a ML based
-    method for integrated clustering.
+    for omics data integration, `r pkg("LUCIDus")` includes a ML based
+    method for integrated clustering, and `r pkg("RHclust")` propose a 
+    k-means based multi-omics clustering.
 -   *Meta-analyses*: `r pkg("metaRNASeq")` and `r pkg("metaMA")`  implement
     p-value combination techniques for meta-analysis of RNA-seq data and 
     microarray data respectively. `r pkg("MetaIntegrator")` provides a pipeline
