@@ -111,8 +111,7 @@ The task view is structured into main topics:
     `r pkg("vhica")` can be used to detect horizontal transfers of transposable
     elements from their divergence compared with regular genes.\
     `r pkg("AnaCoDa")` contains a collection of models to analyze genome scale
-    codon data using a Bayesian framework. `r pkg("apex")` contains a collection
-    of tools for the analysis of aligned DNA sequences from multiple genes. 
+    codon data using a Bayesian framework.  
     `r pkg("BASiNET")` implements a method to classify RNA Sequences using 
     network theory. `r pkg("MINTplates")` is a framework dedicated to
     exploration and annotation of tRNA and other genomic sequences. 
