@@ -354,9 +354,6 @@ The task view is structured into main topics:
     differential analysis of Hi-C experiments.
 -   *Lipidomics*: `r pkg("interep")` can perform interaction analysis in high 
     dimensional lipidomics datasets with repeated measurements. 
-    `r pkg("flippant")` allows the analysis of the activity of the lipid 
-    scrambling activity based on a fluorescence assay (dithionite scramblase 
-    assay).
 -   *Bacterial genomics, microbiome and metagenomics*: `r bioc("phyloseq")` is
     among the most-important packages for the analysis of high-throughput
     microbiome data. `r pkg("BarcodingR")` performs species identification
