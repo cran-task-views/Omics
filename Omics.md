@@ -71,7 +71,9 @@ The task view is structured into main topics:
     `r pkg("riceidconverter")` can be used to convert rice biological 
     identifiers.\
     `r pkg("babelgene")` converts between human and non-human gene 
-    orthologs/homologs from multiple databases. 
+    orthologs/homologs from multiple databases. \
+    `r pkg("hgnc")` downloads and imports the HUGO gene nomenclature committee 
+    on mapping of gene symbols to gene entries in other databases.
 -   *Gene set/pathway enrichment*: `r pkg("WebGestaltR", priority = "core")`
     uses [WebGestalt](http://www.webgestalt.org/) to perform Gene Set 
     Enrichment and Network Topology analysis. `r pkg("GOxploreR")` provides a
@@ -425,10 +427,10 @@ The task view is structured into main topics:
 
 -   `r pkg("PeakSegOptimal")` implements a change point detection method based 
     on the Poisson distribution for count data that includes a constraint suited
-    for peak calling and `r pkg("PeakSegDisk")` provides a large scale 
-    implementation of the method using on-disk storage. `r pkg("PeakError")` 
-    computes true and false positive in peak calling with respect to annotated 
-    region labels.
+    for peak calling, `r pkg("PeakSegDisk")` provides a large scale 
+    implementation of the method using on-disk storage. `r pkg("PeakSegJoint")` 
+    implements a joint peak detection and `r pkg("PeakError")` computes true and
+    false positive in peak calling with respect to annotated region labels.
     
 #### Multiple testing
 
@@ -484,7 +486,7 @@ The task view is structured into main topics:
     networks and `r pkg("dnapath")` integrates pathway information into the 
     differential network analysis of two gene expression datasets. 
     `r pkg("GANPA")` is a network-based gene weighting algorithm for pathway 
-    enrichment analysis and `r pkg("DRaWR")` is a network-based method for 
+    enrichment analysis and has a  `r pkg("GANPAdata")"` companion datasets package. `r pkg("DRaWR")` is a network-based method for 
     ranking genes or properties related to a given gene set.
 -   *PPI networks*: `r pkg("prioGene")` can be used to define disease specific 
     PPI networks and to deduce candidate gene prioritization.
