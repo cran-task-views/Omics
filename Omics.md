@@ -508,8 +508,7 @@ The task view is structured into main topics:
     `r pkg("gggenes")` draws gene arrow maps with a
     [ggplot2](https://ggplot2.tidyverse.org/) approach. `r pkg("VALERIE")` 
     enables the visualization of alternative splicing events from single-cell 
-    data. `r pkg("PACVr")` provides a function to visualize the coverage depth 
-    of a complete plastid genome.
+    data. 
 -   *Results of biomarker discovery methods*: `r pkg("func2vis")` provides 
     visualization and clean-up of enriched gene ontologies (GO) terms, protein 
     complexes and pathways using 
