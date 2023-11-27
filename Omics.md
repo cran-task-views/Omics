@@ -299,9 +299,7 @@ The task view is structured into main topics:
     [Proteome Discoverer](https://www.thermofisher.com/fr/fr/home/industrial/mass-spectrometry/liquid-chromatography-mass-spectrometry-lc-ms/lc-ms-software/multi-omics-data-analysis/proteome-discoverer-software.html).\ 
     `r pkg("prozor")` determines the minimal protein set explaining peptide 
     spectrum matches. `r pkg("net4pg")` implements a method to handle ambiguity
-    for the identification in shotgun proteomics.\
-    `r pkg("Inflect")` contains functions to compute melt temperature and shifts
-    from LC-MS/MS abundance data in TPP experiments.
+    for the identification in shotgun proteomics.
 -   *Imputation*: Several packages implement functions for the imputation of
     proteomics datasets: `r pkg("imputeLCMD")` (left-censored imputation), 
     `r pkg("imp4p")` (including estimation of the missing value mechanism), and
