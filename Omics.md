@@ -394,8 +394,7 @@ The task view is structured into main topics:
     integrates two omics using linear modeling. More generally, `r pkg("dnet")` 
     performs integration from different angles including integration with 
     molecular networks, enrichments using ontologies, etc.\
-    More specifically, `r pkg("iBATCGH")` integrates transcriptomic and CGH data
-    with a Bayesian approach, and `r pkg("desiR")` provides functions for 
+    More specifically, `r pkg("desiR")` provides functions for 
     ranking, selecting, and integrating genes, proteins and metabolite data.
 -   *Prediction*: `r pkg("prioritylasso")` performs prediction from multiple
     omics using successive Lasso models using different priorities for the 
