@@ -415,9 +415,7 @@ The task view is structured into main topics:
 #### Quality control and normalization
 
 -   `r pkg("lineup")` and `r pkg("lineup2")` include tools for detecting and 
-    correcting sample mix-ups in omics data. `r pkg("RUVIIIC")` performs 
-    normalization using negative control variables and replications (originally 
-    designed for proteomics).
+    correcting sample mix-ups in omics data. 
     
 #### Peak calling and analysis in data like ChIP-seq and ATAC-seq
 
