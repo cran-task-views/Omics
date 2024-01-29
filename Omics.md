@@ -3,7 +3,7 @@ name: Omics
 topic: Genomics, Proteomics, Metabolomics, Transcriptomics, and Other Omics
 maintainer: Julie Aubert, Toby Dylan Hocking, Nathalie Vialaneix
 email: julie.aubert@inrae.fr
-version: 2023-12-04
+version: 2024-01-29
 source: https://github.com/cran-task-views/Omics/
 ---
 
@@ -482,7 +482,7 @@ The task view is structured into main topics:
     networks and `r pkg("dnapath")` integrates pathway information into the 
     differential network analysis of two gene expression datasets. 
     `r pkg("GANPA")` is a network-based gene weighting algorithm for pathway 
-    enrichment analysis and has a  `r pkg("GANPAdata")"` companion datasets package. `r pkg("DRaWR")` is a network-based method for 
+    enrichment analysis and has a  `r pkg("GANPAdata")` companion datasets package. `r pkg("DRaWR")` is a network-based method for 
     ranking genes or properties related to a given gene set.
 -   *PPI networks*: `r pkg("prioGene")` can be used to define disease specific 
     PPI networks and to deduce candidate gene prioritization.
