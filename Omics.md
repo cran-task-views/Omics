@@ -255,9 +255,7 @@ The task view is structured into main topics:
    `r pkg("scSorter")` assigns cells to known cell types according to marker
     genes and `r pkg("SignacX")` uses neural networks to identify cell types. 
     `r pkg("clustermole")` can be used to identify human and mouse single-cell 
-    transcriptomic data cell type.\
-    `r pkg("immunarch")` can be used to analyze specifically T-cells and 
-    B-cells.
+    transcriptomic data cell type.
 -   *Biomarker discovery*: `r pkg("DIscBIO")` is a user-friendly 
     multi-algorithmic pipeline for biomarker discovery in single-cell 
     transcriptomics. 
