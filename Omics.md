@@ -3,7 +3,7 @@ name: Omics
 topic: Genomics, Proteomics, Metabolomics, Transcriptomics, and Other Omics
 maintainer: Julie Aubert, Toby Dylan Hocking, Nathalie Vialaneix
 email: julie.aubert@inrae.fr
-version: 2024-02-05
+version: 2024-02-19
 source: https://github.com/cran-task-views/Omics/
 ---
 
@@ -390,10 +390,7 @@ The task view is structured into main topics:
     structural equation modelling (SEM), and `r pkg("IMIX")` uses Gaussian
     mixtures for multi-omics data integration. `r pkg("solvebio")` is a binding 
     for the [SolveBio](https://www.solvebio.com/) API, a biomedical 
-    knowledge hub oriented toward omics data integration. `r pkg("IntLIM")` 
-    integrates two omics using linear modeling. More generally, `r pkg("dnet")` 
-    performs integration from different angles including integration with 
-    molecular networks, enrichments using ontologies, etc.\
+    knowledge hub oriented toward omics data integration. \
     More specifically, `r pkg("desiR")` provides functions for 
     ranking, selecting, and integrating genes, proteins and metabolite data.
 -   *Prediction*: `r pkg("prioritylasso")` performs prediction from multiple
