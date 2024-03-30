@@ -126,7 +126,9 @@ The task view is structured into main topics:
     `r pkg("popPCR")` allows the classification of droplets in fluorescence
     activated cell sorting data to estimate DNA target concentration.
 -   *Copy number data*: `r pkg("ioncopy")` implements calculation of 
-    copy-numbers in amplicon sequencing data. `r pkg("aroma.cn")` implements 
+    copy-numbers in amplicon sequencing data and `r pkg("ACNE")` provides 
+    allele-specific copy number from microarrays using NMF. `r pkg("aroma.cn")` 
+    implements 
     several methods for normalizing and analyzing  DNA copy-number data and 
     `r pkg("PSCBS")` focuses on the analysis of parent-specific DNA copy-number 
     data.
