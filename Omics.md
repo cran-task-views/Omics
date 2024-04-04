@@ -3,7 +3,7 @@ name: Omics
 topic: Genomics, Proteomics, Metabolomics, Transcriptomics, and Other Omics
 maintainer: Julie Aubert, Toby Dylan Hocking, Nathalie Vialaneix
 email: julie.aubert@inrae.fr
-version: 2024-03-30
+version: 2024-04-04
 source: https://github.com/cran-task-views/Omics/
 ---
 
@@ -309,8 +309,6 @@ The task view is structured into main topics:
     `r pkg("imp4p")` (including estimation of the missing value mechanism), and
     `r pkg("mi4p")` (multiple imputation). See also the `r view("MissingData")`
     view.
--   *Differential analysis*: `r pkg("canprot")` contains data files of published 
-    differentially expressed proteins in cancer and cell culture experiments.
 -   *Visualization*: `r pkg("cp4p")` provides calibration plots for proteomics 
     to check assumptions of FDR control procedures and to compute adjusted 
     p-values. `r pkg("LSPFP")` provides plots of peptides from shotgun 
