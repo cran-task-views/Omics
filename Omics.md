@@ -218,9 +218,8 @@ The task view is structured into main topics:
     `r pkg("PQLseq")` implements a mixed model to account for 
     population structure in RNA-seq (and other count data) differential 
     analyses and `r pkg("glmmSeq")` also uses a mixed model for repeated 
-    measurements in transcriptomic datasets. `r pkg("NBPSeq")` and 
-    `r pkg("NBBttest")` are two packages that use (respectively) Negative 
-    Binomial and Negative Binomial Beta tests for differential analyses of
+    measurements in transcriptomic datasets. `r pkg("NBPSeq")`uses
+    Negative Binomial Beta tests for differential analyses of
     RNA-seq data. `r pkg("DiPALM")` enables differential analysis of
     time-course gene expression in different conditions. `r pkg("RVA")` is 
     dedicated to the visualization of RNA-seq data and especially of the results
