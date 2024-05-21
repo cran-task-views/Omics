@@ -473,8 +473,7 @@ The task view is structured into main topics:
     regularized models to perform variable selection in high-dimensional 
     biological data. More generally, `r pkg("DiffCorr")` implements a method for
     identifying pattern changes between 2 experimental conditions in correlation
-    networks and `r pkg("dnapath")` integrates pathway information into the 
-    differential network analysis of two gene expression datasets. 
+    networks. 
     `r pkg("GANPA")` is a network-based gene weighting algorithm for pathway 
     enrichment analysis and has a  `r pkg("GANPAdata")` companion datasets package. `r pkg("DRaWR")` is a network-based method for 
     ranking genes or properties related to a given gene set.
