@@ -3,7 +3,7 @@ name: Omics
 topic: Genomics, Proteomics, Metabolomics, Transcriptomics, and Other Omics
 maintainer: Julie Aubert, Toby Dylan Hocking, Nathalie Vialaneix
 email: julie.aubert@inrae.fr
-version: 2024-05-21
+version: 2024-06-20
 source: https://github.com/cran-task-views/Omics/
 ---
 
@@ -108,8 +108,7 @@ The task view is structured into main topics:
     and converts them to discrete numbers in order to be used as predictors in 
     machine learning models.\
     `r pkg("agvgd")` predicts "missense" substitutions based on the properties of amino acid
-    side chains and protein multiple sequence alignments. `r pkg("RNAsmc")` 
-    provides functions to mine, compare and plot RNA secondary structure. 
+    side chains and protein multiple sequence alignments. 
     `r pkg("vhica")` can be used to detect horizontal transfers of transposable
     elements from their divergence compared with regular genes.\
     `r pkg("AnaCoDa")` contains a collection of models to analyze genome scale
@@ -248,8 +247,7 @@ The task view is structured into main topics:
 -   *Cell clustering and annotation*: `r pkg("conos")` and `r pkg("scINSIGHT")` 
     can be used to identify recurrent cell clusters in collections of 
     single-cell RNA-seq datasets obtained in various conditions. 
-    `r pkg("stochprofML")` models heterogeneity from populations of cells using 
-    a mixture of log-normal distributions. `r pkg("ADAPTS")` constructs 
+    `r pkg("ADAPTS")` constructs 
     cell-type signature matrices using flow sorted or single cell samples and 
     deconvolve bulk gene expression data. `r pkg("FiRE")` can discover rare 
     cells from voluminous single cell expression data.\
