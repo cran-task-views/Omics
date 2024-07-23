@@ -43,8 +43,9 @@ The task view is structured into main topics:
 -   *Databases*: `r pkg("geneExpressionFromGEO")` can be used to easily download
     a gene expression dataset from [GEO](https://www.ncbi.nlm.nih.gov/geo/).
     `r pkg("cbioportalR")` makes available clinical and genomic data from
-    [cBioPortal](http://www.cbioportal.org/). `r pkg("pinfsc50")` provides 
-    genomic data for the plant pathogen *Phytophthora infestans*.
+    [cBioPortal](http://www.cbioportal.org/) and `r pkg("TCGAretriever")` helps 
+    specifically to access and download TCGA data. `r pkg("pinfsc50")` provides 
+    genomic data for the plant pathogen *Phytophthora infestans*. 
 -   *Functional annotation*: `r pkg("enrichR")` provides an interface to the
     [Enrichr](https://maayanlab.cloud/Enrichr/) databases. 
     `r pkg("biomartr", priority = "core")` provides  an interface to the 
@@ -77,12 +78,12 @@ The task view is structured into main topics:
 -   *Gene set/pathway enrichment*: `r pkg("WebGestaltR", priority = "core")`
     uses [WebGestalt](http://www.webgestalt.org/) to perform Gene Set 
     Enrichment and Network Topology analysis. `r pkg("GOxploreR")` provides a
-    method to explore the gene ontology. `r pkg("liger")` and `r pkg("GSA")` 
-    also propose methods for gene set enrichment analysis. `r pkg("VAM")` 
-    proposes a gene set testing method that is better designed than standard 
-    ones to handle single-cell RNA-seq data. `r pkg("tmod")` provides functions 
-    for gene set enrichment analysis in transcriptomic and metabolic profiling 
-    data. `r pkg("sigora")` corrects over-representation biases in pathway 
+    method to explore the gene ontology. `r pkg("GSA")` also propose methods 
+    for gene set enrichment analysis. `r pkg("VAM")` proposes a gene set 
+    testing method that is better designed than standard ones to handle 
+    single-cell RNA-seq data. `r pkg("tmod")` provides functions for gene set 
+    enrichment analysis in transcriptomic and metabolic profiling data. 
+    `r pkg("sigora")` corrects over-representation biases in pathway 
     enrichment analysis. `r pkg("permPATH")` performs pathway enrichment 
     analysis with permutation tests. `r pkg("CePa")` aims to find significant 
     pathways through network topology information and `r pkg("pathfindR")` 
@@ -155,9 +156,13 @@ The task view is structured into main topics:
     network inference). `r pkg("depthTools")` (and its 
     [R commander](https://socialsciences.mcmaster.ca/jfox/Misc/Rcmdr/) 
     plugin `r pkg("RcmdrPlugin.depthTools")`) is a collection of statistical
-    tools based on data depth for gene expression analysis.
+    tools based on data depth for gene expression analysis. 
     [OOMPA](http://oompa.r-forge.r-project.org/) provides a collection of 
     CRAN packages for microarray and proteomics analysis.
+    `r pkg("seeker")` provides a standard interface and parallelization
+    of various tools for transcriptomics such as BrainArray, RMA,
+    [GEOquery](https://doi.org/doi:10.18129/B9.bioc.GEOquery),
+    [ArrayExpress](https://www.ebi.ac.uk/biostudies/arrayexpress).
 -   *Visualization*: `r pkg("tinyarray")` is dedicated to the visualization of 
     GEO and TCGA expression data. `r pkg("mpm")` provides exploratory graphical 
     analysis of gene expression data with various factorial approaches 
@@ -478,6 +483,9 @@ The task view is structured into main topics:
     ranking genes or properties related to a given gene set.
 -   *PPI networks*: `r pkg("prioGene")` can be used to define disease specific 
     PPI networks and to deduce candidate gene prioritization.
+-   *multi-omics networks*: `r pkg("SmCCNet")` builds phenotype-specific 
+    multi-omics using a canonical correlation based framework.   
+    
 
 #### Clustering
 
