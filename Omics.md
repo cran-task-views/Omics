@@ -3,7 +3,7 @@ name: Omics
 topic: Genomics, Proteomics, Metabolomics, Transcriptomics, and Other Omics
 maintainer: Julie Aubert, Toby Dylan Hocking, Nathalie Vialaneix
 email: julie.aubert@inrae.fr
-version: 2024-07-23
+version: 2024-09-25
 source: https://github.com/cran-task-views/Omics/
 ---
 
@@ -185,9 +185,8 @@ The task view is structured into main topics:
     sizes for gene expression tests and `r pkg("NewmanOmics")` implements Newman
     studentized range statistics for genome scale transcriptomics.
 -   *Time series*: `r pkg("TcGSA")` and `r pkg("TGS")` implement methods for 
-    longitudinal gene-expression data analysis. `r pkg("survival666")` 
-    implements a method to eliminate the influence of co-expressed genes in 
-    survival analyses. `r pkg("GeneCycle")` also analyses gene expression time 
+    longitudinal gene-expression data analysis. 
+    `r pkg("GeneCycle")` also analyses gene expression time 
     series to detect periodically expressed genes. `r pkg("BClustLonG")` 
     implements a Dirichlet process mixture model for clustering longitudinal 
     gene expression data.
