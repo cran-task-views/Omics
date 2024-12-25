@@ -46,8 +46,7 @@ The task view is structured into main topics:
     [cBioPortal](http://www.cbioportal.org/) and `r pkg("TCGAretriever")` helps 
     specifically to access and download TCGA data. `r pkg("pinfsc50")` provides 
     genomic data for the plant pathogen *Phytophthora infestans*. 
--   *Functional annotation*: `r pkg("enrichR")` provides an interface to the
-    [Enrichr](https://maayanlab.cloud/Enrichr/) databases. 
+-   *Functional annotation*: 
     `r pkg("biomartr", priority = "core")` provides  an interface to the 
     [BioMart](https://www.ensembl.org/info/data/biomart/) database. 
     `r pkg("msigdbr")` provides an interface for the 
