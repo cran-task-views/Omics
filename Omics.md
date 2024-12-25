@@ -3,7 +3,7 @@ name: Omics
 topic: Genomics, Proteomics, Metabolomics, Transcriptomics, and Other Omics
 maintainer: Julie Aubert, Toby Dylan Hocking, Nathalie Vialaneix
 email: julie.aubert@inrae.fr
-version: 2024-09-25
+version: 2024-12-25
 source: https://github.com/cran-task-views/Omics/
 ---
 
@@ -405,8 +405,7 @@ The task view is structured into main topics:
     k-means based multi-omics clustering.
 -   *Meta-analyses*: `r pkg("metaRNASeq")` and `r pkg("metaMA")`  implement
     p-value combination techniques for meta-analysis of RNA-seq data and 
-    microarray data respectively. `r pkg("MetaIntegrator")` provides a pipeline
-    for the meta-analysis of gene expression data.
+    microarray data respectively. 
 
 ### Specific tasks
 
