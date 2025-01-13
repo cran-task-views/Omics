@@ -3,7 +3,7 @@ name: Omics
 topic: Genomics, Proteomics, Metabolomics, Transcriptomics, and Other Omics
 maintainer: Julie Aubert, Toby Dylan Hocking, Nathalie Vialaneix
 email: julie.aubert@inrae.fr
-version: 2024-12-25
+version: 2025-01-13
 source: https://github.com/cran-task-views/Omics/
 ---
 
@@ -386,9 +386,8 @@ The task view is structured into main topics:
     `r pkg("PMA", priority = "core")` proposes a sparse canonical correlation
     analysis to integrate multiple omics datasets. `r pkg("CovCombR")` and 
     `r pkg("packMBPLSDA")` contain other methods to combine heterogeneous data 
-    sets through a covariance based method (the second being based on PLS-DA),
-    and `r pkg("MOSS")` provides a sparse SVD-based multi-omics integration 
-    method. `r pkg("semmcmc")` also provides an omics integration method based on
+    sets through a covariance based method (the second being based on PLS-DA). 
+    `r pkg("semmcmc")` also provides an omics integration method based on
     structural equation modelling (SEM), and `r pkg("IMIX")` uses Gaussian
     mixtures for multi-omics data integration. `r pkg("solvebio")` is a binding 
     for the [SolveBio](https://www.solvebio.com/) API, a biomedical 
