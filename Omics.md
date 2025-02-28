@@ -3,7 +3,7 @@ name: Omics
 topic: Genomics, Proteomics, Metabolomics, Transcriptomics, and Other Omics
 maintainer: Julie Aubert, Toby Dylan Hocking, Nathalie Vialaneix
 email: julie.aubert@inrae.fr
-version: 2025-01-13
+version: 2025-02-28
 source: https://github.com/cran-task-views/Omics/
 ---
 
@@ -425,8 +425,9 @@ The task view is structured into main topics:
 
 -   `r pkg("bayefdr")` implements Bayesian estimation and optimization of 
     expected False Discovery Rate and `r pkg("hommel")` includes methods for 
-    close testing with Simes' inequality. `r pkg("rSEA")` performs simultaneous 
-    enrichment analysis that controls the FWER. More specifically, 
+    close testing with Simes' inequality. `r pkg("pwrFDR")` computes power under
+    various sequential multiple testing procedures. `r pkg("rSEA")` performs 
+    simultaneous enrichment analysis that controls the FWER. More specifically, 
     `r pkg("RobustRankAggreg")` provides a method for aggregating rank lists, 
     especially lists of genes, `r pkg("DiscreteFDR")` implements multiple 
     testing procedures adapted for discrete tests.
