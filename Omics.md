@@ -3,7 +3,7 @@ name: Omics
 topic: Genomics, Proteomics, Metabolomics, Transcriptomics, and Other Omics
 maintainer: Julie Aubert, Toby Dylan Hocking, Nathalie Vialaneix
 email: julie.aubert@inrae.fr
-version: 2025-02-28
+version: 2025-04-15
 source: https://github.com/cran-task-views/Omics/
 ---
 
@@ -274,7 +274,9 @@ The task view is structured into main topics:
 
 -   *Generic tool*: `r pkg("ChemoSpec", priority = "core")` contains a 
     collection of functions for top-down exploratory chemometrics for various 
-    proteomics spectroscopy data.
+    proteomics spectroscopy data. More specifically, `r pkg("OlinkAnalyze")`
+    provides functions to read and explore proteomic data exported from Olink
+    software and QUANT data. 
 -   *Relation between proteins and DNA*: `r pkg("geno2proteo")` allows to find 
     the DNA and protein sequences of any given genomic loci using the 
     [ENSEMBL](https://www.ensembl.org/) annotations. 
