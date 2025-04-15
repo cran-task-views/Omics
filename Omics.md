@@ -88,8 +88,7 @@ The task view is structured into main topics:
     pathways through network topology information and `r pkg("pathfindR")` 
     (accompanied by the data package `r pkg("pathfindR.data")`) and
     `r pkg("netgsa")` also use network information for enrichment analysis. 
-    `r pkg("SlaPMEG")` performs pathway enrichment analysis for longitudinal 
-    omics data. `r pkg("topologyGSA")` performs gene expression data tests using 
+    `r pkg("topologyGSA")` performs gene expression data tests using 
     given pathway information on genes. `r pkg("diffEnrich")` compares
     functional enrichment between two experimentally-derived groups of genes or
     proteins. `r pkg("DysPIA")` identifies dysregulated pathways based on a 
