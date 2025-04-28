@@ -3,7 +3,7 @@ name: Omics
 topic: Genomics, Proteomics, Metabolomics, Transcriptomics, and Other Omics
 maintainer: Julie Aubert, Toby Dylan Hocking, Nathalie Vialaneix
 email: julie.aubert@inrae.fr
-version: 2025-04-15
+version: 2025-04-28
 source: https://github.com/cran-task-views/Omics/
 ---
 
@@ -157,10 +157,6 @@ The task view is structured into main topics:
     tools based on data depth for gene expression analysis. 
     [OOMPA](http://oompa.r-forge.r-project.org/) provides a collection of 
     CRAN packages for microarray and proteomics analysis.
-    `r pkg("seeker")` provides a standard interface and parallelization
-    of various tools for transcriptomics such as BrainArray, RMA,
-    [GEOquery](https://doi.org/doi:10.18129/B9.bioc.GEOquery),
-    [ArrayExpress](https://www.ebi.ac.uk/biostudies/arrayexpress).
 -   *Visualization*: `r pkg("tinyarray")` is dedicated to the visualization of 
     GEO and TCGA expression data. `r pkg("mpm")` provides exploratory graphical 
     analysis of gene expression data with various factorial approaches 
