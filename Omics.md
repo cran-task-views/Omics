@@ -3,7 +3,7 @@ name: Omics
 topic: Genomics, Proteomics, Metabolomics, Transcriptomics, and Other Omics
 maintainer: Julie Aubert, Toby Dylan Hocking, Nathalie Vialaneix
 email: julie.aubert@inrae.fr
-version: 2025-04-28
+version: 2025-05-12
 source: https://github.com/cran-task-views/Omics/
 ---
 
@@ -208,8 +208,8 @@ The task view is structured into main topics:
 -   *Generic tool*: `r pkg("Tmisc")` is a collection of utility functions to 
     manipulate gene expression data.
 -   *Simulation*: `r pkg("seqgendiff")` provides a framework to simulate 
-    RNA-seq data under various assumptions and `r pkg("SeqNet")` and 
-    `r pkg("graphsim")` both offer simulations of RNA-seq data based on 
+    RNA-seq data under various assumptions and  
+    `r pkg("graphsim")` offers simulations of RNA-seq data based on 
     regulatory networks.
 -   *Differential analysis*: 
     `r pkg("PQLseq")` implements a mixed model to account for 
