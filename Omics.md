@@ -3,7 +3,7 @@ name: Omics
 topic: Genomics, Proteomics, Metabolomics, Transcriptomics, and Other Omics
 maintainer: Julie Aubert, Toby Dylan Hocking, Nathalie Vialaneix
 email: julie.aubert@inrae.fr
-version: 2025-05-12
+version: 2025-05-19
 source: https://github.com/cran-task-views/Omics/
 ---
 
@@ -332,8 +332,6 @@ The task view is structured into main topics:
     survival analysis methods for metabolomics signatures. `r pkg("MetSizeR")` 
     computes sample size for target statistical power in metabolomics 
     experiments.
--   *Clustering*: `r pkg("RAMClustR")` includes a clustering algorithm for mass 
-    spectrometry metabolomic data.
 -   *Flux data*: `r pkg("fbar")` is a toolkit for flux balance analysis and 
     related metabolic modeling techniques.
 
