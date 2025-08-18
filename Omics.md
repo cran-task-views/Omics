@@ -271,8 +271,6 @@ The task view is structured into main topics:
 -   *Relation between proteins and DNA*: `r pkg("geno2proteo")` allows to find 
     the DNA and protein sequences of any given genomic loci using the 
     [ENSEMBL](https://www.ensembl.org/) annotations. 
-    `r pkg("PredCRG")` contains a computational model to predict proteins 
-    encoded by circadian genes.
 -   *Protein structure and sequence*: `r pkg("compas")` manipulates and 
     analyzes 3-D structural geometry of Protein Data Bank (PDB) files. 
     `r pkg("bio3d")` contains tools to process, organize and explore protein 
