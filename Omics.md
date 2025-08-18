@@ -370,8 +370,7 @@ The task view is structured into main topics:
     dysfunctional in cancer based on the integration of multiple omics.
 -   *Exploratory integrative analyses*: `r pkg("o2plsda", priority = "core")` 
     provides functions to perform O2PLS-DA for multi-omics data integration. 
-    Similarly, `r pkg("CovCombR")` can be used to combine heterogeneous data 
-    sets through a covariance based method, and
+    Similarly, 
     `r pkg("PMA", priority = "core")` proposes a sparse canonical correlation
     analysis to integrate multiple omics datasets. `r pkg("CovCombR")` and 
     `r pkg("packMBPLSDA")` contain other methods to combine heterogeneous data 
