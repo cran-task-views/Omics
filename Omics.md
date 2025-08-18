@@ -503,8 +503,7 @@ The task view is structured into main topics:
     visualization and clean-up of enriched gene ontologies (GO) terms, protein 
     complexes and pathways using 
     [ConsensusPathDB](http://www.consensuspathdb.org/YCPDB). 
-    `r pkg("statVisual")` implements visualizations for translational medicine 
-    and biomarker discovery. Similarly, `r pkg("volcano3D")` provides 3D volcano
+    `r pkg("volcano3D")` provides 3D volcano
     and polar plots that is suited to visualize biomarker differential 
     analysis results for 3-class problems.
 -   *Multiple omics*:  `r pkg("OmicNavigator")` is dedicated to the 
