@@ -115,8 +115,6 @@ The task view is structured into main topics:
     `r pkg("BASiNET")` implements a method to classify RNA Sequences using 
     network theory. `r pkg("MINTplates")` is a framework dedicated to
     exploration and annotation of tRNA and other genomic sequences. 
-    `r pkg("cumSeg")` estimates the number and location of change points in 
-    mean-shift (piecewise constant) models, such as genomic sequences.
 -   *Cell analyses*: `r pkg("sonicLength")` estimates the abundance of cell 
     clones from DNA fragments. Similarly, `r pkg("scoper")` performs spectral 
     clustering to identify clones from B cell data. `r pkg("Signac")` is a
