@@ -185,8 +185,7 @@ The task view is structured into main topics:
 -   *Clustering*: `r pkg("slfm")` performs gene expression analysis with a 
     Bayesian sparse latent factor model. `r pkg("lmQCM")` implements a 
     graph-based method for gene co-expression module discovery.
--   *Prediction*: `r pkg("LPS")` implements the linear prediction score
-    approach for gene expression signatures. `r pkg("SMDIC")` performs the 
+-   *Prediction*: `r pkg("SMDIC")` performs the 
     identification of somatic mutation-driven immune cells from expression data.
     `r pkg("cubfits")` uses sequence and expression data to predict protein 
     production rates.
