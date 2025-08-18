@@ -196,8 +196,7 @@ The task view is structured into main topics:
 -   *Generic*: `r bioc("DESeq2")` and `r bioc("edgeR")` are among the
     most-important packages for RNA-seq preprocessing and differential analysis.
 -   *Mapping*: `r pkg("MAAPER")` assigns 3' RNA-seq reads to polyA sites. 
--   *Deconvolution*: `r pkg("BisqueRNA")` provides methods 
-    to estimate cell type abundances from bulk expression data. `r pkg("scBio")`
+-   *Deconvolution*: `r pkg("scBio")`
     also proposes a deconvolution algorithm for bulk RNA-seq data but requires 
     one single-cell reference sample. More specifically, `r pkg("imsig")` 
     estimates the abundance of immune subpopulation cells in solid tumours.
