@@ -372,9 +372,9 @@ The task view is structured into main topics:
     provides functions to perform O2PLS-DA for multi-omics data integration. 
     Similarly, 
     `r pkg("PMA", priority = "core")` proposes a sparse canonical correlation
-    analysis to integrate multiple omics datasets. `r pkg("CovCombR")` and 
-    `r pkg("packMBPLSDA")` contain other methods to combine heterogeneous data 
-    sets through a covariance based method (the second being based on PLS-DA). 
+    analysis to integrate multiple omics datasets. 
+    `r pkg("packMBPLSDA")` contains other methods to combine heterogeneous data 
+    sets through a covariance based method (based on PLS-DA). 
     `r pkg("semmcmc")` also provides an omics integration method based on
     structural equation modelling (SEM), and `r pkg("IMIX")` uses Gaussian
     mixtures for multi-omics data integration. `r pkg("solvebio")` is a binding 
