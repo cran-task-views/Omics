@@ -3,7 +3,7 @@ name: Omics
 topic: Genomics, Proteomics, Metabolomics, Transcriptomics, and Other Omics
 maintainer: Julie Aubert, Toby Dylan Hocking, Nathalie Vialaneix
 email: julie.aubert@inrae.fr
-version: 2025-08-18
+version: 2025-09-05
 source: https://github.com/cran-task-views/Omics/
 ---
 
@@ -468,8 +468,6 @@ The task view is structured into main topics:
     ranking genes or properties related to a given gene set.
 -   *PPI networks*: `r pkg("prioGene")` can be used to define disease specific 
     PPI networks and to deduce candidate gene prioritization.
--   *multi-omics networks*: `r pkg("SmCCNet")` builds phenotype-specific 
-    multi-omics using a canonical correlation based framework.   
     
 
 #### Clustering
