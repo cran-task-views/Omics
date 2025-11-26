@@ -213,9 +213,7 @@ The task view is structured into main topics:
     measurements in transcriptomic datasets. `r pkg("NBPSeq")`uses
     Negative Binomial Beta tests for differential analyses of
     RNA-seq data. `r pkg("DiPALM")` enables differential analysis of
-    time-course gene expression in different conditions. `r pkg("RVA")` is 
-    dedicated to the visualization of RNA-seq data and especially of the results
-    of differential analysis.\
+    time-course gene expression in different conditions. \
     Similarly, `r pkg("markerpen")` uses penalized PCA for biomarker discovery.
     After differential analysis, `r pkg("DGEobj")` and  `r pkg("DGEobj.utils")` 
     provide a flexible container and a function toolkit to manage and annotate 
