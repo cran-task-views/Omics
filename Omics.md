@@ -134,8 +134,7 @@ The task view is structured into main topics:
     `r pkg("mutSignatures")` identifies mutation signatures from somatic 
     mutational catalogs. More generally, `r pkg("ICAMS")` analyses mutational 
     signatures. Also, based on mutation data, `r pkg("ICBioMark")` identifies 
-    immunotherapy biomarkers. `r pkg("pathwayTMB")` estimates tumor mutational
-    burden (TMB) with a new pathway-based gene panel. `r pkg("CB2")` provides
+    immunotherapy biomarkers. `r pkg("CB2")` provides
     functions for CRISPR pooled screen analysis using Beta-Binomial Test.
 
 ### Transcriptomics
