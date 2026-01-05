@@ -204,10 +204,7 @@ The task view is structured into main topics:
     RNA-seq data under various assumptions and  
     `r pkg("graphsim")` offers simulations of RNA-seq data based on 
     regulatory networks.
--   *Differential analysis*: 
-    `r pkg("PQLseq")` implements a mixed model to account for 
-    population structure in RNA-seq (and other count data) differential 
-    analyses and `r pkg("glmmSeq")` also uses a mixed model for repeated 
+-   *Differential analysis*: `r pkg("glmmSeq")` uses a mixed model for repeated 
     measurements in transcriptomic datasets. `r pkg("NBPSeq")`uses
     Negative Binomial Beta tests for differential analyses of
     RNA-seq data. `r pkg("DiPALM")` enables differential analysis of
