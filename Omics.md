@@ -514,9 +514,7 @@ The task view is structured into main topics:
 
 ### Specific application fields
 
--   *Cancer*: `r pkg("oncoPredict")` provides biomarker discovery from cell line
-    screening
-    data. `r pkg("tidyestimate")` infers tumor purity from expression data and 
+-   *Cancer*: `r pkg("tidyestimate")` infers tumor purity from expression data and 
     `r pkg("Allspice")` provides a trained classifier for profiling patients
     with acute lymphoblastic leukemia (ALL) from RNA.
     `r pkg("driveR")` is a tool for personalized or batch analysis of genomic 
