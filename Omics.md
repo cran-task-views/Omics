@@ -178,9 +178,7 @@ The task view is structured into main topics:
 -   *Time series*: `r pkg("TcGSA")` and `r pkg("TGS")` implement methods for 
     longitudinal gene-expression data analysis. 
     `r pkg("GeneCycle")` also analyses gene expression time 
-    series to detect periodically expressed genes. `r pkg("BClustLonG")` 
-    implements a Dirichlet process mixture model for clustering longitudinal 
-    gene expression data.
+    series to detect periodically expressed genes. 
 -   *Clustering*: `r pkg("slfm")` performs gene expression analysis with a 
     Bayesian sparse latent factor model. `r pkg("lmQCM")` implements a 
     graph-based method for gene co-expression module discovery.
