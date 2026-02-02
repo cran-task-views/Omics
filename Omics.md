@@ -130,9 +130,9 @@ The task view is structured into main topics:
     from genomic alteration records, `r pkg("Rediscover")` identifies mutually 
     exclusive mutations using a Poisson-Binomial model, and 
     `r pkg("mutSignatures")` identifies mutation signatures from somatic 
-    mutational catalogs. More generally, `r pkg("ICAMS")` analyses mutational 
-    signatures. Also, based on mutation data, `r pkg("ICBioMark")` identifies 
-    immunotherapy biomarkers. `r pkg("CB2")` provides
+    mutational catalogs. 
+    Also, based on mutation data, `r pkg("ICBioMark")` identifies 
+    immunotherapy biomarkers and `r pkg("CB2")` provides
     functions for CRISPR pooled screen analysis using Beta-Binomial Test.
 
 ### Transcriptomics
