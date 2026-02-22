@@ -43,8 +43,7 @@ The task view is structured into main topics:
 -   *Databases*: `r pkg("geneExpressionFromGEO")` can be used to easily download
     a gene expression dataset from [GEO](https://www.ncbi.nlm.nih.gov/geo/).
     `r pkg("cbioportalR")` makes available clinical and genomic data from
-    [cBioPortal](http://www.cbioportal.org/) and `r pkg("TCGAretriever")` helps 
-    specifically to access and download TCGA data. `r pkg("pinfsc50")` provides 
+    [cBioPortal](http://www.cbioportal.org/). `r pkg("pinfsc50")` provides 
     genomic data for the plant pathogen *Phytophthora infestans*. 
 -   *Functional annotation*: 
     `r pkg("biomartr", priority = "core")` provides  an interface to the 
