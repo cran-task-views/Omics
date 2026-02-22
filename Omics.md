@@ -455,8 +455,6 @@ The task view is structured into main topics:
     enrichment analysis and has a  `r pkg("GANPAdata")` companion datasets 
     package. `r pkg("DRaWR")` is a network-based method for 
     ranking genes or properties related to a given gene set.
--   *PPI networks*: `r pkg("prioGene")` can be used to define disease specific 
-    PPI networks and to deduce candidate gene prioritization.
     
 
 #### Clustering
