@@ -61,9 +61,8 @@ The task view is structured into main topics:
     [NCBI](www.ncbi.nlm.nih.gov/) database.  `r pkg("PSSMCOOL")` contains the 
     computation of various features from Position Specific Scoring Matrix
     (PSSM).
--   *Gene symbol conversions*: `r pkg("aliases2entrez")` converts human gene 
-    symbols to curated gene entrezID from [NCBI](https://www.ncbi.nlm.nih.gov/) 
-    database. `r pkg("AnnotationBustR")` extracts subsequences into FASTA files  
+-   *Gene symbol conversions*: 
+    `r pkg("AnnotationBustR")` extracts subsequences into FASTA files  
     from [GenBank](https://www.ncbi.nlm.nih.gov/genbank/) annotations where gene 
     names may vary among accessions. `r pkg("BED")` is an interface for the 
     [Neo4j](https://neo4j.com/) database providing a mapping between different 
