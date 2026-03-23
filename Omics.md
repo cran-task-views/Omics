@@ -354,8 +354,7 @@ The task view is structured into main topics:
     provides a method to identify genes that are consistently altered in cancer 
     across different omics.
 -   *Pathway analyses*: `r pkg("ActivePathways")` combines p-values to obtain
-    enriched pathways and processes. `r pkg("ICDS")` identifies pathways 
-    dysfunctional in cancer based on the integration of multiple omics.
+    enriched pathways and processes. 
 -   *Exploratory integrative analyses*: `r pkg("o2plsda", priority = "core")` 
     provides functions to perform O2PLS-DA for multi-omics data integration. 
     Similarly, 
