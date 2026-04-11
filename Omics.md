@@ -74,8 +74,8 @@ The task view is structured into main topics:
     on mapping of gene symbols to gene entries in other databases.
 -   *Gene set/pathway enrichment*: `r pkg("WebGestaltR", priority = "core")`
     uses [WebGestalt](http://www.webgestalt.org/) to perform Gene Set 
-    Enrichment and Network Topology analysis. `r pkg("GOxploreR")` provides a
-    method to explore the gene ontology. `r pkg("GSA")` also propose methods 
+    Enrichment and Network Topology analysis. 
+    `r pkg("GSA")` also propose methods 
     for gene set enrichment analysis. `r pkg("VAM")` proposes a gene set 
     testing method that is better designed than standard ones to handle 
     single-cell RNA-seq data. `r pkg("tmod")` provides functions for gene set 
