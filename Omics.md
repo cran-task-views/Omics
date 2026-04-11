@@ -241,8 +241,8 @@ The task view is structured into main topics:
 -   *Biomarker discovery*: `r pkg("DIscBIO")` is a user-friendly 
     multi-algorithmic pipeline for biomarker discovery in single-cell 
     transcriptomics. 
--   *Cell trajectories*: `r pkg("dynwrap")`, `r pkg("treefit")`, and
-    `r pkg("SCORPIUS")` infer cell trajectories from single-cell gene 
+-   *Cell trajectories*: `r pkg("dynwrap")`, and `r pkg("treefit")`
+    ` infer cell trajectories from single-cell gene 
     expression data. `r pkg("phateR")` can be used to visualize single-cell data
     with trajectories.
 -   *Misc*: `r pkg("rPanglaoDB")` can download and merge single-cell RNA-seq 
