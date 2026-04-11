@@ -272,7 +272,7 @@ The task view is structured into main topics:
     `r pkg("iq")` also implements protein quantification for mass 
     spectrometry. `r pkg("protViz")` contains functions to visualize and analyze
     small mass spectrometry proteomic datasets.\
-    `r pkg("PTXQC")` and `r pkg("ypssc")` are both designed to analyze outputs 
+    `r pkg("PTXQC")` is designed to analyze outputs 
     of [MaxQuant](https://www.maxquant.org) (a quantitative proteomics tool for
     large mass-spectrometric datasets). `r pkg("protti")` can also analyze 
     outputs of MaxQuant in addition to outputs of 
