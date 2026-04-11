@@ -232,8 +232,7 @@ The task view is structured into main topics:
     cell-type signature matrices using flow sorted or single cell samples and 
     deconvolve bulk gene expression data. `r pkg("FiRE")` can discover rare 
     cells from voluminous single cell expression data.\
-   `r pkg("scSorter")` assigns cells to known cell types according to marker
-    genes and `r pkg("SignacX")` uses neural networks to identify cell types. 
+    `r pkg("SignacX")` uses neural networks to identify cell types. 
     `r pkg("clustermole")` can be used to identify human and mouse single-cell 
     transcriptomic data cell type.
     `r pkg("immunarch")` can be used to analyze specifically T-cells and 
