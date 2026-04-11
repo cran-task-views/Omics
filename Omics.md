@@ -314,8 +314,6 @@ The task view is structured into main topics:
     survival analysis methods for metabolomics signatures. `r pkg("MetSizeR")` 
     computes sample size for target statistical power in metabolomics 
     experiments.
--   *Flux data*: `r pkg("fbar")` is a toolkit for flux balance analysis and 
-    related metabolic modeling techniques.
 
 ### Other omics
 
