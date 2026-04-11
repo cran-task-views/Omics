@@ -455,9 +455,8 @@ The task view is structured into main topics:
 #### Clustering
 
 -   `r pkg("EMMIXgene")` implements a mixture model-based approach for the 
-    clustering of microarray expression data and `r pkg("ORIClust")` performs
-    clustering of short time-course or dose-response microarray gene 
-    expressions. `r pkg("OptCirClust")` performs clustering for circular data 
+    clustering of microarray expression data. 
+    `r pkg("OptCirClust")` performs clustering for circular data 
     (like circular DNA or RNA molecules) and `r pkg("adjclust")` performs
     constrained clustering adapted to genomic constraints. The latter 
     includes a wrapper for Hi-C datasets.
