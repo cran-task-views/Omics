@@ -3,7 +3,7 @@ name: Omics
 topic: Genomics, Proteomics, Metabolomics, Transcriptomics, and Other Omics
 maintainer: Julie Aubert, Toby Dylan Hocking, Nathalie Vialaneix
 email: julie.aubert@inrae.fr
-version: 2026-04-11
+version: 2026-08-25
 source: https://github.com/cran-task-views/Omics/
 ---
 
@@ -432,7 +432,7 @@ The task view is structured into main topics:
     reverse engineering, and prediction in cascade networks with experimental 
     data provided in `r pkg("CascadeData")`. `r pkg("miic")` can be used to 
     infer causal and non causal networks using information theory.
--   *Single-cell data*: `r pkg("scLink")` and `r pkg("scTenifoldNet")` can be 
+-   *Single-cell data*: `r pkg("scTenifoldNet")` can be 
     used to infer co-expression networks from single-cell data, the latter 
     including an approach to compare these networks between different 
     conditions.
@@ -502,9 +502,9 @@ The task view is structured into main topics:
     with acute lymphoblastic leukemia (ALL) from RNA.
     `r pkg("driveR")` is a tool for personalized or batch analysis of genomic 
     data for cancer driver gene prioritization by combining genomic information 
-    and prior biological knowledge. `r pkg("DRomics")` is dedicated to
-    omics data obtained using a dose-response design, with a large number of 
-    tested doses.    
+    and prior biological knowledge. 
+-   *(Eco)-toxicology*: `r pkg("DRomics")` is dedicated to omics data obtained 
+    using a dose-response design, with a large number of tested doses.    
 -   *Nutrition*: `r pkg("BRINDA")` computes biomarkers reflecting inflammation
     and nutritional determinants of anemia.
 
