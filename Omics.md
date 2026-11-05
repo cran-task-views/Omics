@@ -3,7 +3,7 @@ name: Omics
 topic: Genomics, Proteomics, Metabolomics, Transcriptomics, and Other Omics
 maintainer: Julie Aubert, Toby Dylan Hocking, Nathalie Vialaneix
 email: julie.aubert@inrae.fr
-version: 2026-09-22
+version: 2026-11-05
 source: https://github.com/cran-task-views/Omics/
 ---
 
