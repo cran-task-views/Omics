@@ -3,7 +3,7 @@ name: Omics
 topic: Genomics, Proteomics, Metabolomics, Transcriptomics, and Other Omics
 maintainer: Julie Aubert, Toby Dylan Hocking, Nathalie Vialaneix
 email: julie.aubert@inrae.fr
-version: 2026-09-22
+version: 2026-11-05
 source: https://github.com/cran-task-views/Omics/
 ---
 
@@ -189,10 +189,13 @@ The task view is structured into main topics:
     most-important packages for RNA-seq preprocessing and differential analysis.
 -   *Deconvolution*: `r pkg("scBio")`
     also proposes a deconvolution algorithm for bulk RNA-seq data but requires 
-    one single-cell reference sample. More specifically, `r pkg("imsig")` 
-    estimates the abundance of immune subpopulation cells in solid tumours.
-    Finally, `r pkg("omicwas")` tests association with phenotypes that are 
-    cell-type specific in bulk omics experiments.  
+    one single-cell reference sample. `r pkg("cellGeometry")` also deconvolutes 
+    bulk RNA-seq data using single-cell reference data but can merge different
+    reference datasets, handle atlas-level single-cell datasets and is ultra-fast.
+    More specifically, `r pkg("imsig")` estimates the abundance of immune 
+    subpopulation cells in solid tumours. Finally, `r pkg("omicwas")` tests 
+    association with phenotypes that are cell-type specific in bulk omics 
+    experiments.  
 -   *Generic tool*: `r pkg("Tmisc")` is a collection of utility functions to 
     manipulate gene expression data.
 -   *Simulation*: `r pkg("seqgendiff")` provides a framework to simulate 
@@ -472,7 +475,8 @@ The task view is structured into main topics:
     `r pkg("gggenes")` draws gene arrow maps with a
     [ggplot2](https://ggplot2.tidyverse.org/) approach. `r pkg("VALERIE")` 
     enables the visualization of alternative splicing events from single-cell 
-    data. 
+    data. `r pkg("locuszoomr")` is a pure R implementation of [locuszoom](https://my.locuszoom.org/)
+    for plotting genetic data at genomic loci accompanied by gene annotations.
 -   *Results of biomarker discovery methods*: `r pkg("func2vis")` provides 
     visualization and clean-up of enriched gene ontologies (GO) terms, protein 
     complexes and pathways using 
